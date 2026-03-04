@@ -10794,6 +10794,16 @@
 		)
 		(uuid "297ba64e-e42b-4f5e-ace8-1828aa5733d4")
 	)
+	(text "TODO do we need to connect the 5V for HDMI?"
+		(exclude_from_sim no)
+		(at 531.876 70.866 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2e1ab721-bf5a-4929-98da-747ec2adf815")
+	)
 	(text "TODO get this checked by an expert\nEspecially with the updated 1M\nat the front for the scope probe\nAnd the chassis diode"
 		(exclude_from_sim no)
 		(at 86.868 322.834 0)
@@ -20673,6 +20683,15 @@
 				)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 88.9 225.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1f2f198e-73c2-4c04-ba00-9a296977947f")
 		)
@@ -20739,6 +20758,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 88.9 235.585 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -20869,6 +20897,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 67.31 127.635 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -21086,6 +21123,15 @@
 				)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 52.705 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2c739238-06e3-4a4b-9c78-de72f5f13c69")
 		)
@@ -21152,6 +21198,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 73.66 109.855 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -21284,6 +21339,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 33.02 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -21428,6 +21492,15 @@
 				)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 250.19 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ec184c23-fa03-4e24-a026-f741cd14e9f0")
 		)
@@ -21492,6 +21565,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 250.19 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -21690,6 +21772,15 @@
 				)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 251.46 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "10504978-2ae4-4b75-b20f-30dc13378930")
 		)
@@ -21756,6 +21847,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 262.89 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -21826,6 +21926,15 @@
 				)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 274.32 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c8f3bad6-8352-4653-9de3-4c2be02cc87b")
 		)
@@ -21892,6 +22001,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 285.75 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -21962,6 +22080,15 @@
 				)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 297.18 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6195ca3c-f306-438a-bc57-aa1092e3e238")
 		)
@@ -22028,6 +22155,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 308.61 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -22098,6 +22234,15 @@
 				)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 25.4 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "RP2350_80QFN_minimal"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
@@ -22158,6 +22303,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 25.4 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(instances
@@ -22222,6 +22376,15 @@
 				)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 25.4 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "RP2350_80QFN_minimal"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
@@ -22284,6 +22447,15 @@
 				)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 25.4 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "RP2350_80QFN_minimal"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
@@ -22342,6 +22514,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 76.2 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -22607,6 +22788,15 @@
 				)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 58.42 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9c8b31b5-0bd1-4950-975b-9856efc6199a")
 		)
@@ -22673,6 +22863,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 93.98 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -22869,6 +23068,15 @@
 				)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 121.92 235.585 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ae71747e-f962-46ee-8241-094d275d40c6")
 		)
@@ -22935,6 +23143,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 104.14 230.505 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -23073,6 +23290,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 267.97 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -23398,6 +23624,15 @@
 				)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 353.06 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "db34d302-cffd-43d4-992b-4ae08be4950c")
 		)
@@ -23612,6 +23847,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 295.91 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -23851,6 +24095,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 325.12 307.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d773b7bb-52f4-411d-a1a4-e08382358bcb")
 		)
@@ -23930,6 +24183,15 @@
 			)
 		)
 		(property "MFR. Part #" "0603WAF1001T5E"
+			(at 325.12 294.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 325.12 294.64 0)
 			(effects
 				(font
@@ -24331,6 +24593,15 @@
 			)
 		)
 		(property "LCSC Part #" "C701581"
+			(at 455.93 294.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 455.93 294.64 0)
 			(effects
 				(font
@@ -25662,6 +25933,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 494.03 325.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9f6d78c1-5db0-43ff-8b7e-e86d27a61c5d")
 		)
@@ -25805,6 +26085,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 123.19 337.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ea5290c6-f0d3-48a2-bca3-17ecfd90030a")
 		)
@@ -25883,6 +26172,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 123.19 349.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4051e845-9db1-47ef-a3dc-011e0667130d")
 		)
@@ -25951,6 +26249,15 @@
 			)
 		)
 		(property "LCSC Part #" "C24061"
+			(at 214.63 368.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 214.63 368.3 0)
 			(effects
 				(font
@@ -26171,6 +26478,15 @@
 			)
 		)
 		(property "LCSC Part #" "C206003"
+			(at 173.99 340.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 173.99 340.36 0)
 			(effects
 				(font
@@ -26535,6 +26851,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 167.64 356.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d5130668-e634-49d2-b27a-2bd3ae413de2")
 		)
@@ -26679,6 +27004,15 @@
 			)
 		)
 		(property "MFR. Part #" "0603WAF1001T5E"
+			(at 191.77 356.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 191.77 356.87 0)
 			(effects
 				(font
@@ -26969,6 +27303,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 241.3 345.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5373c2c7-624b-45dc-8913-f3f373f148c2")
 		)
@@ -27121,6 +27464,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 250.19 354.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a902a71f-6ed0-4d5b-b2b4-79f837dac4b6")
 		)
@@ -27255,7 +27607,7 @@
 				(hide yes)
 			)
 		)
-		(property "MRF. Part #" "OPA830IDBVR"
+		(property "MFR. Part #" "OPA830IDBVR"
 			(at 212.09 339.09 0)
 			(effects
 				(font
@@ -27265,6 +27617,15 @@
 			)
 		)
 		(property "LCSC Part #" "C2058414"
+			(at 212.09 339.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 212.09 339.09 0)
 			(effects
 				(font
@@ -27694,6 +28055,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 217.17 327.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ff7d727f-b138-413b-9dbe-568d32086043")
 		)
@@ -27781,6 +28151,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 201.93 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "beb237c8-b363-4ef3-b20c-54425651bb6e")
 		)
@@ -27860,6 +28239,15 @@
 			)
 		)
 		(property "MFR. Part #" "0603WAF1001T5E"
+			(at 229.87 356.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 229.87 356.87 0)
 			(effects
 				(font
@@ -28336,6 +28724,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 259.08 354.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "845624a8-cd3d-40c0-8d75-f6e9f4f63544")
 		)
@@ -28674,6 +29071,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 331.47 349.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d7520c22-6ae7-43f9-aadb-3a8019354016")
 		)
@@ -28754,6 +29160,15 @@
 			)
 		)
 		(property "LCSC Part #" "C24061"
+			(at 334.01 377.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 334.01 377.19 0)
 			(effects
 				(font
@@ -29177,6 +29592,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 350.52 299.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "eef25342-5c2b-466b-9c92-272688eeea1c")
 		)
@@ -29533,6 +29957,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 359.41 355.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d2fdaea6-ef64-4e0e-9d74-65c8c485af98")
 		)
@@ -29612,6 +30045,15 @@
 			)
 		)
 		(property "MFR. Part #" "ERJ3EKF1004V"
+			(at 317.5 353.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 317.5 353.06 0)
 			(effects
 				(font
@@ -29836,6 +30278,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 199.39 332.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fe6a4983-fc87-477f-8b38-c5cb1ea44a15")
 		)
@@ -29902,6 +30353,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 74.93 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -30054,6 +30514,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 454.66 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8192da7f-8729-4416-9a08-84a1733013cb")
 		)
@@ -30150,6 +30619,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 467.36 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1a052c95-ce59-49c1-8abe-33e3f00e8d90")
 		)
@@ -30229,6 +30707,15 @@
 			)
 		)
 		(property "MFR. Part #" "CC0603KRX7R9BB104"
+			(at 321.31 384.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 321.31 384.81 0)
 			(effects
 				(font
@@ -30499,6 +30986,15 @@
 				)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 166.37 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b78ca939-293b-4904-bc91-c0f37b04d3a5")
 		)
@@ -30560,6 +31056,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 535.94 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 535.94 97.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30654,6 +31159,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 179.07 327.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "60155354-36ce-4e6a-a56c-72c750f5c87f")
 		)
@@ -30733,6 +31247,15 @@
 			)
 		)
 		(property "MFR. Part #" "CC0603KRX7R9BB104"
+			(at 325.12 342.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 325.12 342.9 0)
 			(effects
 				(font
@@ -30939,6 +31462,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 535.94 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "dffa072d-b4ef-48e9-8af9-ce10de954940")
 		)
@@ -31026,6 +31558,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 419.1 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "39e9cf8f-9215-4fb1-92a6-8ab6335f61d5")
 		)
@@ -31090,6 +31631,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 120.65 165.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -31171,6 +31721,15 @@
 			)
 		)
 		(property "MFR. Part #" "CC0603KRX7R9BB104"
+			(at 160.02 332.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 160.02 332.74 0)
 			(effects
 				(font
@@ -31266,6 +31825,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 510.54 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0ff017ce-b065-48df-ad82-c09fa3450075")
 		)
@@ -31332,6 +31900,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 240.03 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -31467,6 +32044,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 535.94 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "58d413bd-0857-4534-b953-4520685799ee")
 		)
@@ -31533,6 +32119,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 320.04 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -31615,6 +32210,15 @@
 			)
 		)
 		(property "LCSC Part #" "C1589"
+			(at 398.78 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 398.78 114.3 0)
 			(effects
 				(font
@@ -31755,6 +32359,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 535.94 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "83750835-155e-4cf9-8310-c72846ae0e04")
 		)
@@ -31817,6 +32430,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 62.23 342.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 62.23 342.9 0)
 			(effects
 				(font
@@ -31890,6 +32512,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 133.35 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -31979,6 +32610,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 439.42 334.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ed1310bd-8fda-4d08-9890-9e6894d40330")
 		)
@@ -32058,6 +32698,15 @@
 			)
 		)
 		(property "MFR. Part #" "0603WAF1503T5E"
+			(at 495.3 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 495.3 257.81 0)
 			(effects
 				(font
@@ -32217,6 +32866,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 199.39 374.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "19223505-030f-42f7-8405-59f238d8dcf0")
 		)
@@ -32278,6 +32936,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 535.94 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 535.94 130.81 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32420,6 +33087,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 387.35 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "1eb8c1dd-74bd-4c92-b983-e0cd66843bf3")
 		)
@@ -32486,6 +33162,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 32.385 116.205 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -32640,6 +33325,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 438.15 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ddaae38c-ca5a-437b-a852-d85db7c7a264")
 		)
@@ -32701,6 +33395,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 535.94 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 535.94 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32972,6 +33675,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 416.56 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "A"
 			(uuid "7881f499-6591-4631-bb0b-dd740ac2575a")
 		)
@@ -33179,6 +33891,15 @@
 				)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 34.925 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c09e97cc-dace-4298-8f49-8e9aae57d478")
 		)
@@ -33311,6 +34032,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 153.67 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -33577,6 +34307,15 @@
 				)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 134.62 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b6c3f370-64e9-4794-a5a3-0acb668e73c3")
 		)
@@ -33723,6 +34462,15 @@
 			)
 		)
 		(property "LCSC Part #" "C160403"
+			(at 297.18 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 297.18 217.17 0)
 			(effects
 				(font
@@ -34014,6 +34762,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 429.26 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c99eaccd-0eab-4099-8a6d-5fcd00f910c8")
 		)
@@ -34101,6 +34858,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 488.95 358.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "297003d9-cce1-44ec-a986-f59de71b815d")
 		)
@@ -34162,6 +34928,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 492.76 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 492.76 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34248,6 +35023,15 @@
 			)
 		)
 		(property "MFR. Part #" "0603WAF8202T5E"
+			(at 476.25 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 476.25 251.46 0)
 			(effects
 				(font
@@ -34343,6 +35127,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 477.52 358.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8d1ab4a8-c7cb-44b3-8812-bd6902efc24c")
 		)
@@ -34405,6 +35198,15 @@
 		)
 		(property "Description" "ESD protection diode, 5.0Vrwm, SOD-923"
 			(at 85.09 353.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 85.09 353.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34696,6 +35498,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 426.72 358.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5deef305-42f7-410d-8943-08900c7c395f")
 		)
@@ -34757,6 +35568,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 535.94 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 535.94 110.49 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34843,6 +35663,15 @@
 			)
 		)
 		(property "MFR. Part #" "CC0603KRX7R9BB104"
+			(at 426.72 311.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 426.72 311.15 0)
 			(effects
 				(font
@@ -34995,6 +35824,15 @@
 			)
 		)
 		(property "MFR. Part #" "CC0603KRX7R9BB104"
+			(at 440.69 311.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 440.69 311.15 0)
 			(effects
 				(font
@@ -35201,6 +36039,15 @@
 			)
 		)
 		(property "LCSC Part #" "C208597"
+			(at 172.72 297.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 172.72 297.18 0)
 			(effects
 				(font
@@ -35561,6 +36408,15 @@
 				)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 32.385 125.095 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ba75e2ee-32ae-4159-a4b7-a29bf0b1d79e")
 		)
@@ -35625,6 +36481,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 68.58 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -35776,6 +36641,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 119.38 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -35978,6 +36852,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 398.78 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "aca6c8dd-ed96-4b95-abf4-d52d71981432")
 		)
@@ -36065,6 +36948,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 157.48 313.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b56948d4-9b7d-4f12-9f8c-08f5194684b3")
 		)
@@ -36131,6 +37023,15 @@
 				)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 146.05 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "984483dc-fa1d-48e1-a8b3-daef8469594d")
 		)
@@ -36192,6 +37093,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 535.94 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 535.94 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36286,6 +37196,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 480.06 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d9f96046-c436-47c6-a414-3bdc72f479e9")
 		)
@@ -36354,6 +37273,15 @@
 				)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 143.51 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "764f9665-9e39-4812-863e-2ea17f6c8f2d")
 		)
@@ -36416,6 +37344,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 95.25 353.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 95.25 353.06 0)
 			(effects
 				(font
@@ -36492,6 +37429,15 @@
 				)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 142.24 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "79e93b9a-6490-41b5-b0ff-ddf0204770d7")
 		)
@@ -36559,6 +37505,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 335.28 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -36765,6 +37720,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 535.94 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "df16836a-9683-44fc-81fe-a5786505a54c")
 		)
@@ -36917,6 +37881,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 337.82 307.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6b61e3c9-9c8f-4a71-a618-f399d110c5f1")
 		)
@@ -36983,6 +37956,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 154.94 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -37118,6 +38100,15 @@
 				)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 228.6 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6ed83fc8-1865-4646-ba01-07b6f5caa651")
 		)
@@ -37197,6 +38188,15 @@
 			)
 		)
 		(property "MFR. Part #" "CC0603KRX7R9BB104"
+			(at 345.44 294.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 345.44 294.64 0)
 			(effects
 				(font
@@ -37552,6 +38552,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 414.02 358.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "69d86921-3d2c-4040-953f-70d1936ee62f")
 		)
@@ -37619,6 +38628,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 129.54 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -37838,6 +38856,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 387.35 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6810840b-cfe2-4c21-b33b-0dde153b1a90")
 		)
@@ -37981,6 +39008,15 @@
 			)
 		)
 		(property "LCSC Part #" "C160404"
+			(at 462.28 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 462.28 54.61 0)
 			(effects
 				(font
@@ -38147,6 +39183,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 523.24 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "dc1d8f2a-bd35-4eca-a4b9-86a057783d3e")
 		)
@@ -38209,6 +39254,15 @@
 			)
 		)
 		(property "Description" "HDMI type A connector"
+			(at 508 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 508 113.03 0)
 			(effects
 				(font
@@ -38358,6 +39412,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 135.89 340.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9ec88233-c0a9-400b-8723-e48c26615363")
 		)
@@ -38434,6 +39497,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 198.12 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -38759,6 +39831,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 454.66 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d6ab8c7d-9f3a-4d14-b5f8-c6fd9edbfef1")
 		)
@@ -38861,6 +39942,15 @@
 				)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 107.95 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "84e70b4e-b4a7-4e77-b665-7c87366e5049")
 		)
@@ -38928,6 +40018,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 53.975 173.355 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -39009,6 +40108,15 @@
 			)
 		)
 		(property "MFR. Part #" "CC0603KRX7R9BB104"
+			(at 149.86 306.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 149.86 306.07 0)
 			(effects
 				(font
@@ -39169,6 +40277,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 439.42 358.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d9082c71-254b-4022-b2dc-b4572aae5a5a")
 		)
@@ -39256,6 +40373,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 482.6 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "68615300-a079-4f9f-8f57-44a42c31b4ea")
 		)
@@ -39335,6 +40461,15 @@
 			)
 		)
 		(property "MFR. Part #" "0603WAF1001T5E"
+			(at 153.67 359.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 153.67 359.41 0)
 			(effects
 				(font
@@ -39562,6 +40697,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 516.89 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "88fb1308-867a-4f7c-9778-80155edac887")
 		)
@@ -39761,6 +40905,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 106.68 353.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "756797ef-9fe3-493e-9d01-754984661eb4")
 		)
@@ -39840,6 +40993,15 @@
 			)
 		)
 		(property "MFR. Part #" "0603WAF1000T5E"
+			(at 162.56 313.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 162.56 313.69 0)
 			(effects
 				(font
@@ -40130,6 +41292,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 476.25 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3c7f6520-8b7d-4eb5-88a3-5a984c84357e")
 		)
@@ -40209,6 +41380,15 @@
 			)
 		)
 		(property "MFR. Part #" "CL10A105KB8NNNC"
+			(at 312.42 307.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 312.42 307.34 0)
 			(effects
 				(font
@@ -40361,6 +41541,15 @@
 			)
 		)
 		(property "MFR. Part #" "0603WAF0000T5E"
+			(at 516.89 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 516.89 208.28 0)
 			(effects
 				(font
@@ -40650,6 +41839,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 133.35 334.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a35cc8d0-302b-4f2f-9688-b25ca0dff63f")
 		)
@@ -40775,6 +41973,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 391.16 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
 			(at 391.16 46.99 0)
 			(effects
 				(font
@@ -40958,6 +42165,15 @@
 				(hide yes)
 			)
 		)
+		(property "MRF. Part #" ""
+			(at 469.9 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a6c87ba7-f77e-4f76-9088-ca6da64074aa")
 		)
@@ -41019,6 +42235,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 77.47 342.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MRF. Part #" ""
+			(at 77.47 342.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
