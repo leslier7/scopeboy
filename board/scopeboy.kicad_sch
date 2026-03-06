@@ -10967,6 +10967,16 @@
 		)
 		(uuid "7ca0adce-66e2-4670-94e5-68d1aec8173c")
 	)
+	(text "TODO check if this needs to be 5V"
+		(exclude_from_sim no)
+		(at 424.18 221.234 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "805013b6-cd1a-4392-babb-dcfaa6da7f4a")
+	)
 	(text "JST Debug Connector"
 		(exclude_from_sim no)
 		(at 328.93 210.82 0)
