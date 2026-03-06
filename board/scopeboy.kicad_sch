@@ -10814,6 +10814,16 @@
 		)
 		(uuid "2e1ab721-bf5a-4929-98da-747ec2adf815")
 	)
+	(text "TODO double check these based on\nhttps://learn.adafruit.com/adafruit-rp2350-22-pin-fpc-hstx-to-dvi-adapter/pinouts"
+		(exclude_from_sim no)
+		(at 573.532 80.772 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "37ecda28-fc8e-4bd5-be8d-a531ed58b41d")
+	)
 	(text "TODO get this checked by an expert\nEspecially with the updated 1M\nat the front for the scope probe\nAnd the chassis diode"
 		(exclude_from_sim no)
 		(at 86.868 322.834 0)
@@ -10846,6 +10856,16 @@
 			)
 		)
 		(uuid "440f106f-a91a-49aa-9a3d-51a73f4a6ece")
+	)
+	(text "TODO delete these headers"
+		(exclude_from_sim no)
+		(at 324.104 189.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4bcc90c3-c2c6-4362-9882-b93f99772132")
 	)
 	(text "TODO add attenuation after \nstage 1 and before stage 2\nAlso change gain stage so\ngain is over 10 V/V and fixed\nsince that is the input stable range"
 		(exclude_from_sim no)
@@ -10934,6 +10954,18 @@
 			(justify left bottom)
 		)
 		(uuid "734186bb-6317-44a5-bc02-c67793f0e70d")
+	)
+	(text "TODO either add a LiPo JST connector or a AA/AAA battery connector"
+		(exclude_from_sim no)
+		(at 435.864 147.066 0)
+		(effects
+			(font
+				(size 2.286 2.286)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "744dee7d-6ccd-416e-a163-d9f10ccc03c0")
 	)
 	(text "No need for these I think since we are only doing output"
 		(exclude_from_sim no)
@@ -13264,6 +13296,16 @@
 	)
 	(wire
 		(pts
+			(xy 539.75 100.33) (xy 551.18 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b092279-dc4f-45cd-a73f-1d2bf685141a")
+	)
+	(wire
+		(pts
 			(xy 335.28 168.91) (xy 347.98 168.91)
 		)
 		(stroke
@@ -13561,6 +13603,16 @@
 			(type default)
 		)
 		(uuid "4605c8e8-8d63-4aa4-9b2b-b03bd1d4a17a")
+	)
+	(wire
+		(pts
+			(xy 539.75 102.87) (xy 551.18 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46191675-c165-4995-a570-368ae5d71d9f")
 	)
 	(wire
 		(pts
@@ -14004,6 +14056,16 @@
 	)
 	(wire
 		(pts
+			(xy 539.75 92.71) (xy 551.18 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "542192b0-1fcf-482d-b6c0-ed5611701d25")
+	)
+	(wire
+		(pts
 			(xy 143.51 62.23) (xy 143.51 60.96)
 		)
 		(stroke
@@ -14401,6 +14463,16 @@
 			(type default)
 		)
 		(uuid "65de782a-117b-42d6-a554-a45e3c92bc74")
+	)
+	(wire
+		(pts
+			(xy 539.75 97.79) (xy 551.18 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65e3cd72-e9b0-43ad-b860-dc9301ab5bb6")
 	)
 	(wire
 		(pts
@@ -14951,6 +15023,16 @@
 			(type default)
 		)
 		(uuid "7a51e70a-be9f-4f8c-9719-de1e0d3f0ede")
+	)
+	(wire
+		(pts
+			(xy 539.75 107.95) (xy 551.18 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7aa8fed3-12ea-476c-b846-3049e1a3fe92")
 	)
 	(wire
 		(pts
@@ -15784,6 +15866,16 @@
 	)
 	(wire
 		(pts
+			(xy 539.75 95.25) (xy 551.18 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f4b0b86-77dc-434d-aab6-63f210540595")
+	)
+	(wire
+		(pts
 			(xy 387.35 80.01) (xy 387.35 83.82)
 		)
 		(stroke
@@ -15821,6 +15913,16 @@
 			(type default)
 		)
 		(uuid "9fc0102d-8545-4427-b900-5ea31bb43488")
+	)
+	(wire
+		(pts
+			(xy 539.75 105.41) (xy 551.18 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0505048-552e-45e5-a171-ef9901505625")
 	)
 	(wire
 		(pts
@@ -15931,6 +16033,16 @@
 			(type default)
 		)
 		(uuid "a7bb90b6-90fc-4c13-9671-7353e534f89e")
+	)
+	(wire
+		(pts
+			(xy 539.75 110.49) (xy 551.18 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7d23744-e1cc-44d8-89c8-9b69b2d5a864")
 	)
 	(wire
 		(pts
@@ -18422,6 +18534,16 @@
 		)
 		(uuid "05ab5bdc-bf89-49fe-93d7-62795eebbf5e")
 	)
+	(label "GPIO13"
+		(at 551.18 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0710fd9d-7a72-4dbe-ae5d-e51cf228720a")
+	)
 	(label "GPIO32"
 		(at 250.19 193.04 180)
 		(effects
@@ -18692,6 +18814,16 @@
 		)
 		(uuid "38d1b094-59d5-4959-915d-82a2c3d4ccd0")
 	)
+	(label "GPIO14"
+		(at 551.18 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3a3b1164-a0f5-4354-9e61-753346a12afd")
+	)
 	(label "GPIO0"
 		(at 18.415 116.205 0)
 		(effects
@@ -18711,6 +18843,26 @@
 			(justify right bottom)
 		)
 		(uuid "3df40c8d-3c35-463c-a7d2-b844046db375")
+	)
+	(label "GPIO15"
+		(at 551.18 110.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3e04b325-db4f-4ca4-b9dc-08dc95705182")
+	)
+	(label "GPIO18"
+		(at 551.18 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3e7f7e3d-054e-420d-a6a0-301fa6201506")
 	)
 	(label "GPIO21"
 		(at 316.23 173.99 180)
@@ -18761,6 +18913,16 @@
 			(justify right bottom)
 		)
 		(uuid "4917bec1-22c1-4439-81d7-8d6c8b537c24")
+	)
+	(label "GPIO12"
+		(at 551.18 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4a78374e-0f03-43f0-968b-24546eb54320")
 	)
 	(label "GPIO38"
 		(at 250.19 208.28 180)
@@ -19502,6 +19664,16 @@
 		)
 		(uuid "ca168edb-5dad-42d3-abb6-e8b583347183")
 	)
+	(label "GPIO16"
+		(at 551.18 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ca175b1f-741e-400d-a210-dc89d5797910")
+	)
 	(label "GPIO34"
 		(at 250.19 198.12 180)
 		(effects
@@ -19521,6 +19693,16 @@
 			(justify left bottom)
 		)
 		(uuid "ccaea42f-9569-47d0-b561-dd7d5f7469bf")
+	)
+	(label "GPIO17"
+		(at 551.18 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cd049e98-b27b-48dd-a605-f11de9153d01")
 	)
 	(label "GPIO2"
 		(at 316.23 125.73 180)
@@ -19551,6 +19733,16 @@
 			(justify left bottom)
 		)
 		(uuid "dcd9d6b2-4102-4c46-a040-adcfa1800f9d")
+	)
+	(label "GPIO19"
+		(at 551.18 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dd28de3d-d9c5-49a0-8e5e-707b9728844f")
 	)
 	(label "GPIO14"
 		(at 316.23 156.21 180)
