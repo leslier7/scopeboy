@@ -10772,6 +10772,16 @@
 		)
 		(uuid "167dc6e0-ca8a-4e09-860f-700b3c488376")
 	)
+	(text "TODO double check the diodes"
+		(exclude_from_sim no)
+		(at 107.188 334.264 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "17f6b838-2b1f-439c-8462-6e7169fd458f")
+	)
 	(text "IOs"
 		(exclude_from_sim no)
 		(at 325.12 106.68 0)
@@ -10836,6 +10846,16 @@
 			)
 		)
 		(uuid "440f106f-a91a-49aa-9a3d-51a73f4a6ece")
+	)
+	(text "TODO add attenuation after \nstage 1 and before stage 2\nAlso change gain stage so\ngain is over 10 V/V and fixed\nsince that is the input stable range"
+		(exclude_from_sim no)
+		(at 167.132 381.762 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4cd2c4c7-38dc-4adc-bf3e-48ce16f9c03e")
 	)
 	(text "ADC"
 		(exclude_from_sim no)
@@ -24557,7 +24577,7 @@
 				)
 			)
 		)
-		(property "Value" "ADC08100"
+		(property "Value" "ADC08060"
 			(at 468.63 292.7604 0)
 			(effects
 				(font
@@ -24592,7 +24612,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C701581"
+		(property "LCSC Part #" "C701580"
 			(at 455.93 294.64 0)
 			(effects
 				(font
@@ -24601,7 +24621,7 @@
 				(hide yes)
 			)
 		)
-		(property "MRF. Part #" ""
+		(property "MRF. Part #" "ADC08060CIMTX/NOPB"
 			(at 455.93 294.64 0)
 			(effects
 				(font
@@ -29547,7 +29567,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TLV271"
+		(property "Value" "TLV9101"
 			(at 358.14 309.88 0)
 			(effects
 				(font
@@ -29583,7 +29603,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C181500"
+		(property "LCSC Part #" "C4368903"
 			(at 350.52 299.72 0)
 			(effects
 				(font
@@ -29592,7 +29612,7 @@
 				(hide yes)
 			)
 		)
-		(property "MRF. Part #" ""
+		(property "MRF. Part #" "TLV9101IDBVR"
 			(at 350.52 299.72 0)
 			(effects
 				(font
