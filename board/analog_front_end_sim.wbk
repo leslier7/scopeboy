@@ -1,0 +1,45 @@
+{
+  "last_sch_text_sim_command": "",
+  "tabs": [
+    {
+      "analysis": "OP",
+      "commands": [
+        ".op",
+        ".kicad adjustpaths"
+      ]
+    },
+    {
+      "analysis": "AC",
+      "commands": [
+        ".ac dec 20 1 200Meg",
+        ".kicad adjustpaths",
+        ".save all",
+        ".probe alli",
+        ".probe allp"
+      ],
+      "dottedSecondary": true,
+      "margins": {
+        "bottom": 45,
+        "left": 70,
+        "right": 70,
+        "top": 30
+      },
+      "measurements": [],
+      "showGrid": true,
+      "traces": [
+        {
+          "color": "rgb(231, 138, 195)",
+          "signal": "V(/VOffset)/V(/U4IN) (gain)",
+          "trace_type": 521
+        }
+      ]
+    }
+  ],
+  "user_defined_signals": [
+    "V(/VIN)/V(/IN)",
+    "V(/VIN)/V(/VOffset)",
+    "V(/VOffset)/V(/VGain)",
+    "V(/VOffset)/V(/U4IN)"
+  ],
+  "version": 6
+}
