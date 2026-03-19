@@ -28,18 +28,53 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(231, 138, 195)",
-          "signal": "V(/VOffset)/V(/U4IN) (gain)",
+          "color": "rgb(55, 126, 184)",
+          "signal": "V(/VOffset) (phase)",
+          "trace_type": 517
+        },
+        {
+          "color": "rgb(55, 126, 184)",
+          "cursor1": {
+            "position": 19921197.043905694,
+            "x_format": "3~Hz",
+            "y_format": "3~dB"
+          },
+          "cursorD": {
+            "x_format": "3~Hz",
+            "y_format": "3~dB"
+          },
+          "signal": "V(/VOffset) (gain)",
           "trace_type": 521
+        }
+      ]
+    },
+    {
+      "analysis": "TRAN",
+      "commands": [
+        ".tran 1n 500n",
+        ".kicad adjustpaths",
+        ".save all",
+        ".probe alli",
+        ".probe allp"
+      ],
+      "dottedSecondary": true,
+      "margins": {
+        "bottom": 45,
+        "left": 70,
+        "right": 70,
+        "top": 30
+      },
+      "measurements": [],
+      "showGrid": true,
+      "traces": [
+        {
+          "color": "rgb(228, 26, 28)",
+          "signal": "V(/VOffset)",
+          "trace_type": 257
         }
       ]
     }
   ],
-  "user_defined_signals": [
-    "V(/VIN)/V(/IN)",
-    "V(/VIN)/V(/VOffset)",
-    "V(/VOffset)/V(/VGain)",
-    "V(/VOffset)/V(/U4IN)"
-  ],
+  "user_defined_signals": [],
   "version": 6
 }
