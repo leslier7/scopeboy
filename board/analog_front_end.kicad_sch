@@ -3969,49 +3969,27 @@
 		)
 		(uuid "fe9c35a6-2dd4-4b20-aebd-36ade9675c67")
 	)
-	(global_label "SEL0"
+	(hierarchical_label "SEL0"
 		(shape input)
 		(at 179.07 76.2 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "57df3bc6-2bc3-4351-b47a-a5204310d408")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 185.9971 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
+		(uuid "025ecc93-d939-488f-84c2-b6ea258ceb6e")
 	)
-	(global_label "SEL1"
+	(hierarchical_label "SEL1"
 		(shape input)
 		(at 179.07 81.28 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "7eeaf9ab-a032-46e3-a695-c59d54c3126f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 185.9971 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
+		(uuid "0272a8d9-0631-4434-8e00-b42bda7692be")
 	)
 	(hierarchical_label "SCL"
 		(shape input)
