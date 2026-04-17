@@ -3381,6 +3381,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "GNDA_1"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GNDA"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GNDA_1_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GNDA_1_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MCU_RaspberryPi_RP2350:RP2350_80QFN"
 			(pin_names
 				(offset 1.016)
@@ -7485,16 +7586,6 @@
 		)
 		(uuid "260f434c-345a-4330-ad93-b975b3b3ea17")
 	)
-	(text "TODO place trig on pico"
-		(exclude_from_sim no)
-		(at 376.682 311.404 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "270d3290-14d9-4dc2-a52c-0050c561bc28")
-	)
 	(text "12MHz Crystal"
 		(exclude_from_sim no)
 		(at 93.98 217.805 0)
@@ -7681,16 +7772,6 @@
 		)
 		(uuid "9eed8653-63d4-4ee0-ae0c-c95a87e5c988")
 	)
-	(text "TODO probably delete this"
-		(exclude_from_sim no)
-		(at 96.012 176.022 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "a2a5abf4-3687-4eb9-992c-721ea013c9e6")
-	)
 	(text "Analog Front End"
 		(exclude_from_sim no)
 		(at 331.47 292.608 0)
@@ -7766,16 +7847,6 @@
 		)
 		(uuid "e5bd2e22-a554-4369-9101-d3953beb02df")
 	)
-	(text "TODO place SEL pins"
-		(exclude_from_sim no)
-		(at 282.194 311.404 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "e9396975-03a1-41d6-9e06-25c7d9fce529")
-	)
 	(text "HDMI"
 		(exclude_from_sim no)
 		(at 517.652 80.264 0)
@@ -7786,16 +7857,6 @@
 			(justify left bottom)
 		)
 		(uuid "ed0ed67d-caca-4278-b68c-2cb497d4d848")
-	)
-	(text "TODO place chassis pins"
-		(exclude_from_sim no)
-		(at 282.448 316.992 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "f88036a2-b3cf-42cc-beca-48d12c62c814")
 	)
 	(junction
 		(at 52.07 60.96)
@@ -12505,6 +12566,16 @@
 		)
 		(uuid "03724272-b93d-4fe0-9397-535cabb335eb")
 	)
+	(label "TRIG"
+		(at 250.19 121.92 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "04baea09-674c-4baf-81e3-a3d2c8a35f17")
+	)
 	(label "SCL"
 		(at 250.19 165.1 180)
 		(effects
@@ -12698,6 +12769,16 @@
 		)
 		(uuid "2d30beeb-f77a-4026-9af1-319bf46ca259")
 	)
+	(label "Sel0"
+		(at 250.19 124.46 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2f150eaa-c827-4083-ad7b-ba5a4f736d09")
+	)
 	(label "SCK"
 		(at 250.19 116.84 180)
 		(effects
@@ -12788,6 +12869,16 @@
 			(justify left bottom)
 		)
 		(uuid "3e7f7e3d-054e-420d-a6a0-301fa6201506")
+	)
+	(label "Sel1"
+		(at 250.19 127 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "401a3dbb-a479-4560-8cc5-c06d7ac4f6e9")
 	)
 	(label "GPIO36"
 		(at 250.19 203.2 180)
@@ -12888,16 +12979,6 @@
 			(justify left bottom)
 		)
 		(uuid "54919214-6b57-4c10-b585-4a394986db28")
-	)
-	(label "GPIO5"
-		(at 250.19 124.46 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "554a26d3-4659-45e4-953b-5b7461e88413")
 	)
 	(label "TX"
 		(at 287.02 219.71 0)
@@ -13168,16 +13249,6 @@
 			(justify right bottom)
 		)
 		(uuid "94ce2dc1-e392-4db3-9b35-d4e8acb0e867")
-	)
-	(label "GPIO6"
-		(at 250.19 127 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "94df0221-9190-4fc2-a23d-fe8963c5525a")
 	)
 	(label "D1"
 		(at 250.19 134.62 180)
@@ -13660,16 +13731,6 @@
 			(justify left bottom)
 		)
 		(uuid "ee6f9ba4-aa15-4762-81bb-255ae5068692")
-	)
-	(label "GPIO4"
-		(at 250.19 121.92 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f249d358-ae89-481e-8b75-14dc3b8d6aec")
 	)
 	(label "ROTSW"
 		(at 250.19 175.26 180)
@@ -17697,6 +17758,73 @@
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GNDA_1")
+		(lib_id "power:GNDA")
+		(at 298.45 317.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05deed47-64b2-4424-ad48-af03ef257db4")
+		(property "Reference" "#PWR0143"
+			(at 298.45 323.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDA"
+			(at 298.45 322.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 298.45 317.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 298.45 317.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+			(at 298.45 317.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5e02853d-3076-4816-a7f7-bc12a522d75a")
+		)
+		(instances
+			(project "scopeboy"
+				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
+					(reference "#PWR0143")
 					(unit 1)
 				)
 			)
