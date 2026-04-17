@@ -13840,7 +13840,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ed96b87")
-		(property "Reference" "C4"
+		(property "Reference" "C3"
 			(at 90.0684 228.346 0)
 			(effects
 				(font
@@ -13900,9 +13900,9 @@
 			(uuid "d8f2566d-6f0c-4e00-8b6c-83f8cf4d888b")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "C4")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -13917,7 +13917,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ed98685")
-		(property "Reference" "C5"
+		(property "Reference" "C4"
 			(at 90.0684 238.506 0)
 			(effects
 				(font
@@ -13977,9 +13977,9 @@
 			(uuid "b7d89dd0-a7d6-467f-b281-b837f2099b8c")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "C5")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -13994,7 +13994,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ed9b1cb")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR08"
 			(at 82.55 244.475 0)
 			(effects
 				(font
@@ -14041,9 +14041,9 @@
 			(uuid "b8b716f8-88df-4c86-b621-a7c5d12c1f0e")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR011")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -14134,7 +14134,7 @@
 			(uuid "09bfceb9-14bc-4789-b808-077597835356")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "U1")
 					(unit 1)
@@ -14151,7 +14151,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005eda6c1c")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR02"
 			(at 67.31 107.315 0)
 			(effects
 				(font
@@ -14198,9 +14198,9 @@
 			(uuid "f606b97c-f4b3-42ac-b7eb-7de29b6af899")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR04")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -14215,7 +14215,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005eda75f4")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR03"
 			(at 67.31 145.415 0)
 			(effects
 				(font
@@ -14262,9 +14262,9 @@
 			(uuid "e42a3988-8957-461c-9095-82a64e26e239")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR05")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -14340,7 +14340,7 @@
 			(uuid "7df0b561-be17-4d43-ac66-afebf4bf02dd")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "R4")
 					(unit 1)
@@ -14357,7 +14357,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005edb1aa1")
-		(property "Reference" "C2"
+		(property "Reference" "C1"
 			(at 76.581 108.6866 0)
 			(effects
 				(font
@@ -14417,9 +14417,9 @@
 			(uuid "32252237-8f8b-4f89-ae72-8828424c05c7")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "C2")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -14434,7 +14434,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005edb5c1d")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR06"
 			(at 73.66 121.285 0)
 			(effects
 				(font
@@ -14481,9 +14481,9 @@
 			(uuid "b4e80694-de79-49a7-90dc-4f98ae1a1a98")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR08")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -14498,7 +14498,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005edc82df")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR026"
 			(at 198.12 250.19 0)
 			(effects
 				(font
@@ -14545,9 +14545,9 @@
 			(uuid "4889d590-9ad0-40bb-8671-276bceacd83f")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR024")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -14562,7 +14562,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ede0881")
-		(property "Reference" "R10"
+		(property "Reference" "R12"
 			(at 250.19 89.9922 90)
 			(effects
 				(font
@@ -14620,9 +14620,9 @@
 			(uuid "0a928a63-0657-4304-a0ed-0a0b5e75e824")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "R10")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -14637,7 +14637,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ede1624")
-		(property "Reference" "R11"
+		(property "Reference" "R13"
 			(at 250.19 98.8822 90)
 			(effects
 				(font
@@ -14695,9 +14695,9 @@
 			(uuid "c5c4c1d0-4590-403b-9644-371833c22b25")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "R11")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -14712,7 +14712,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005eed9ba4")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR027"
 			(at 219.71 63.5 0)
 			(effects
 				(font
@@ -14759,9 +14759,9 @@
 			(uuid "b0473b8a-0611-4e83-9cf8-34d53dc70c79")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR025")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -14836,7 +14836,7 @@
 			(uuid "fbb2b209-244e-4fd6-bcc5-f48165af7074")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "C15")
 					(unit 1)
@@ -14913,7 +14913,7 @@
 			(uuid "1422bb26-e47f-411a-9417-5681ef83568b")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "C16")
 					(unit 1)
@@ -14990,7 +14990,7 @@
 			(uuid "4b750ad4-5120-4da6-abfd-5395f59a7ac3")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "C18")
 					(unit 1)
@@ -15067,7 +15067,7 @@
 			(uuid "23e66139-6e83-4fe7-af70-e508407fc7a6")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "C19")
 					(unit 1)
@@ -15144,7 +15144,7 @@
 			(uuid "3199c324-97d1-4f23-a2a1-2337b656facb")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "C20")
 					(unit 1)
@@ -15221,293 +15221,9 @@
 			(uuid "6d479f16-e62a-4f01-b96e-2eca0c36108f")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "C21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 25.4 218.44 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005ef4c292")
-		(property "Reference" "H1"
-			(at 27.94 217.2716 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 27.94 219.583 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 25.4 218.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 25.4 218.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 25.4 218.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MRF. Part #" ""
-			(at 25.4 218.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "RP2350_80QFN_minimal"
-				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "H1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 25.4 223.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005ef4cf1f")
-		(property "Reference" "H2"
-			(at 27.94 222.3516 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 27.94 224.663 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 25.4 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 25.4 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 25.4 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MRF. Part #" ""
-			(at 25.4 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "RP2350_80QFN_minimal"
-				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "H2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 25.4 228.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005ef4d323")
-		(property "Reference" "H3"
-			(at 27.94 227.4316 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 27.94 229.743 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 25.4 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 25.4 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 25.4 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MRF. Part #" ""
-			(at 25.4 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "RP2350_80QFN_minimal"
-				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "H3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 25.4 233.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005ef4d57b")
-		(property "Reference" "H4"
-			(at 27.94 232.5116 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 27.94 234.823 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 25.4 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 25.4 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 25.4 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MRF. Part #" ""
-			(at 25.4 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "RP2350_80QFN_minimal"
-				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -15583,7 +15299,7 @@
 			(uuid "b7ebbd30-b8df-4305-90d8-18d487cd29c9")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "U3")
 					(unit 1)
@@ -15600,7 +15316,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f069fc0")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR012"
 			(at 99.06 44.45 0)
 			(effects
 				(font
@@ -15647,9 +15363,9 @@
 			(uuid "1eaadc72-3cdb-4b28-a074-47811e2b77ae")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR02")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -15664,7 +15380,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f06a60b")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR019"
 			(at 127 57.15 0)
 			(effects
 				(font
@@ -15711,9 +15427,9 @@
 			(uuid "447b3c7f-897f-44bf-8bee-984c561a13ab")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR010")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -15728,7 +15444,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f077314")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR022"
 			(at 144.78 44.45 0)
 			(effects
 				(font
@@ -15775,9 +15491,9 @@
 			(uuid "dcc04bdc-d93d-4580-92dd-58389c3e8b58")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR012")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -15792,7 +15508,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f09255d")
-		(property "Reference" "C1"
+		(property "Reference" "C6"
 			(at 112.141 45.8216 0)
 			(effects
 				(font
@@ -15852,9 +15568,9 @@
 			(uuid "7d3a8989-9bb3-41aa-88e4-d49115915485")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "C1")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -15869,7 +15585,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f0930a1")
-		(property "Reference" "C6"
+		(property "Reference" "C9"
 			(at 147.701 45.8216 0)
 			(effects
 				(font
@@ -15929,9 +15645,9 @@
 			(uuid "e3674788-3db2-41ae-bf90-bb8e6bbe30f3")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "C6")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -15946,7 +15662,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f093d45")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR015"
 			(at 109.22 58.42 0)
 			(effects
 				(font
@@ -15993,9 +15709,9 @@
 			(uuid "be5e1adf-3d9c-4b0c-af63-ea5718eb5f47")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR03")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -16010,7 +15726,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f0a1049")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR023"
 			(at 144.78 58.42 0)
 			(effects
 				(font
@@ -16057,9 +15773,9 @@
 			(uuid "22afd0c5-f589-4824-99b7-bace2480f484")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR013")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -16074,7 +15790,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f0d8ebf")
-		(property "Reference" "R7"
+		(property "Reference" "R9"
 			(at 121.92 230.3272 90)
 			(effects
 				(font
@@ -16132,9 +15848,9 @@
 			(uuid "dada3ede-ef7d-4108-93fc-e7e91b397f0d")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "R7")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -16215,7 +15931,7 @@
 			(uuid "ac7c0c08-2ad8-4011-990a-78fde928229c")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "Y1")
 					(unit 1)
@@ -16232,7 +15948,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f1af967")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR028"
 			(at 267.97 149.86 0)
 			(effects
 				(font
@@ -16279,9 +15995,9 @@
 			(uuid "45e3ff68-d0fc-4dde-b1bf-d01520b6ff5d")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR026")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -16356,7 +16072,7 @@
 			(uuid "5bc4a8bd-c4b0-4bcb-947e-a0c24476288a")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "C17")
 					(unit 1)
@@ -16373,7 +16089,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f1af973")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR029"
 			(at 267.97 163.83 0)
 			(effects
 				(font
@@ -16420,9 +16136,9 @@
 			(uuid "e6848218-3972-4909-948d-3dfa5138e1bb")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR027")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -16588,7 +16304,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060bdae9f")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR054"
 			(at 440.69 321.31 0)
 			(effects
 				(font
@@ -16638,7 +16354,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR055")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -16653,7 +16369,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060bdaeab")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR056"
 			(at 450.85 321.31 0)
 			(effects
 				(font
@@ -16703,7 +16419,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR057")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -16718,7 +16434,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060bdaeb5")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR055"
 			(at 450.85 306.07 0)
 			(effects
 				(font
@@ -16768,7 +16484,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR056")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -16783,7 +16499,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060bdaebd")
-		(property "Reference" "#PWR075"
+		(property "Reference" "#PWR074"
 			(at 486.41 328.93 0)
 			(effects
 				(font
@@ -16833,7 +16549,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR075")
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -16848,7 +16564,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060bdaedf")
-		(property "Reference" "#PWR068"
+		(property "Reference" "#PWR067"
 			(at 477.52 368.3 0)
 			(effects
 				(font
@@ -16898,7 +16614,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR068")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -16913,7 +16629,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060bdaee5")
-		(property "Reference" "#PWR078"
+		(property "Reference" "#PWR077"
 			(at 488.95 358.14 0)
 			(effects
 				(font
@@ -16963,7 +16679,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR078")
+					(reference "#PWR077")
 					(unit 1)
 				)
 			)
@@ -16978,7 +16694,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060bdaef2")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR076"
 			(at 486.41 346.71 0)
 			(effects
 				(font
@@ -17028,7 +16744,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR077")
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -17043,7 +16759,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060bdaef8")
-		(property "Reference" "#PWR076"
+		(property "Reference" "#PWR075"
 			(at 486.41 334.01 0)
 			(effects
 				(font
@@ -17093,7 +16809,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR076")
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -17108,7 +16824,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060bdaeff")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR058"
 			(at 450.85 336.55 0)
 			(effects
 				(font
@@ -17158,7 +16874,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR059")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -17173,7 +16889,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060bdaf05")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR066"
 			(at 477.52 358.14 0)
 			(effects
 				(font
@@ -17223,7 +16939,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR067")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -17238,7 +16954,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060c0a170")
-		(property "Reference" "#PWR079"
+		(property "Reference" "#PWR078"
 			(at 488.95 368.3 0)
 			(effects
 				(font
@@ -17288,7 +17004,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR079")
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
@@ -17303,7 +17019,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060c0a176")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR057"
 			(at 450.85 331.47 0)
 			(effects
 				(font
@@ -17353,7 +17069,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR058")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -17368,7 +17084,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060c205f6")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR046"
 			(at 426.72 368.3 0)
 			(effects
 				(font
@@ -17418,7 +17134,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR047")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -17433,7 +17149,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060c205fc")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR045"
 			(at 426.72 358.14 0)
 			(effects
 				(font
@@ -17483,7 +17199,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR046")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -17498,7 +17214,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060c385db")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR053"
 			(at 439.42 368.3 0)
 			(effects
 				(font
@@ -17548,7 +17264,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR054")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -17563,7 +17279,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060c385e1")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR052"
 			(at 439.42 358.14 0)
 			(effects
 				(font
@@ -17613,7 +17329,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR053")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -17628,7 +17344,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060c385ed")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR051"
 			(at 439.42 344.17 0)
 			(effects
 				(font
@@ -17678,7 +17394,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR052")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -17693,7 +17409,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060c385f3")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR050"
 			(at 439.42 334.01 0)
 			(effects
 				(font
@@ -17743,7 +17459,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR051")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -17758,7 +17474,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060d66a42")
-		(property "Reference" "R18"
+		(property "Reference" "R20"
 			(at 492.252 326.2884 0)
 			(effects
 				(font
@@ -17839,7 +17555,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "R18")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -17854,7 +17570,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0025e273-8d04-4a4b-b21e-5606fa6a7b6c")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR04"
 			(at 68.58 166.37 0)
 			(effects
 				(font
@@ -17901,9 +17617,9 @@
 			(uuid "3d85d2f0-a12f-4cd2-9c19-03f9cd4ce531")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR06")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -17918,7 +17634,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "02cbe2d4-0509-4226-845a-ed75dfe020e1")
-		(property "Reference" "C3"
+		(property "Reference" "C2"
 			(at 77.851 167.7416 0)
 			(effects
 				(font
@@ -17978,9 +17694,9 @@
 			(uuid "1e3334d9-6652-4b44-b9b6-a3919372ed22")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "C3")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -17995,7 +17711,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0a2c5d69-43d7-4898-a81e-f0aea4de6e17")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR060"
 			(at 454.66 273.05 0)
 			(effects
 				(font
@@ -18045,7 +17761,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR061")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -18259,7 +17975,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0d65bf0c-9704-4417-8961-9ea54dc2d990")
-		(property "Reference" "#PWR080"
+		(property "Reference" "#PWR079"
 			(at 495.3 273.05 0)
 			(effects
 				(font
@@ -18309,7 +18025,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR080")
+					(reference "#PWR079")
 					(unit 1)
 				)
 			)
@@ -18371,7 +18087,7 @@
 			(uuid "ef701c0e-7205-430e-9c90-5fe308e40800")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "#PWR020")
 					(unit 1)
@@ -18388,7 +18104,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0f49df51-269b-469e-9124-34052b6d2c1e")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR034"
 			(at 387.35 124.46 0)
 			(effects
 				(font
@@ -18438,7 +18154,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR035")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -18513,7 +18229,7 @@
 			(uuid "60e1e838-a1d3-41ee-8df0-335858e9f957")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "C12")
 					(unit 1)
@@ -18531,7 +18247,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "13f0d9b0-de31-430b-a4b3-1e4ff79f8d1d")
-		(property "Reference" "R24"
+		(property "Reference" "R26"
 			(at 535.94 91.44 90)
 			(effects
 				(font
@@ -18592,7 +18308,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "R24")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -18607,7 +18323,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "15c69732-322b-4f54-8ab8-c57964b87090")
-		(property "Reference" "R47"
+		(property "Reference" "R7"
 			(at 74.93 50.546 90)
 			(effects
 				(font
@@ -18668,7 +18384,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "R47")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -18683,7 +18399,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1a1b605f-400c-4791-9cb7-0e9ba7ef62bb")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR061"
 			(at 467.36 187.96 0)
 			(effects
 				(font
@@ -18733,7 +18449,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR062")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -18749,7 +18465,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1ac3a304-f481-4eea-b72d-6aeb4b7a29e5")
-		(property "Reference" "R26"
+		(property "Reference" "R28"
 			(at 535.94 96.52 90)
 			(effects
 				(font
@@ -18810,7 +18526,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "R26")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -18921,7 +18637,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1baf75ce-b576-4e5b-a968-eae4e1150743")
-		(property "Reference" "R6"
+		(property "Reference" "R8"
 			(at 120.65 159.8422 90)
 			(effects
 				(font
@@ -18979,9 +18695,9 @@
 			(uuid "e4c912ab-207f-49be-97fa-c6889a608880")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "R6")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -19152,7 +18868,7 @@
 			(uuid "7a6fd0eb-fb3f-41f0-9cfd-6728f62d0e49")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "C14")
 					(unit 1)
@@ -19169,7 +18885,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2271c4ff-ebb3-4079-be91-91eb4009e440")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR043"
 			(at 426.72 311.15 0)
 			(effects
 				(font
@@ -19219,7 +18935,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR044")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -19235,7 +18951,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2571f953-6263-4e54-915c-e61fc2a006ab")
-		(property "Reference" "R23"
+		(property "Reference" "R25"
 			(at 535.94 88.9 90)
 			(effects
 				(font
@@ -19296,7 +19012,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "R23")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -19371,7 +19087,7 @@
 			(uuid "baa4eebb-256c-433a-be86-9ba53437d70b")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "C22")
 					(unit 1)
@@ -19485,7 +19201,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "28538623-c337-443c-8595-2034206c9cf8")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR018"
 			(at 119.38 105.41 0)
 			(effects
 				(font
@@ -19532,9 +19248,9 @@
 			(uuid "48cf5bdc-b6c8-44b5-b285-088ef20d0bb6")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR019")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -19550,7 +19266,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2a2e7d5a-d755-45ff-851e-5a7a1a12e83c")
-		(property "Reference" "R25"
+		(property "Reference" "R27"
 			(at 535.94 93.98 90)
 			(effects
 				(font
@@ -19611,7 +19327,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "R25")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -19685,7 +19401,7 @@
 			(uuid "60bc8042-9019-4595-8e44-d914b37edcf2")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "SW2")
 					(unit 1)
@@ -19798,7 +19514,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3482b4c3-1b53-43fd-876d-fa10350fb2a2")
-		(property "Reference" "R19"
+		(property "Reference" "R21"
 			(at 493.522 258.9784 0)
 			(effects
 				(font
@@ -19879,7 +19595,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "R19")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -19894,7 +19610,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "348691a1-5df6-415b-9ef3-b4ff4946476c")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR011"
 			(at 97.79 236.855 0)
 			(effects
 				(font
@@ -19941,9 +19657,9 @@
 			(uuid "07777e61-1fa1-4648-88a7-2093ff52f177")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR014")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -19959,7 +19675,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "37098636-4cdd-490f-a094-b494beea25b4")
-		(property "Reference" "J2"
+		(property "Reference" "J1"
 			(at 33.02 34.29 0)
 			(effects
 				(font
@@ -20065,7 +19781,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "J2")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -20081,7 +19797,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "376301f8-f9f7-4433-9efe-241e64a7e888")
-		(property "Reference" "R30"
+		(property "Reference" "R32"
 			(at 535.94 124.46 90)
 			(effects
 				(font
@@ -20140,9 +19856,9 @@
 			(uuid "bc17140d-6207-4345-8fe6-13b0b67c115e")
 		)
 		(instances
-			(project ""
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "R30")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -20157,7 +19873,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3b3963f1-f04f-4204-be8d-13be4abdbebb")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR064"
 			(at 469.9 248.92 0)
 			(effects
 				(font
@@ -20207,7 +19923,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR065")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -20223,7 +19939,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b8c7bd8-79ad-4fe3-8cdb-63d1aec361b0")
-		(property "Reference" "R12"
+		(property "Reference" "R14"
 			(at 389.89 86.3599 0)
 			(effects
 				(font
@@ -20286,7 +20002,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "R12")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -20303,7 +20019,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3d56d73d-78cc-44b0-85d7-7c8068a91391")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR073"
 			(at 486.41 58.42 0)
 			(effects
 				(font
@@ -20353,7 +20069,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR030")
+					(reference "#PWR073")
 					(unit 1)
 				)
 			)
@@ -20428,7 +20144,7 @@
 			(uuid "3cc82732-8f99-43be-92ae-187b4fc96bde")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "R1")
 					(unit 1)
@@ -20445,7 +20161,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3f1fb83a-3456-4575-afb4-8ac619d80e24")
-		(property "Reference" "#PWR086"
+		(property "Reference" "#PWR085"
 			(at 510.54 271.78 0)
 			(effects
 				(font
@@ -20495,7 +20211,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR086")
+					(reference "#PWR085")
 					(unit 1)
 				)
 			)
@@ -20607,7 +20323,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "43e84961-7b9f-4cf2-96a5-267149fbe899")
-		(property "Reference" "R22"
+		(property "Reference" "R24"
 			(at 535.94 86.36 90)
 			(effects
 				(font
@@ -20666,9 +20382,9 @@
 			(uuid "def6450b-ce95-4f11-8bfa-a5d4923312b9")
 		)
 		(instances
-			(project ""
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "R22")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -20683,7 +20399,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "44b2aa1d-5108-4846-a48b-a7eb2b9f629f")
-		(property "Reference" "#PWR072"
+		(property "Reference" "#PWR071"
 			(at 482.6 273.05 0)
 			(effects
 				(font
@@ -20733,7 +20449,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR072")
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -20748,7 +20464,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "46ae1052-afa2-4949-9dea-7cf230102ece")
-		(property "Reference" "R46"
+		(property "Reference" "R6"
 			(at 74.93 42.672 90)
 			(effects
 				(font
@@ -20809,7 +20525,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "R46")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -20825,7 +20541,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "46fadd82-db50-409a-aae9-30714ce15e18")
-		(property "Reference" "#PWR073"
+		(property "Reference" "#PWR072"
 			(at 483.87 83.82 0)
 			(effects
 				(font
@@ -20875,7 +20591,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR073")
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -20938,7 +20654,7 @@
 			(uuid "d5f657dc-11d1-4472-85a4-923e0206bd5b")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "#PWR032")
 					(unit 1)
@@ -21024,7 +20740,7 @@
 			(uuid "2f5fe527-6641-45e4-85b3-64c8d2cf0750")
 		)
 		(instances
-			(project ""
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "SW3")
 					(unit 1)
@@ -21042,7 +20758,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "47db5292-5c58-45f7-8325-789cefde5a97")
-		(property "Reference" "#PWR083"
+		(property "Reference" "#PWR082"
 			(at 508 82.55 0)
 			(effects
 				(font
@@ -21090,9 +20806,9 @@
 			(uuid "918c82c3-7b5a-497e-9d08-8073c1d6abfa")
 		)
 		(instances
-			(project ""
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR083")
+					(reference "#PWR082")
 					(unit 1)
 				)
 			)
@@ -21107,7 +20823,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "485218bd-0289-4310-b27c-910d2bdab93e")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR07"
 			(at 74.93 180.34 0)
 			(effects
 				(font
@@ -21154,9 +20870,9 @@
 			(uuid "9f3ee7bd-d100-4614-9850-f9c0cd61b26e")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR09")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -21231,7 +20947,7 @@
 			(uuid "3d99ea3c-ec7c-45ff-adf5-e070f70235a8")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "R3")
 					(unit 1)
@@ -21248,7 +20964,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4919f124-096e-4a8d-8fe8-d2803254e417")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR048"
 			(at 430.53 114.3 0)
 			(effects
 				(font
@@ -21298,7 +21014,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR049")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -21374,7 +21090,7 @@
 			(uuid "be9dc58a-f7ed-4974-b497-3805bb3261b1")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "C10")
 					(unit 1)
@@ -21391,7 +21107,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4e9c1ccf-24c9-4f5e-bdc8-81da640507a3")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR039"
 			(at 414.02 358.14 0)
 			(effects
 				(font
@@ -21441,7 +21157,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR040")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -21517,7 +21233,7 @@
 			(uuid "5cfe9784-07a4-490e-9bab-9035b3bc9d3e")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "L1")
 					(unit 1)
@@ -21535,7 +21251,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5091ec9a-742f-4995-9356-b35495550d9c")
-		(property "Reference" "#PWR090"
+		(property "Reference" "#PWR089"
 			(at 552.45 134.62 0)
 			(effects
 				(font
@@ -21585,7 +21301,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR090")
+					(reference "#PWR089")
 					(unit 1)
 				)
 			)
@@ -21601,7 +21317,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5967cc4b-feab-42c1-87b1-6b864d76e494")
-		(property "Reference" "J3"
+		(property "Reference" "J2"
 			(at 299.72 215.8999 0)
 			(effects
 				(font
@@ -21685,7 +21401,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "J3")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -21700,7 +21416,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "596f6f17-cc11-4419-a3fe-a0158580ae4d")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR05"
 			(at 68.58 204.47 0)
 			(effects
 				(font
@@ -21747,9 +21463,9 @@
 			(uuid "b5bcd574-3150-46fc-8276-c13da0b69a27")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR07")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -21811,7 +21527,7 @@
 			(uuid "3dcdcedd-8377-49ab-9b1e-89125c282331")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "#PWR021")
 					(unit 1)
@@ -21828,7 +21544,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "59d6a60a-12ca-4454-822a-2b3f2fef3392")
-		(property "Reference" "#PWR089"
+		(property "Reference" "#PWR088"
 			(at 523.24 271.78 0)
 			(effects
 				(font
@@ -21878,7 +21594,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR089")
+					(reference "#PWR088")
 					(unit 1)
 				)
 			)
@@ -22086,7 +21802,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f3b71c1-025a-40a1-adda-26ca00248b15")
-		(property "Reference" "R17"
+		(property "Reference" "R19"
 			(at 492.76 73.66 90)
 			(effects
 				(font
@@ -22147,7 +21863,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "R17")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -22162,7 +21878,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6027fce4-a06a-41f7-9e85-fd8a3d9ff8ba")
-		(property "Reference" "R15"
+		(property "Reference" "R17"
 			(at 475.0816 249.682 0)
 			(effects
 				(font
@@ -22243,7 +21959,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "R15")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -22356,7 +22072,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "647521d8-3c86-480b-8574-e8f9a8632f56")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR035"
 			(at 398.78 83.82 0)
 			(effects
 				(font
@@ -22406,7 +22122,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR036")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -22421,7 +22137,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "65b36bd2-fa62-41e8-afc2-1a77b19a6856")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR038"
 			(at 416.56 57.15 0)
 			(effects
 				(font
@@ -22471,7 +22187,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR039")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -22486,7 +22202,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "663dc4fd-ac66-4e49-90fb-7aa5d29b3ede")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR062"
 			(at 467.36 200.66 0)
 			(effects
 				(font
@@ -22536,7 +22252,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR063")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -22648,7 +22364,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "66b3eaaa-76ed-46c7-b691-61873630a2e6")
-		(property "Reference" "R29"
+		(property "Reference" "R31"
 			(at 535.94 104.14 90)
 			(effects
 				(font
@@ -22709,7 +22425,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "R29")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -22820,7 +22536,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "670db49d-7a2a-4ede-bff8-daaecadde2c8")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR047"
 			(at 429.26 200.66 0)
 			(effects
 				(font
@@ -22870,7 +22586,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR048")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -22981,7 +22697,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6d3c01d6-54bc-4726-bc00-e0b9c1e52eec")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR068"
 			(at 480.06 187.96 0)
 			(effects
 				(font
@@ -23031,7 +22747,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR069")
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -23046,7 +22762,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7054c23d-e303-4cb5-9d5c-03a4078c8bb0")
-		(property "Reference" "#PWR088"
+		(property "Reference" "#PWR087"
 			(at 523.24 255.27 0)
 			(effects
 				(font
@@ -23096,7 +22812,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR088")
+					(reference "#PWR087")
 					(unit 1)
 				)
 			)
@@ -23111,7 +22827,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "79a0e413-64ae-4058-9b04-68eada0aeb40")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR037"
 			(at 398.78 101.6 0)
 			(effects
 				(font
@@ -23161,7 +22877,71 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR038")
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 24.13 228.6 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7a597021-7e88-42f3-a873-73b61bea0afd")
+		(property "Reference" "H1"
+			(at 26.67 227.3299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 26.67 229.8699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
+			(at 24.13 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 24.13 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 24.13 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "scopeboy"
+				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -23176,7 +22956,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7a9580b8-fa81-425c-87ca-59d74ec5696c")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR086"
 			(at 523.24 223.52 0)
 			(effects
 				(font
@@ -23226,7 +23006,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR087")
+					(reference "#PWR086")
 					(unit 1)
 				)
 			)
@@ -23242,7 +23022,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7ae3837d-a2a5-42d5-abc4-4d25b391c9b6")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR014"
 			(at 107.95 124.46 0)
 			(effects
 				(font
@@ -23289,9 +23069,9 @@
 			(uuid "7e4fac50-c934-4f05-8968-aaebb9d9a764")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR016")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -23366,7 +23146,7 @@
 			(uuid "b86c79d9-2f05-4f1a-b322-8bffa41327e2")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "R2")
 					(unit 1)
@@ -23459,7 +23239,7 @@
 			(uuid "828b9c4e-8d26-4867-b723-b74cd2803117")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "U2")
 					(unit 1)
@@ -23476,7 +23256,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "81701cb7-44d0-445b-99a5-4b9d9128e7b3")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR025"
 			(at 175.26 63.5 0)
 			(effects
 				(font
@@ -23523,9 +23303,9 @@
 			(uuid "1aa2f6f1-0862-4cf6-b990-fe98e7f5c019")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR023")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -23541,7 +23321,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "838f2f8a-cee7-4869-ad9a-fcfb64bc990a")
-		(property "Reference" "C8"
+		(property "Reference" "C7"
 			(at 123.19 106.68 0)
 			(effects
 				(font
@@ -23601,9 +23381,73 @@
 			(uuid "bff41558-021c-477b-a5e0-d4eb73929d10")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "C8")
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 50.8 228.6 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8493d957-8f72-4a0d-bfb2-5d7f5e77131d")
+		(property "Reference" "H3"
+			(at 53.34 227.3299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 53.34 229.8699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
+			(at 50.8 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 50.8 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "scopeboy"
+				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -23618,7 +23462,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8b1f0284-4d34-4edd-be27-fd39c34aab23")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR049"
 			(at 431.8 247.65 0)
 			(effects
 				(font
@@ -23668,7 +23512,71 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR050")
+					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 50.8 242.57 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8eee7968-f0a1-4190-8817-458737790ddf")
+		(property "Reference" "H4"
+			(at 53.34 241.2999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 53.34 243.8399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
+			(at 50.8 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 50.8 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "scopeboy"
+				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -23684,7 +23592,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8fef86b9-8141-4505-adba-de9d57ce9b20")
-		(property "Reference" "R13"
+		(property "Reference" "R15"
 			(at 401.32 86.3599 0)
 			(effects
 				(font
@@ -23747,7 +23655,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "R13")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -23762,7 +23670,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "919c1793-0fcf-4575-8c6c-eda756a79fa2")
-		(property "Reference" "R9"
+		(property "Reference" "R11"
 			(at 146.05 117.9322 90)
 			(effects
 				(font
@@ -23820,9 +23728,73 @@
 			(uuid "8b263c38-68b5-4274-ac39-616b7519da57")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "R9")
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 24.13 242.57 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "92608406-0a55-4e07-a388-4d6b6282e9e5")
+		(property "Reference" "H2"
+			(at 26.67 241.2999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 26.67 243.8399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_TopBottom"
+			(at 24.13 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 24.13 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 24.13 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "scopeboy"
+				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -23838,7 +23810,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9602045b-bba8-451b-b8a1-12104e998531")
-		(property "Reference" "R28"
+		(property "Reference" "R30"
 			(at 535.94 101.6 90)
 			(effects
 				(font
@@ -23899,7 +23871,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "R28")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -24010,7 +23982,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9c77ddd7-0f01-4a10-8d25-561e0b821e2b")
-		(property "Reference" "C9"
+		(property "Reference" "C8"
 			(at 146.431 64.8716 0)
 			(effects
 				(font
@@ -24070,9 +24042,9 @@
 			(uuid "4f53e1dd-4b97-4b5e-92b2-366c76ba42ad")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "C9")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -24087,7 +24059,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a3ec68e2-704d-404c-97b0-00421b9ff8a8")
-		(property "Reference" "R8"
+		(property "Reference" "R10"
 			(at 141.0716 88.392 0)
 			(effects
 				(font
@@ -24147,9 +24119,9 @@
 			(uuid "2158d547-6294-4040-99e0-4c5694db01a8")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "R8")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -24165,7 +24137,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a4508228-dd38-46fa-aa5e-3f08d93631a1")
-		(property "Reference" "J4"
+		(property "Reference" "J3"
 			(at 337.82 215.9 0)
 			(effects
 				(font
@@ -24231,9 +24203,9 @@
 			(uuid "e2da30e3-9f29-4b8d-a79b-4bbb3bb493c6")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "J4")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -24248,7 +24220,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a835df2c-d2db-4251-8ec8-fbf051e61244")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR065"
 			(at 469.9 273.05 0)
 			(effects
 				(font
@@ -24298,7 +24270,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR066")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -24313,7 +24285,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "aa8ff04f-0afc-4150-a3aa-addacee1e6f3")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR041"
 			(at 419.1 250.19 0)
 			(effects
 				(font
@@ -24363,7 +24335,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR042")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -24379,7 +24351,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ab600144-7076-404d-9778-c44a8345aec1")
-		(property "Reference" "R27"
+		(property "Reference" "R29"
 			(at 535.94 99.06 90)
 			(effects
 				(font
@@ -24440,7 +24412,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "R27")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -24455,7 +24427,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "aba2622e-e17a-4ebd-be9f-f218c789408b")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR030"
 			(at 274.32 223.52 0)
 			(effects
 				(font
@@ -24505,7 +24477,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR028")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -24580,7 +24552,7 @@
 			(uuid "faed632b-8075-4695-a6de-c19611a252be")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "C11")
 					(unit 1)
@@ -24597,7 +24569,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b0449d50-339e-4518-bdf3-62c4b0dbd446")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR036"
 			(at 398.78 124.46 0)
 			(effects
 				(font
@@ -24647,7 +24619,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR037")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -24722,7 +24694,7 @@
 			(uuid "6a68528f-ba5e-4606-b856-bd8a021df1ff")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "C13")
 					(unit 1)
@@ -24739,7 +24711,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b5f588f0-f355-4a8d-ad20-79e451833d63")
-		(property "Reference" "#PWR070"
+		(property "Reference" "#PWR069"
 			(at 480.06 200.66 0)
 			(effects
 				(font
@@ -24789,7 +24761,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR070")
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -24806,7 +24778,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b628ef98-8b5c-4459-8463-c857350d3f75")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR042"
 			(at 425.45 58.42 0)
 			(effects
 				(font
@@ -24856,7 +24828,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR029")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -24871,7 +24843,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b8f9e55d-e398-4eb0-8dea-8b639c87c9ad")
-		(property "Reference" "#PWR085"
+		(property "Reference" "#PWR084"
 			(at 510.54 261.62 0)
 			(effects
 				(font
@@ -24921,7 +24893,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR085")
+					(reference "#PWR084")
 					(unit 1)
 				)
 			)
@@ -25093,7 +25065,7 @@
 			(uuid "1c83d932-fb4e-4271-8f55-c2476e14a081")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "SW1")
 					(unit 1)
@@ -25110,7 +25082,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "be363a43-d88c-4497-8379-f3c3589b513f")
-		(property "Reference" "#PWR082"
+		(property "Reference" "#PWR081"
 			(at 506.73 154.94 0)
 			(effects
 				(font
@@ -25159,7 +25131,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR082")
+					(reference "#PWR081")
 					(unit 1)
 				)
 			)
@@ -25271,7 +25243,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c2071810-c2af-4ff0-be70-7e721ddbc4c0")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR063"
 			(at 469.9 240.03 0)
 			(effects
 				(font
@@ -25321,7 +25293,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR064")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -25337,7 +25309,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c3ce5053-ba3b-4c10-9876-e9f67730e958")
-		(property "Reference" "J7"
+		(property "Reference" "J5"
 			(at 462.28 43.18 0)
 			(effects
 				(font
@@ -25422,7 +25394,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "J7")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -25437,7 +25409,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c3f82109-88a2-45f2-8037-9c4abd5dacb7")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR044"
 			(at 426.72 321.31 0)
 			(effects
 				(font
@@ -25487,7 +25459,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR045")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -25599,7 +25571,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c5babca0-b8a2-43e7-aadd-dfaeb57226b8")
-		(property "Reference" "J8"
+		(property "Reference" "J6"
 			(at 496.57 111.7599 0)
 			(effects
 				(font
@@ -25714,9 +25686,9 @@
 			(uuid "c012911b-237e-44b4-8641-eccc824ac0fc")
 		)
 		(instances
-			(project ""
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "J8")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -26029,7 +26001,7 @@
 			(uuid "54555707-9ecb-4be7-9e15-669e0e698f7e")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "U4")
 					(unit 1)
@@ -26166,7 +26138,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cb0f1e5d-e572-4f44-8a4a-6f7f23812888")
-		(property "Reference" "C7"
+		(property "Reference" "C5"
 			(at 111.76 106.68 0)
 			(effects
 				(font
@@ -26226,9 +26198,9 @@
 			(uuid "99f1398c-5c12-4f4d-9494-d839ab7e8a41")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "C7")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -26304,7 +26276,7 @@
 			(uuid "179342da-272e-4635-bb8a-4c2bd4b1e019")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "R5")
 					(unit 1)
@@ -26369,7 +26341,7 @@
 			(uuid "93a1b4a7-0139-42d2-837d-11151606684a")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "#PWR031")
 					(unit 1)
@@ -26483,7 +26455,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d12b2028-7391-474d-a44a-3454cc2cdbf4")
-		(property "Reference" "#PWR074"
+		(property "Reference" "#PWR09"
 			(at 90.17 46.99 0)
 			(effects
 				(font
@@ -26534,7 +26506,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR074")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -26549,7 +26521,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d14c855d-50ec-4f85-9928-85877d3577ea")
-		(property "Reference" "R16"
+		(property "Reference" "R18"
 			(at 480.822 258.9784 0)
 			(effects
 				(font
@@ -26630,7 +26602,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "R16")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -26647,7 +26619,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d4a3b8db-d45a-43b8-9883-885d40fde35f")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR033"
 			(at 387.35 83.82 0)
 			(effects
 				(font
@@ -26695,9 +26667,9 @@
 			(uuid "62bae9bf-147a-456d-882a-b48264c52e96")
 		)
 		(instances
-			(project ""
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR034")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -26713,7 +26685,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d5408117-4230-4224-8513-ba3f6ea779a3")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR01"
 			(at 33.02 87.63 0)
 			(effects
 				(font
@@ -26763,7 +26735,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR033")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -26778,7 +26750,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d8294ac3-14e8-411a-990b-a5c17f573eca")
-		(property "Reference" "R21"
+		(property "Reference" "R23"
 			(at 515.7216 212.852 0)
 			(effects
 				(font
@@ -26859,7 +26831,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "R21")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -26875,7 +26847,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d87ebb90-e86a-4702-b07d-2a47240d2254")
-		(property "Reference" "#PWR0144"
+		(property "Reference" "#PWR010"
 			(at 90.17 54.61 0)
 			(effects
 				(font
@@ -26926,7 +26898,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR0144")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -26941,7 +26913,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dc9ecc86-ce71-4913-a3db-d8bc97f691bf")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR013"
 			(at 107.95 91.44 0)
 			(effects
 				(font
@@ -26988,9 +26960,9 @@
 			(uuid "f50bb738-d677-434f-965b-27336fe62863")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR015")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -27005,7 +26977,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dd839fb2-16f3-4439-a2e5-de42f1e78af4")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR070"
 			(at 482.6 64.77 0)
 			(effects
 				(font
@@ -27055,7 +27027,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR071")
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -27071,7 +27043,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e44a4cdb-0ebe-438f-bbe1-c155893929bc")
-		(property "Reference" "#PWR081"
+		(property "Reference" "#PWR080"
 			(at 500.38 83.82 0)
 			(effects
 				(font
@@ -27121,7 +27093,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR081")
+					(reference "#PWR080")
 					(unit 1)
 				)
 			)
@@ -27136,7 +27108,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ea0745aa-18cf-42ae-a5f3-747623813a85")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR024"
 			(at 153.67 106.68 0)
 			(effects
 				(font
@@ -27183,9 +27155,9 @@
 			(uuid "4235c829-759a-4ec3-b19b-42efa80068dc")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR022")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -27200,7 +27172,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eb7d6d33-53ee-4496-89a6-b249a0b71637")
-		(property "Reference" "R14"
+		(property "Reference" "R16"
 			(at 475.0816 234.442 0)
 			(effects
 				(font
@@ -27281,7 +27253,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "R14")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -27296,7 +27268,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ef68b991-5a76-4452-a7a7-876781163210")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR059"
 			(at 454.66 200.66 0)
 			(effects
 				(font
@@ -27346,7 +27318,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR060")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -27361,7 +27333,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ef6a4adf-d88c-4e51-974f-5634cef86efc")
-		(property "Reference" "R20"
+		(property "Reference" "R22"
 			(at 515.7216 206.502 0)
 			(effects
 				(font
@@ -27442,7 +27414,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "R20")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -27457,7 +27429,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f20187ba-bb64-46c4-87d8-045556e9b148")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR017"
 			(at 114.3 175.26 0)
 			(effects
 				(font
@@ -27504,9 +27476,9 @@
 			(uuid "6d11327f-eb19-423f-897b-a97bddd52bcc")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR018")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -27521,7 +27493,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f59abf64-443b-49d9-88e8-5a0d12c41063")
-		(property "Reference" "#PWR084"
+		(property "Reference" "#PWR083"
 			(at 510.54 223.52 0)
 			(effects
 				(font
@@ -27571,7 +27543,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR084")
+					(reference "#PWR083")
 					(unit 1)
 				)
 			)
@@ -27586,7 +27558,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f8b8857c-4490-4875-87ea-c2be381103c3")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR040"
 			(at 414.02 368.3 0)
 			(effects
 				(font
@@ -27636,7 +27608,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR041")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -27652,7 +27624,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fb280e92-7ea0-47d6-a495-c5b4821d0d58")
-		(property "Reference" "J6"
+		(property "Reference" "J4"
 			(at 391.16 27.94 0)
 			(effects
 				(font
@@ -27737,7 +27709,7 @@
 		(instances
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "J6")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -27752,7 +27724,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fc436037-d906-40fc-9bc2-8fb4a180e6ff")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR016"
 			(at 110.49 236.855 0)
 			(effects
 				(font
@@ -27799,9 +27771,9 @@
 			(uuid "49bdd7ee-3741-44e1-9963-2560b2dc5564")
 		)
 		(instances
-			(project "RP2350_80QFN_minimal"
+			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR017")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
