@@ -1357,6 +1357,148 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x03"
 			(pin_names
 				(offset 1.016)
@@ -5336,182 +5478,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:LP2985-3.3"
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -6.35 5.715 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "LP2985-3.3"
-				(at 0 5.715 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-				(at 0 8.255 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lp2985.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "150mA 16V Low-noise Low-dropout Regulator With Shutdown, 3.3V output voltage, SOT-23-5"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "LDO regulator linear  SOT-23-5"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOT?23*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "LP2985-3.3_0_1"
-				(rectangle
-					(start -7.62 -5.08)
-					(end 7.62 4.445)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "LP2985-3.3_1_1"
-				(pin power_in line
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 0 0)
-					(length 2.54)
-					(name "ON/~{OFF}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "VOUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name "BP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Regulator_Linear:NCP1117-3.3_SOT223"
 			(pin_names
 				(offset 0.254)
@@ -7649,18 +7615,6 @@
 		)
 		(uuid "68225c2e-f3f1-42f8-ae59-06983d20dccb")
 	)
-	(text "TODO this might need to be \nupdated to work off of battery"
-		(exclude_from_sim no)
-		(at 520.446 190.5 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.254)
-				(bold yes)
-			)
-		)
-		(uuid "68fe1d2d-f71e-46bc-b3db-fead493392b2")
-	)
 	(text "Joystick Connector\n"
 		(exclude_from_sim no)
 		(at 442.468 32.512 0)
@@ -7683,9 +7637,9 @@
 		)
 		(uuid "7079d14d-ebaf-4eb3-b264-7a4faf0b923e")
 	)
-	(text "TODO either add a LiPo JST connector or a AA/AAA battery connector"
+	(text "Battery Connector"
 		(exclude_from_sim no)
-		(at 435.864 147.066 0)
+		(at 405.384 143.002 0)
 		(effects
 			(font
 				(size 2.286 2.286)
@@ -7716,18 +7670,6 @@
 		)
 		(uuid "7ca0adce-66e2-4670-94e5-68d1aec8173c")
 	)
-	(text "TODO CHANGE THESE TO BATTERY VOLTAGES"
-		(exclude_from_sim no)
-		(at 443.738 209.804 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-			)
-		)
-		(uuid "805013b6-cd1a-4392-babb-dcfaa6da7f4a")
-	)
 	(text "JST Debug Connector"
 		(exclude_from_sim no)
 		(at 328.93 210.82 0)
@@ -7749,7 +7691,7 @@
 		)
 		(uuid "95fc4555-25f2-431c-97e0-ef25c852af46")
 	)
-	(text "TODO this needs to be updated as well. I think I now have 2 digital power units with the analog side as well"
+	(text "TODO Update this to be a Buck Boost converter and add some way to handle both USB and Battery input"
 		(exclude_from_sim no)
 		(at 158.75 21.336 0)
 		(effects
@@ -7760,6 +7702,18 @@
 			)
 		)
 		(uuid "991959d0-249d-4c35-9003-d616dffdf951")
+	)
+	(text "TODO This should not connect directly to USB VBUS"
+		(exclude_from_sim no)
+		(at 407.416 149.606 0)
+		(effects
+			(font
+				(size 2.286 2.286)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "9d9f716f-aee2-45f6-93dd-bc5b07daf5cc")
 	)
 	(text "Make sure R7 and R8 are close to RP2350\n"
 		(exclude_from_sim no)
@@ -7814,17 +7768,6 @@
 			)
 		)
 		(uuid "bfa71ace-a2b4-48d2-b6f1-51d6a87db837")
-	)
-	(text "PSU DIG."
-		(exclude_from_sim no)
-		(at 447.04 175.26 0)
-		(effects
-			(font
-				(size 5.0038 5.0038)
-			)
-			(justify left bottom)
-		)
-		(uuid "c0e97602-5096-48bb-9967-4f28ded5d388")
 	)
 	(text "USB Port"
 		(exclude_from_sim no)
@@ -8355,16 +8298,6 @@
 			(type default)
 		)
 		(uuid "03705b0d-423e-4746-ac2b-3f0d0d430ded")
-	)
-	(wire
-		(pts
-			(xy 480.06 184.15) (xy 480.06 186.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "049a4ad0-cd37-4744-8bbd-769915dce7e2")
 	)
 	(wire
 		(pts
@@ -8978,16 +8911,6 @@
 	)
 	(wire
 		(pts
-			(xy 464.82 186.69) (xy 467.36 186.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2f105a75-768b-4467-9617-45fad25a6e69")
-	)
-	(wire
-		(pts
 			(xy 212.09 81.28) (xy 212.09 93.98)
 		)
 		(stroke
@@ -9315,16 +9238,6 @@
 			(type default)
 		)
 		(uuid "452bc39e-5885-4fbe-a356-e611dba1a44a")
-	)
-	(wire
-		(pts
-			(xy 439.42 186.69) (xy 439.42 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "45819208-12c7-4e23-99d2-171bbc1a0686")
 	)
 	(wire
 		(pts
@@ -9778,16 +9691,6 @@
 	)
 	(wire
 		(pts
-			(xy 464.82 184.15) (xy 467.36 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5f2fb3de-9bcf-4fbc-821f-2fac745b528a")
-	)
-	(wire
-		(pts
 			(xy 67.31 137.795) (xy 67.31 139.065)
 		)
 		(stroke
@@ -10078,16 +9981,6 @@
 	)
 	(wire
 		(pts
-			(xy 444.5 184.15) (xy 439.42 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "71d3d470-8737-47eb-a9eb-60797ad779ed")
-	)
-	(wire
-		(pts
 			(xy 143.51 71.12) (xy 143.51 73.66)
 		)
 		(stroke
@@ -10265,16 +10158,6 @@
 			(type default)
 		)
 		(uuid "7b3783d5-4390-4199-9782-742756a818fe")
-	)
-	(wire
-		(pts
-			(xy 444.5 186.69) (xy 439.42 186.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c05a573-93c8-43cd-82ad-9200693e2093")
 	)
 	(wire
 		(pts
@@ -10795,6 +10678,16 @@
 			(type default)
 		)
 		(uuid "989e9894-8021-4769-8f61-fe623356256e")
+	)
+	(wire
+		(pts
+			(xy 388.62 158.75) (xy 398.78 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99d56c76-2b50-402a-bd27-72483024b539")
 	)
 	(wire
 		(pts
@@ -11355,6 +11248,16 @@
 			(type default)
 		)
 		(uuid "ba5254b3-c839-4f26-8ed4-fbf5f3cc9fa0")
+	)
+	(wire
+		(pts
+			(xy 388.62 161.29) (xy 398.78 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba76b886-d594-4018-b104-d11d7a639032")
 	)
 	(wire
 		(pts
@@ -12185,16 +12088,6 @@
 			(type default)
 		)
 		(uuid "ec223814-f9af-44f3-baa3-a771aadbafe4")
-	)
-	(wire
-		(pts
-			(xy 429.26 184.15) (xy 429.26 186.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec5cf217-85fa-4e19-b41f-ee88c15abf60")
 	)
 	(wire
 		(pts
@@ -13795,94 +13688,6 @@
 		(uuid "1fd88788-78ec-4fe6-9b6b-a5b05e8804dd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 502.4691 331.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VSYS"
-		(shape input)
-		(at 439.42 184.15 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3d2c6545-c400-48db-8a21-87da82f3cbd4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 439.42 177.2228 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VSYS"
-		(shape input)
-		(at 419.1 236.22 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "526530d8-8efc-4be7-a806-db824ed61842")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 419.1 229.2928 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VSYS"
-		(shape input)
-		(at 431.8 236.22 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c3fa1916-0e11-45f7-b43d-0ed48bf0d47f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 431.8 229.2928 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VSYS"
-		(shape input)
-		(at 429.26 184.15 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "dcfe6468-230b-41b6-b648-5f1d50fb7a66")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 429.26 177.2228 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16266,7 +16071,16 @@
 				(hide yes)
 			)
 		)
-		(property "MRF. Part #" "ADC08060CIMTX/NOPB"
+		(property "MRF. Part #" ""
+			(at 455.93 294.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR. Part #" "ADC08060CIMTX/NOPB"
 			(at 455.93 294.64 0)
 			(effects
 				(font
@@ -17896,205 +17710,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:LP2985-3.3")
-		(at 454.66 186.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0af62a6b-0e1a-4e94-9d3a-4c51b1d19a4e")
-		(property "Reference" "U5"
-			(at 454.66 178.0032 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LP2985-3.3"
-			(at 454.66 180.3146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 454.66 178.435 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1809251740_Texas-Instruments-LP2985-33DBVR_C95414.pdf"
-			(at 454.66 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 454.66 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C95414"
-			(at 454.66 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR. Part #" "LP2985-33DBVR"
-			(at 454.66 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MRF. Part #" ""
-			(at 454.66 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8192da7f-8729-4416-9a08-84a1733013cb")
-		)
-		(pin "2"
-			(uuid "7cce47f8-1e39-4412-9663-31a159f624a1")
-		)
-		(pin "3"
-			(uuid "aef91af8-ee87-4f52-a593-3c9b02a5d802")
-		)
-		(pin "4"
-			(uuid "f2e4e14b-ddc7-4ca9-9c9c-97ba92153857")
-		)
-		(pin "5"
-			(uuid "bed65541-ff1d-4706-bbf8-e1e7ebb2da56")
-		)
-		(instances
-			(project "scopeboy"
-				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "U5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 467.36 190.5 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0c87f59d-b7d9-47b5-9ab4-9e5fb4063339")
-		(property "Reference" "C34"
-			(at 464.439 191.6684 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10n"
-			(at 464.439 189.357 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 466.3948 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2102081402_FH-Guangdong-Fenghua-Advanced-Tech-0603B103K500NT_C57112.pdf"
-			(at 467.36 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 467.36 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C57112"
-			(at 467.36 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR. Part #" "0603B103K500NT"
-			(at 467.36 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MRF. Part #" ""
-			(at 467.36 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1a052c95-ce59-49c1-8abe-33e3f00e8d90")
-		)
-		(pin "2"
-			(uuid "ec3f0dc7-5bcc-482c-ba6e-2cb6606e45fd")
-		)
-		(instances
-			(project "scopeboy"
-				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "C34")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GNDA")
 		(at 495.3 266.7 0)
 		(unit 1)
@@ -18513,71 +18128,6 @@
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 467.36 184.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1a1b605f-400c-4791-9cb7-0e9ba7ef62bb")
-		(property "Reference" "#PWR061"
-			(at 467.36 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 467.741 179.7558 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 467.36 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 467.36 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 467.36 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6ee0500f-a30e-464e-b8d7-1a762578426e")
-		)
-		(instances
-			(project "scopeboy"
-				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -19315,6 +18865,71 @@
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 388.62 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "26e7b470-4b2c-4024-b183-7ca346127f32")
+		(property "Reference" "#PWR0144"
+			(at 388.62 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 388.747 165.6842 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 388.62 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 388.62 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 388.62 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3fe05e77-cb2c-405e-8ddf-e8069f7f259c")
+		)
+		(instances
+			(project "scopeboy"
+				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
+					(reference "#PWR0144")
 					(unit 1)
 				)
 			)
@@ -21730,102 +21345,6 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 429.26 190.5 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5abdff9d-aff6-4877-a23d-02d2835e7918")
-		(property "Reference" "C29"
-			(at 426.339 191.6684 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1u"
-			(at 426.339 189.357 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 428.2948 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1810261812_Samsung-Electro-Mechanics-CL10A105KB8NNNC_C15849.pdf"
-			(at 429.26 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 429.26 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C15849"
-			(at 429.26 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR. Part #" "CL10A105KB8NNNC"
-			(at 429.26 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MRF. Part #" ""
-			(at 429.26 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c99eaccd-0eab-4099-8a6d-5fcd00f910c8")
-		)
-		(pin "2"
-			(uuid "a8735a95-37fa-4024-b068-9e0226dc642f")
-		)
-		(instances
-			(project "scopeboy"
-				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "C29")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
 		(at 488.95 358.14 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22322,71 +21841,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 467.36 194.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "663dc4fd-ac66-4e49-90fb-7aa5d29b3ede")
-		(property "Reference" "#PWR062"
-			(at 467.36 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 467.487 198.7042 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 467.36 194.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 467.36 194.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 467.36 194.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3aab7014-99b8-4ca1-b3d8-5e6e371f9f94")
-		)
-		(instances
-			(project "scopeboy"
-				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR062")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 426.72 358.14 180)
 		(unit 1)
@@ -22656,71 +22110,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 429.26 194.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "670db49d-7a2a-4ede-bff8-daaecadde2c8")
-		(property "Reference" "#PWR047"
-			(at 429.26 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 429.387 198.7042 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 429.26 194.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 429.26 194.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 429.26 194.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6b50c287-57bc-4cef-a5bd-6ab350183ad6")
-		)
-		(instances
-			(project "scopeboy"
-				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR047")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 440.69 311.15 180)
 		(unit 1)
@@ -22811,71 +22200,6 @@
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "C33")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 480.06 184.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6d3c01d6-54bc-4726-bc00-e0b9c1e52eec")
-		(property "Reference" "#PWR068"
-			(at 480.06 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 480.441 179.7558 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 480.06 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 480.06 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 480.06 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0110e5b2-752f-44eb-9998-f4e66bdb4c8e")
-		)
-		(instances
-			(project "scopeboy"
-				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -24007,102 +23331,6 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 480.06 190.5 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "978ab20e-783d-480c-b314-d5eca7ca3312")
-		(property "Reference" "C37"
-			(at 477.139 191.6684 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2.2u"
-			(at 477.139 189.357 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 479.0948 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1810271109_Samsung-Electro-Mechanics-CL10A225KO8NNNC_C23630.pdf"
-			(at 480.06 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 480.06 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C23630"
-			(at 480.06 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR. Part #" "CL10A225KO8NNNC"
-			(at 480.06 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MRF. Part #" ""
-			(at 480.06 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d9f96046-c436-47c6-a414-3bdc72f479e9")
-		)
-		(pin "2"
-			(uuid "6107c1f8-8fb8-43f0-9b46-0b751528dae4")
-		)
-		(instances
-			(project "scopeboy"
-				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "C37")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
 		(at 143.51 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24334,6 +23562,85 @@
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 403.86 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a61b0612-b2ce-436c-bbca-6f572a488572")
+		(property "Reference" "J8"
+			(at 406.4 158.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 406.4 161.2899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal"
+			(at 403.86 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 403.86 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 403.86 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR. Part #" "S2B-PH-SM4-TB(LF)(SN)"
+			(at 403.86 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a6f9e6ac-698d-4ef0-bc34-d9e6174c2490")
+		)
+		(pin "1"
+			(uuid "d4f70810-e46e-4d56-bda8-36c0d7a6bdf3")
+		)
+		(instances
+			(project "scopeboy"
+				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -24612,6 +23919,70 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VBUS")
+		(at 431.8 236.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "acb1f158-f160-4c60-b9a7-6d741735c719")
+		(property "Reference" "#PWR0147"
+			(at 431.8 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 432.181 231.8258 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 431.8 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 431.8 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 431.8 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "95f3f751-c9e0-4c72-9ee3-aace24b5b9ed")
+		)
+		(instances
+			(project "scopeboy"
+				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
+					(reference "#PWR0147")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 154.94 66.04 0)
 		(unit 1)
@@ -24825,71 +24196,6 @@
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "C13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 480.06 194.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b5f588f0-f355-4a8d-ad20-79e451833d63")
-		(property "Reference" "#PWR069"
-			(at 480.06 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 480.187 198.7042 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 480.06 194.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 480.06 194.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 480.06 194.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e6598323-20a7-4f91-b571-d9cf3eea8679")
-		)
-		(instances
-			(project "scopeboy"
-				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -26413,6 +25719,70 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VBUS")
+		(at 419.1 236.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ce665309-8235-4f01-b5d7-183cca5c39b9")
+		(property "Reference" "#PWR0146"
+			(at 419.1 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 419.481 231.8258 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 419.1 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 419.1 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 419.1 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9af993b9-7f57-442f-8dcc-f504744aaa2e")
+		)
+		(instances
+			(project "scopeboy"
+				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
+					(reference "#PWR0146")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 320.04 74.93 0)
 		(mirror y)
@@ -27388,71 +26758,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 454.66 194.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ef68b991-5a76-4452-a7a7-876781163210")
-		(property "Reference" "#PWR059"
-			(at 454.66 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 454.787 198.7042 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 454.66 194.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 454.66 194.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 454.66 194.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "317417e5-854e-4792-81f8-88584e63d792")
-		)
-		(instances
-			(project "scopeboy"
-				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR059")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 516.89 208.28 90)
 		(unit 1)
@@ -27607,6 +26912,70 @@
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 388.62 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f3090389-a4c2-4fd5-81f7-1aeb8fe96063")
+		(property "Reference" "#PWR0145"
+			(at 388.62 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 389.001 154.3558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 388.62 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 388.62 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 388.62 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7b782443-ffb7-4d20-8346-417dd6260cbe")
+		)
+		(instances
+			(project "scopeboy"
+				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
+					(reference "#PWR0145")
 					(unit 1)
 				)
 			)

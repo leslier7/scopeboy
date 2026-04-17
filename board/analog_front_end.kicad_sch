@@ -8325,7 +8325,16 @@
 				(hide yes)
 			)
 		)
-		(property "MRF. Part #" "TLV9101IDBVR"
+		(property "MRF. Part #" ""
+			(at 341.63 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR. Part #" "TLV9101IDBVR"
 			(at 341.63 76.2 0)
 			(effects
 				(font
@@ -10291,7 +10300,16 @@
 				(hide yes)
 			)
 		)
-		(property "MRF. Part #" "C0603C100J5GACTU"
+		(property "MRF. Part #" ""
+			(at 86.36 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR. Part #" "C0603C100J5GACTU"
 			(at 86.36 129.54 0)
 			(effects
 				(font
@@ -11090,7 +11108,16 @@
 				(hide yes)
 			)
 		)
-		(property "MRF. Part #" "RC0603FR-071ML"
+		(property "MRF. Part #" ""
+			(at 97.79 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR. Part #" "RC0603FR-071ML"
 			(at 97.79 129.54 0)
 			(effects
 				(font
@@ -11585,7 +11612,16 @@
 				(hide yes)
 			)
 		)
-		(property "MRF. Part #" "RC0603FR-0710KL"
+		(property "MRF. Part #" ""
+			(at 68.58 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR. Part #" "RC0603FR-0710KL"
 			(at 68.58 119.38 90)
 			(effects
 				(font
