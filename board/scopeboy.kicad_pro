@@ -624,18 +624,6 @@
         },
         {
           "group_by": false,
-          "label": "MRF. Part #",
-          "name": "MRF. Part #",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer Part Number",
-          "name": "Manufacturer Part Number",
-          "show": false
-        },
-        {
-          "group_by": false,
           "label": "Sim.Device",
           "name": "Sim.Device",
           "show": false
@@ -688,7 +676,7 @@
       "include_excluded_from_bom": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "Sim.Library"
     },
     "connection_grid_size": 50.0,
     "drawing": {
