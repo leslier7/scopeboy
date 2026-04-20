@@ -14026,6 +14026,16 @@
 		)
 		(uuid "0014801d-eae5-44d3-8fe2-3efac6de30b1")
 	)
+	(label "Backlight"
+		(at 250.19 177.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "007b3d09-b503-41ff-ac7b-2433141e3376")
+	)
 	(label "MISO"
 		(at 410.21 39.37 0)
 		(effects
@@ -14126,6 +14136,16 @@
 			(justify right bottom)
 		)
 		(uuid "0735efb2-6ece-4ad5-9939-b6315ef1f5bd")
+	)
+	(label "D{slash}C"
+		(at 250.19 180.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "075c58f2-93d5-4c33-9c2f-3020eff004b3")
 	)
 	(label "SD_D0"
 		(at 250.19 132.08 180)
@@ -15020,16 +15040,6 @@
 		)
 		(uuid "b71240ff-a427-445d-a434-c42105bfc649")
 	)
-	(label "GPIO27"
-		(at 250.19 180.34 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b92379c8-bad4-4018-91ab-a1e8c3b5c214")
-	)
 	(label "QSPI_SD1"
 		(at 152.4 129.54 0)
 		(effects
@@ -15382,16 +15392,6 @@
 		)
 		(uuid "f9d0701d-f186-4b95-94f5-4cd2accdedba")
 	)
-	(label "GPIO26"
-		(at 250.19 177.8 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "faf77216-2d48-4f0a-9399-593385185203")
-	)
 	(global_label "CLK"
 		(shape input)
 		(at 496.57 331.47 0)
@@ -15716,7 +15716,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
+		(property "Value" "+3.3V"
 			(at 67.691 99.1108 0)
 			(effects
 				(font
@@ -16218,70 +16218,6 @@
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 219.71 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005eed9ba4")
-		(property "Reference" "#PWR027"
-			(at 219.71 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 220.091 55.2958 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 219.71 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 219.71 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 219.71 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b0473b8a-0611-4e83-9cf8-34d53dc70c79")
-		)
-		(instances
-			(project "scopeboy"
-				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -16853,7 +16789,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
+		(property "Value" "+3.3V"
 			(at 281.051 140.3858 0)
 			(effects
 				(font
@@ -17525,7 +17461,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
+		(property "Value" "+3.3V"
 			(at 489.331 349.9358 0)
 			(effects
 				(font
@@ -17785,7 +17721,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
+		(property "Value" "+3.3V"
 			(at 477.901 349.9358 0)
 			(effects
 				(font
@@ -17915,7 +17851,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
+		(property "Value" "+3.3V"
 			(at 451.231 323.2658 0)
 			(effects
 				(font
@@ -18457,7 +18393,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
+		(property "Value" "+3.3V"
 			(at 68.961 158.1658 0)
 			(effects
 				(font
@@ -21498,7 +21434,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
+		(property "Value" "+3.3V"
 			(at 486.41 49.53 0)
 			(effects
 				(font
@@ -23888,7 +23824,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
+		(property "Value" "+3.3V"
 			(at 398.78 74.93 0)
 			(effects
 				(font
@@ -27183,7 +27119,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
+		(property "Value" "+3.3V"
 			(at 425.45 49.53 0)
 			(effects
 				(font
@@ -29330,7 +29266,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
+		(property "Value" "+3.3V"
 			(at 387.35 74.93 0)
 			(effects
 				(font
@@ -29664,70 +29600,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 107.95 87.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "dc9ecc86-ce71-4913-a3db-d8bc97f691bf")
-		(property "Reference" "#PWR013"
-			(at 107.95 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 108.331 83.2358 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 107.95 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 107.95 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 107.95 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f50bb738-d677-434f-965b-27336fe62863")
-		)
-		(instances
-			(project "scopeboy"
-				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
-					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 482.6 58.42 0)
 		(unit 1)
@@ -29787,6 +29659,71 @@
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "#PWR070")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3VA")
+		(at 219.71 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "de6e4967-b901-4d81-85ac-30df54ad0550")
+		(property "Reference" "#PWR027"
+			(at 219.71 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 217.678 55.118 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 219.71 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 219.71 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 219.71 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "91bb57f0-e95d-47b5-871e-d66ceeab4aa3")
+		)
+		(instances
+			(project "scopeboy"
+				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -30004,6 +29941,71 @@
 			(project "scopeboy"
 				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
 					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3VA")
+		(at 107.95 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ee1791e7-ed66-4969-b3b6-c6ea6d0c34af")
+		(property "Reference" "#PWR013"
+			(at 107.95 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 105.918 83.058 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 107.95 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "07413a7c-fb1d-46a0-915e-a0e46b35fd99")
+		)
+		(instances
+			(project "scopeboy"
+				(path "/94683f5c-9cd9-448e-be96-9792537b5cb8"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
