@@ -37,8 +37,9 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(Final_Project 
-                Final_Project.c 
+add_executable(Final_Project
+                Final_Project.c
+                display.c
                 TFTMaster.c
                 dac.c
                 adc.c
@@ -75,4 +76,13 @@ target_link_libraries(Final_Project
         )
 
 pico_add_extra_outputs(Final_Project)
+
+# HDMI output option — build with: cmake -DUSE_HDMI=ON ..
+option(USE_HDMI "Use HDMI output instead of TFT" OFF)
+
+if(USE_HDMI)
+    add_subdirectory(libs/pico_hdmi)
+    target_compile_definitions(Final_Project PRIVATE DISPLAY_HDMI)
+    target_link_libraries(Final_Project pico_hdmi)
+endif()
 

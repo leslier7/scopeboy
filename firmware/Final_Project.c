@@ -12,7 +12,10 @@
 #include "hardware/timer.h"
 #include "pico/multicore.h"
 #include "pt_cornell_rp2040_v1_4.h"
-#include "TFTMaster.h"
+#include "display.h"
+#ifdef DISPLAY_HDMI
+#include "pico_hdmi/video_output.h"
+#endif
 #include "dac.h"
 #include "adc.h"
 #include "trigger.h"
@@ -234,9 +237,9 @@ short voltToPixel(float volts) {
 #define PIXELS_PER_DIV 48 
 
 void drawGrid(short width) {
-    tft_fillRect(0, 0, width, 240, TFT_BLACK);
-    tft_setTextSize(1);
-    tft_setTextColor(TFT_LIGHTGREY);
+    display_fillRect(0, 0, width, 240, TFT_BLACK);
+    display_setTextSize(1);
+    display_setTextColor(TFT_LIGHTGREY);
 
     short centerX = width / 2;
     short centerY = 120;
@@ -246,22 +249,22 @@ void drawGrid(short width) {
         short x = centerX + (i * PIXELS_PER_DIV);
         if (x > 0 && x < width) {
             uint16_t color = (i == 0) ? 0x7BEF : TFT_DARKGREY;
-            tft_drawFastVLine(x, 0, 240, color);
-            tft_drawFastVLine(x, centerY - 4, 9, TFT_WHITE); 
+            display_drawFastVLine(x, 0, 240, color);
+            display_drawFastVLine(x, centerY - 4, 9, TFT_WHITE); 
             float t = (float)i * timePerDiv; 
             char buf[10]; sprintf(buf, "%.0f", t); 
-            tft_setCursor(x + 2, 230); tft_writeString(buf);
+            display_setCursor(x + 2, 230); display_writeString(buf);
         }
     }
     for (int i = -2; i <= 2; i++) {
         short y = centerY + (i * PIXELS_PER_DIV);
         if (y >= 0 && y < 240) {
             uint16_t color = (i == 0) ? 0x7BEF : TFT_DARKGREY;
-            tft_drawFastHLine(0, y, width, color);
-            tft_drawFastHLine(centerX - 4, y, 9, TFT_WHITE); 
+            display_drawFastHLine(0, y, width, color);
+            display_drawFastHLine(centerX - 4, y, 9, TFT_WHITE); 
             float v = trueCenterV - ((float)i * voltsPerDiv);
             char buf[10]; sprintf(buf, "%.1fV", v);
-            tft_setCursor(2, y - 10); tft_writeString(buf);
+            display_setCursor(2, y - 10); display_writeString(buf);
         }
     }
 }
@@ -305,10 +308,10 @@ void drawWaveformFromBuffer(short width) {
         int currY_old = oldWaveY[x]; 
 
         if (prevY_old != currY_old || prevY_new != currY_new || true) { 
-            tft_drawLine(prevX, prevY_old, x, currY_old, TFT_BLACK); 
+            display_drawLine(prevX, prevY_old, x, currY_old, TFT_BLACK); 
             if (abs(x - centerX) % 48 == 0) {
                 uint16_t color = (x == centerX) ? 0x7BEF : TFT_DARKGREY;
-                tft_drawFastVLine(x, MARGIN_TOP, (240 - MARGIN_BOTTOM) - MARGIN_TOP, color);
+                display_drawFastVLine(x, MARGIN_TOP, (240 - MARGIN_BOTTOM) - MARGIN_TOP, color);
             }
             int yMin = (prevY_old < currY_old) ? prevY_old : currY_old;
             int yMax = (prevY_old > currY_old) ? prevY_old : currY_old;
@@ -316,11 +319,11 @@ void drawWaveformFromBuffer(short width) {
                 int gy = hGridYs[i];
                 if (gy >= yMin && gy <= yMax) {
                     uint16_t color = (gy == centerY) ? 0x7BEF : TFT_DARKGREY;
-                    tft_drawPixel(x, gy, color);
-                    tft_drawPixel(prevX, gy, color); 
+                    display_drawPixel(x, gy, color);
+                    display_drawPixel(prevX, gy, color); 
                 }
             }
-            tft_drawLine(prevX, prevY_new, x, currY_new, TFT_YELLOW); 
+            display_drawLine(prevX, prevY_new, x, currY_new, TFT_YELLOW); 
         }
         oldWaveY[prevX] = prevY_new;
         prevX = x;
@@ -335,10 +338,10 @@ void restoreCursorBg(short y, short width) {
     uint16_t color = TFT_BLACK;
     if (y > 0 && (y % 48 == 0)) color = TFT_DARKGREY;
     if (y == 120) color = 0x7BEF; 
-    tft_drawFastHLine(0, y, width, color);
+    display_drawFastHLine(0, y, width, color);
     for (int x = 48; x < width; x += 48) {
         uint16_t vColor = (x == 144) ? 0x7BEF : TFT_DARKGREY;
-        tft_drawPixel(x, y, vColor);
+        display_drawPixel(x, y, vColor);
     }
 }
 
@@ -352,7 +355,7 @@ void drawCursors(short width) {
         if (wasShowing) {
             if (oldY1 != -1) restoreCursorBg(oldY1, width);
             if (oldY2 != -1) restoreCursorBg(oldY2, width);
-            tft_fillRect(5, 25, 100, 15, TFT_BLACK); 
+            display_fillRect(5, 25, 100, 15, TFT_BLACK); 
             wasShowing = false;
         }
         return;
@@ -364,27 +367,27 @@ void drawCursors(short width) {
 
     if (newY1 != oldY1) {
         if (oldY1 != -1) restoreCursorBg(oldY1, width);
-        tft_drawFastHLine(0, newY1, width, TFT_MAGENTA);
+        display_drawFastHLine(0, newY1, width, TFT_MAGENTA);
         oldY1 = newY1;
-    } else tft_drawFastHLine(0, newY1, width, TFT_MAGENTA);
+    } else display_drawFastHLine(0, newY1, width, TFT_MAGENTA);
 
     if (newY2 != oldY2) {
         if (oldY2 != -1) restoreCursorBg(oldY2, width);
-        tft_drawFastHLine(0, newY2, width, TFT_CYAN);
+        display_drawFastHLine(0, newY2, width, TFT_CYAN);
         oldY2 = newY2;
-    } else tft_drawFastHLine(0, newY2, width, TFT_CYAN);
+    } else display_drawFastHLine(0, newY2, width, TFT_CYAN);
     
     float deltaV = cursorV1_volts - cursorV2_volts;
     if (deltaV < 0) deltaV = -deltaV; 
     
     if (deltaV != oldDeltaV || forceFullRedraw) {
-        tft_fillRect(5, 25, 100, 15, TFT_BLACK); 
-        tft_setTextSize(1);
-        tft_setTextColor(TFT_WHITE);
-        tft_setCursor(5, 25); 
+        display_fillRect(5, 25, 100, 15, TFT_BLACK); 
+        display_setTextSize(1);
+        display_setTextColor(TFT_WHITE);
+        display_setCursor(5, 25); 
         char buf[20];
         sprintf(buf, "dV: %.2f V", deltaV);
-        tft_writeString(buf);
+        display_writeString(buf);
         oldDeltaV = deltaV;
     }
 }
@@ -396,7 +399,7 @@ void drawUI() {
     if (isSnakeMode) {
         // One-time Setup when entering Game
         if (!wasSnakeMode) {
-            tft_fillScreen(TFT_BLACK); 
+            display_fillScreen(TFT_BLACK); 
             wasSnakeMode = true;
         }
         drawSnake();
@@ -416,10 +419,10 @@ void drawUI() {
     // Mode Switching Logic
     if (isFFTMode) {
         if (!lastModeWasFFT) {
-            tft_fillScreen(TFT_BLACK); 
+            display_fillScreen(TFT_BLACK); 
             lastModeWasFFT = true;     
         }
-        tft_fillRect(20, 40, 256, 180, TFT_BLACK); 
+        display_fillRect(20, 40, 256, 180, TFT_BLACK); 
 
         for (int i=0; i<64; i++) {
             int height = fft_output[i] * 0.5; 
@@ -427,25 +430,25 @@ void drawUI() {
             int x = 20 + (i * 4); 
             if (height > 0) {
                  uint16_t color = (height > 100) ? TFT_RED : TFT_GREEN;
-                 tft_fillRect(x, 220 - height, 3, height, color);
+                 display_fillRect(x, 220 - height, 3, height, color);
             }
         }
-        tft_setCursor(100, 5); tft_setTextColor(TFT_MAGENTA); tft_setTextSize(2); tft_writeString("FFT MODE");
-        tft_setTextSize(1); tft_setTextColor(TFT_WHITE);
-        tft_setCursor(20, 225); tft_writeString("0Hz");
-        tft_setCursor(240, 225); char buf[32]; sprintf(buf, "%dk", SAMPLE_RATE_HZ / 2 / 1000); tft_writeString(buf);
+        display_setCursor(100, 5); display_setTextColor(TFT_MAGENTA); display_setTextSize(2); display_writeString("FFT MODE");
+        display_setTextSize(1); display_setTextColor(TFT_WHITE);
+        display_setCursor(20, 225); display_writeString("0Hz");
+        display_setCursor(240, 225); char buf[32]; sprintf(buf, "%dk", SAMPLE_RATE_HZ / 2 / 1000); display_writeString(buf);
         
         int maxBin = 0; int maxVal = 0;
         for(int i=1; i<64; i++) { if(fft_output[i] > maxVal) { maxVal = fft_output[i]; maxBin = i; } }
         float peakFreq = maxBin * (SAMPLE_RATE_HZ / 128.0); 
-        tft_fillRect(0, 23, 320, 15, TFT_BLACK); 
-        tft_setTextColor(TFT_WHITE); tft_setCursor(20, 25); sprintf(buf, "Peak: %.1fkHz", peakFreq/1000.0); tft_writeString(buf);
+        display_fillRect(0, 23, 320, 15, TFT_BLACK); 
+        display_setTextColor(TFT_WHITE); display_setCursor(20, 25); sprintf(buf, "Peak: %.1fkHz", peakFreq/1000.0); display_writeString(buf);
 
     } else {
         if (lastModeWasFFT) { forceFullRedraw = true; lastModeWasFFT = false; }
         if (forceFullRedraw) {
             drawGrid(scopeWidth);
-            if (isMenuOpen) { tft_fillRect(240, 0, 80, 240, TFT_NAVY); menuDirty = true; }
+            if (isMenuOpen) { display_fillRect(240, 0, 80, 240, TFT_NAVY); menuDirty = true; }
             for(int i=0; i<320; i++) oldWaveY[i] = 120; 
             forceFullRedraw = false; 
         }
@@ -457,36 +460,36 @@ void drawUI() {
     if (!isFFTMode) {
         static float oldVoltsPerDiv = -1;
         static float oldTimePerDiv = -1;
-        tft_setTextColor(TFT_GREEN); 
+        display_setTextColor(TFT_GREEN); 
         if (voltsPerDiv != oldVoltsPerDiv) {
-            tft_fillRect(5, 5, 110, 20, TFT_BLACK); tft_setTextSize(2); tft_setCursor(5, 5);
-            char buf[32]; sprintf(buf, "%.1f V/d", voltsPerDiv); tft_writeString(buf);
+            display_fillRect(5, 5, 110, 20, TFT_BLACK); display_setTextSize(2); display_setCursor(5, 5);
+            char buf[32]; sprintf(buf, "%.1f V/d", voltsPerDiv); display_writeString(buf);
             oldVoltsPerDiv = voltsPerDiv;
         }
-        tft_setTextColor(TFT_YELLOW); 
+        display_setTextColor(TFT_YELLOW); 
         if (timePerDiv != oldTimePerDiv) {
-            tft_fillRect(120, 5, 110, 20, TFT_BLACK); tft_setTextSize(2); tft_setCursor(120, 5);
-            char buf[32]; sprintf(buf, "%.0f ms/d", timePerDiv); tft_writeString(buf);
+            display_fillRect(120, 5, 110, 20, TFT_BLACK); display_setTextSize(2); display_setCursor(120, 5);
+            char buf[32]; sprintf(buf, "%.0f ms/d", timePerDiv); display_writeString(buf);
             oldTimePerDiv = timePerDiv;
         }
     }
 
     static bool oldIsRecording = false;
     if (isRecording != oldIsRecording) {
-        tft_fillRect(scopeWidth - 40, 5, 40, 20, TFT_BLACK);
-        if (isRecording) { tft_setTextColor(TFT_RED); tft_setCursor(scopeWidth - 40, 5); tft_writeString((char*)"REC"); }
+        display_fillRect(scopeWidth - 40, 5, 40, 20, TFT_BLACK);
+        if (isRecording) { display_setTextColor(TFT_RED); display_setCursor(scopeWidth - 40, 5); display_writeString((char*)"REC"); }
         oldIsRecording = isRecording;
     }
 
     if (isMenuOpen && menuDirty && !isFFTMode) {
-        tft_setTextSize(1);
+        display_setTextSize(1);
         for (int i = 0; i < MENU_COUNT; i++) {
             short yPos = 5 + (i * 32); 
             uint16_t boxColor = TFT_NAVY; uint16_t textColor = TFT_LIGHTGREY;
             if (i == selectedMenuItem) { boxColor = isEditing ? TFT_RED : TFT_DARKGREY; textColor = TFT_WHITE; }
-            tft_fillRect(240, yPos - 2, 80, 28, boxColor);
-            tft_setTextColor(textColor); tft_setCursor(245, yPos + 8); tft_writeString((char*)menuNames[i]);
-            tft_setCursor(245, yPos + 18); tft_setTextColor(TFT_WHITE); 
+            display_fillRect(240, yPos - 2, 80, 28, boxColor);
+            display_setTextColor(textColor); display_setCursor(245, yPos + 8); display_writeString((char*)menuNames[i]);
+            display_setCursor(245, yPos + 18); display_setTextColor(TFT_WHITE); 
             char buf[32];
             if (i == MENU_V_DIV) sprintf(buf, "%.1fV", voltsPerDiv);
             else if (i == MENU_T_DIV) sprintf(buf, "%.0fms", timePerDiv); 
@@ -500,7 +503,7 @@ void drawUI() {
             else if (i == MENU_RUN_STOP) sprintf(buf, "%s", isRunning ? "RUN" : "STOP");
             else if (i == MENU_CURSORS_EN) sprintf(buf, "%s", showCursors ? "ON" : "OFF");
             else sprintf(buf, " ");
-            tft_writeString(buf);
+            display_writeString(buf);
         }
         menuDirty = false; 
     }
@@ -548,7 +551,7 @@ void updateSnake() {
     // 4. ERASE TAIL (The Flicker Fix)
     // If we didn't grow, the last segment (tail) will disappear. Erase it now.
     if (!grew) {
-        tft_fillRect(snakeX[snakeLen-1]*SNAKE_BLOCK_SIZE, snakeY[snakeLen-1]*SNAKE_BLOCK_SIZE, SNAKE_BLOCK_SIZE, SNAKE_BLOCK_SIZE, TFT_BLACK);
+        display_fillRect(snakeX[snakeLen-1]*SNAKE_BLOCK_SIZE, snakeY[snakeLen-1]*SNAKE_BLOCK_SIZE, SNAKE_BLOCK_SIZE, SNAKE_BLOCK_SIZE, TFT_BLACK);
     }
 
     // 5. Shift Body
@@ -562,25 +565,25 @@ void drawSnake() {
     // --- Game Over Screen ---
     if(gameOver) {
         if (!gameOverDrawn) {
-            tft_fillScreen(TFT_BLACK);
-            tft_setCursor(80, 100); tft_setTextColor(TFT_RED); tft_setTextSize(3); tft_writeString("GAME OVER");
-            tft_setCursor(60, 140); tft_setTextColor(TFT_WHITE); tft_setTextSize(1); tft_writeString("Press BACK to Exit");
+            display_fillScreen(TFT_BLACK);
+            display_setCursor(80, 100); display_setTextColor(TFT_RED); display_setTextSize(3); display_writeString("GAME OVER");
+            display_setCursor(60, 140); display_setTextColor(TFT_WHITE); display_setTextSize(1); display_writeString("Press BACK to Exit");
             gameOverDrawn = true;
         }
         return;
     }
     
-    // NO tft_fillScreen HERE! That caused the flicker.
+    // NO display_fillScreen HERE! That caused the flicker.
     
     // Draw Food
-    tft_fillRect(foodX*SNAKE_BLOCK_SIZE, foodY*SNAKE_BLOCK_SIZE, SNAKE_BLOCK_SIZE, SNAKE_BLOCK_SIZE, TFT_RED);
+    display_fillRect(foodX*SNAKE_BLOCK_SIZE, foodY*SNAKE_BLOCK_SIZE, SNAKE_BLOCK_SIZE, SNAKE_BLOCK_SIZE, TFT_RED);
     
     // Draw Snake
     // Optimization: We technically only need to redraw Head (Green) and the segment after it (Orange).
     // But redrawing the whole small body is fast enough and safer.
     for(int i=0; i<snakeLen; i++) {
         uint16_t c = (i==0) ? TFT_GREEN : TFT_ORANGE;
-        tft_fillRect(snakeX[i]*SNAKE_BLOCK_SIZE, snakeY[i]*SNAKE_BLOCK_SIZE, SNAKE_BLOCK_SIZE, SNAKE_BLOCK_SIZE, c);
+        display_fillRect(snakeX[i]*SNAKE_BLOCK_SIZE, snakeY[i]*SNAKE_BLOCK_SIZE, SNAKE_BLOCK_SIZE, SNAKE_BLOCK_SIZE, c);
     }
 }
 
@@ -725,19 +728,29 @@ static PT_THREAD (protothread_fft_calc(struct pt *pt))
     PT_END(pt);
 }
 
-// Entry point for core 0
+#ifdef DISPLAY_HDMI
+void core1_entry() {
+    video_output_core1_run();
+}
 void core0_entry() {
     pt_add_thread(protothread_trigger);
     pt_add_thread(protothread_graphics);
-    pt_schedule_start ;
+    pt_add_thread(protothread_blinky);
+    pt_add_thread(protothread_fft_calc);
+    pt_schedule_start;
 }
-
-// Entry point for core 1
+#else
+void core0_entry() {
+    pt_add_thread(protothread_trigger);
+    pt_add_thread(protothread_graphics);
+    pt_schedule_start;
+}
 void core1_entry() {
     pt_add_thread(protothread_blinky);
-    pt_add_thread(protothread_fft_calc); 
-    pt_schedule_start ;
+    pt_add_thread(protothread_fft_calc);
+    pt_schedule_start;
 }
+#endif
 
 // --- Main ---
 int main() {
@@ -759,10 +772,7 @@ int main() {
 
     rotary_init(); 
 
-    tft_init_hw();
-    tft_begin();
-    tft_setRotation(3); 
-    tft_fillScreen(TFT_BLACK);
+    display_init();
     
     initDac();
     int dac_val = setVoltage(CHAN_TRIG, 1.65f);
