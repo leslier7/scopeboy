@@ -2,77 +2,48 @@
     DAC code
     By Robbie Leslie 2025
 
-    Pins:
-    CS    -> GPIO 13
-    LDAC  -> GPIO 9
-    MOSI  -> GPIO 11
-    SCK   -> GPIO 10
-    VOUT_A is for trigger
-    VOUT_B is for offset
-
-
+    Two DAC5571 8-bit I2C DACs on a shared I2C1 bus:
+    SDA  -> GPIO 20
+    SCL  -> GPIO 21
+    TRIG DAC   I2C addr 0x4D  (A0=1, A1=0)
+    OFFSET DAC I2C addr 0x4C  (A0=0, A1=0)
 */
 
 #include "dac.h"
 #include "pico/stdlib.h"
-#include "hardware/spi.h"
+#include <math.h>
 
-#define PIN_CS   13
-#define PIN_LDAC 9
-#define PIN_MOSI 11
-#define PIN_SCK  10
-#define SPI_PORT spi1
-
-#define DAC_config_chan_A 0b0001000000000000
-#define DAC_config_chan_B 0b1011000000000000
-
-void initDac(){
-
-    // Initialize SPI channel (channel, baud rate set to 20MHz)
-    spi_init(SPI_PORT, 20000000) ;
-    // Format (channel, data bits per transfer, polarity, phase, order)
-    spi_set_format(SPI_PORT, 16, 0, 0, 0);
-
-    // Map SPI signals to GPIO ports
-    gpio_set_function(PIN_SCK, GPIO_FUNC_SPI);
-    gpio_set_function(PIN_MOSI, GPIO_FUNC_SPI);
-    gpio_set_function(PIN_CS, GPIO_FUNC_SPI) ;
-
-    // // CS pin
-    // gpio_init(PIN_CS);
-    // gpio_set_dir(PIN_CS, GPIO_OUT);
-    // gpio_put(PIN_CS, 1); //Idle high
-
-    // Map LDAC pin to GPIO port, hold it low (could alternatively tie to GND)
-    gpio_init(PIN_LDAC) ;
-    gpio_set_dir(PIN_LDAC, GPIO_OUT) ;
-    gpio_put(PIN_LDAC, 0) ;
+// DAC5571 write: 2 bytes after address
+//   byte 0: [PD1][PD0][0][0][D7][D6][D5][D4]
+//   byte 1: [D3][D2][D1][D0][0][0][0][0]
+static int dac5571_write(uint8_t addr, uint8_t raw) {
+    uint8_t buf[2] = {
+        (raw >> 4) & 0x0F,
+        (raw << 4) & 0xF0
+    };
+    return i2c_write_blocking(DAC_I2C_PORT, addr, buf, 2, false);
 }
 
-int setVoltage(int channel, float voltage){
+void initDac() {
+    i2c_init(DAC_I2C_PORT, 400000);
+    gpio_set_function(DAC_SDA_PIN, GPIO_FUNC_I2C);
+    gpio_set_function(DAC_SCL_PIN, GPIO_FUNC_I2C);
+    gpio_pull_up(DAC_SDA_PIN);
+    gpio_pull_up(DAC_SCL_PIN);
+}
 
-    // DAC has 4.096V range (2.048V VREF × 2x gain)
-    // Still error out if greater than 3.3v since that is the rail
-    if(voltage > 3.3 || voltage < 0.0f){
-        return -1;
-    }
-    uint16_t raw = (uint16_t)(voltage * 4095.0f / 4.096f + 0.5f); // convert + round
-    uint16_t dac_data; 
+int setVoltage(int channel, float voltage) {
+    if (voltage > 3.3f || voltage < 0.0f) return -1;
 
-    switch (channel){
+    // DAC5571: VOUT = (D / 256) * VDD, VDD = 3.3V
+    uint8_t raw = (uint8_t)fminf(voltage / 3.3f * 256.0f, 255.0f);
+
+    switch (channel) {
         case CHAN_TRIG:
-            dac_data = (uint16_t)(DAC_config_chan_A | (raw & 0x0FFF));
-            int spi_out_a = spi_write16_blocking(SPI_PORT, &dac_data, 1) ;
-            return spi_out_a;
-            break;
+            return dac5571_write(DAC_ADDR_TRIG, raw);
         case CHAN_OFFSET:
-            dac_data = (uint16_t)(DAC_config_chan_B | (raw & 0x0FFF));
-            int spi_out_b = spi_write16_blocking(SPI_PORT, &dac_data, 1) ;
-            return spi_out_b;
-            break;
-        default: return -1;
+            return dac5571_write(DAC_ADDR_OFFSET, raw);
+        default:
+            return -1;
     }
-    
-    return -1;
 }
-

@@ -7,6 +7,8 @@
 #include "hardware/structs/sio.h"
 #include "dac.h"
 
+//TODO need to update this to use paralel GPIO pins from the new ADC
+
 // Analog mux gain select pins
 #define SEL_0 5
 #define SEL_1 6

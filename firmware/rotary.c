@@ -5,8 +5,8 @@
 
 #include "TFTMaster.h"
 
-#define ENCCLK 14
-#define ENCDT 15
+#define ENCCLK 23
+#define ENCDT 24
 
 volatile int dtcount = 0;
 volatile int clkcount = 0;
