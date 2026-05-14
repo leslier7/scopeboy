@@ -49,6 +49,7 @@ pico_set_program_version(Final_Project "0.1")
 
 # Generate PIO header
 pico_generate_pio_header(Final_Project ${CMAKE_CURRENT_LIST_DIR}/SPIPIO.pio)
+pico_generate_pio_header(Final_Project ${CMAKE_CURRENT_LIST_DIR}/adc8060.pio)
 
 # Modify the below lines to enable/disable output over UART/USB
 pico_enable_stdio_uart(Final_Project 1)

@@ -1,0 +1,42 @@
+.program adc8060_capture
+.side_set 1                 ; 1 side-set pin = CLK (GPIO9)
+
+; 2 PIO instructions per sample → sample rate = sys_clk / (2 × clkdiv)
+; 20 MSPS at 150 MHz: clkdiv = 3.75 (int=3, frac=192/256)
+.wrap_target
+    nop        side 0       ; CLK low  — hold for half-period
+    in pins, 8 side 1       ; CLK high — capture D0-D7 on rising edge
+.wrap
+
+% c-sdk {
+#include "hardware/clocks.h"
+
+static inline void adc8060_capture_program_init(
+    PIO pio, uint sm, uint offset,
+    uint clk_pin, uint data_base_pin,
+    uint sample_rate_hz)
+{
+    pio_sm_config c = adc8060_capture_program_get_default_config(offset);
+
+    // CLK output — side-set pin
+    pio_gpio_init(pio, clk_pin);
+    pio_sm_set_consecutive_pindirs(pio, sm, clk_pin, 1, true);
+    sm_config_set_sideset_pins(&c, clk_pin);
+
+    // D0-D7 inputs (pio_gpio_init clears pulls)
+    for (uint i = 0; i < 8; i++)
+        pio_gpio_init(pio, data_base_pin + i);
+    pio_sm_set_consecutive_pindirs(pio, sm, data_base_pin, 8, false);
+    sm_config_set_in_pins(&c, data_base_pin);
+
+    // Shift left so sample occupies bits[7:0] of FIFO word; autopush at 8 bits fires once per sample
+    sm_config_set_in_shift(&c, false, true, 8);
+
+    // Clock divider: 2 PIO cycles per sample
+    float clk_div = (float)clock_get_hz(clk_sys) / (2.0f * sample_rate_hz);
+    sm_config_set_clkdiv(&c, clk_div);
+
+    pio_sm_init(pio, sm, offset, &c);
+    pio_sm_set_enabled(pio, sm, true);
+}
+%}

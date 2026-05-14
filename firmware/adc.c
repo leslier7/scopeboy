@@ -3,8 +3,8 @@
 #include "adc.h"
 #include "pico/stdlib.h"
 #include "hardware/dma.h"
-#include "hardware/clocks.h"
-#include "hardware/structs/sio.h"
+#include "hardware/pio.h"
+#include "adc8060.pio.h"
 #include "dac.h"
 
 // Analog mux gain select pins
@@ -13,6 +13,9 @@
 
 // First GPIO of the 8-bit parallel data bus (D0=GPIO32 … D7=GPIO39)
 #define D_BUS_FIRST_PIN 32
+
+// CLK output to ADC8060
+#define ADC_CLK_PIN 9
 
 uint8_t capture_buf[CAPTURE_DEPTH];
 uint8_t frame_buf[CAPTURE_DEPTH];
@@ -31,19 +34,12 @@ void init_adc_capture() {
     gpio_init(SEL_1);
     gpio_set_dir(SEL_1, GPIO_OUT);
 
-    // Configure D0-D7 (GPIO32-GPIO39) as high-impedance digital inputs
-    for (int i = 0; i < 8; i++) {
-        uint pin = D_BUS_FIRST_PIN + i;
-        gpio_init(pin);
-        gpio_set_dir(pin, GPIO_IN);
-        gpio_disable_pulls(pin);
-    }
-
-    // DMA pacing timer 0: rate = sys_clk * (X/Y)
-    // Choose X=1, Y = sys_clk / SAMPLE_RATE_HZ so the timer fires at SAMPLE_RATE_HZ
-    uint32_t y = clock_get_hz(clk_sys) / SAMPLE_RATE_HZ;
-    if (y > 0xFFFF) y = 0xFFFF;
-    dma_hw->timer[0] = (1u << 16) | (uint16_t)y;
+    // PIO1 — TFTMaster already owns pio0
+    // Generates CLK on GPIO9 and captures D0-D7 (GPIO32-39) on each rising edge
+    PIO pio = pio1;
+    uint sm = pio_claim_unused_sm(pio, true);
+    uint offset = pio_add_program(pio, &adc8060_capture_program);
+    adc8060_capture_program_init(pio, sm, offset, ADC_CLK_PIN, D_BUS_FIRST_PIN, SAMPLE_RATE_HZ);
 
     uint ctrl_chan = dma_claim_unused_channel(true);
     uint data_chan = dma_claim_unused_channel(true);
@@ -64,20 +60,19 @@ void init_adc_capture() {
         false
     );
 
-    // Data channel: byte reads from GPIO_HI_IN[7:0] (= GPIO32-GPIO39) → capture_buf
-    // Paced by DMA timer 0 so each transfer happens at SAMPLE_RATE_HZ
+    // Data channel: 8-bit reads from PIO RX FIFO → capture_buf, paced by PIO DREQ
     dma_channel_config cfg = dma_channel_get_default_config(data_chan);
     channel_config_set_transfer_data_size(&cfg, DMA_SIZE_8);
     channel_config_set_read_increment(&cfg, false);
     channel_config_set_write_increment(&cfg, true);
-    channel_config_set_dreq(&cfg, DREQ_DMA_TIMER0);
+    channel_config_set_dreq(&cfg, pio_get_dreq(pio, sm, false));
     channel_config_set_chain_to(&cfg, ctrl_chan);
 
     dma_channel_configure(
         data_chan,
         &cfg,
         capture_buf,
-        (volatile uint8_t *)&sio_hw->gpio_hi_in,  // low byte = GPIO32-GPIO39
+        (volatile uint8_t *)&pio->rxf[sm],
         CAPTURE_DEPTH,
         true
     );

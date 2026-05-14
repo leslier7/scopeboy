@@ -4,7 +4,7 @@
 #include "pico/stdlib.h"
 
 #define CAPTURE_DEPTH   320
-#define SAMPLE_RATE_HZ  500000
+#define SAMPLE_RATE_HZ  20000000   // 20 MSPS for ADC8060
 
 typedef enum gain_mode{
     GAIN_LOW,
