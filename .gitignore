@@ -106,3 +106,7 @@ GerberFiles.zip
 # Exported BOM files
 *.xml
 *.csv
+
+*.pdf
+production/
+.history/

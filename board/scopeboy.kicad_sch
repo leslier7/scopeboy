@@ -6,7 +6,7 @@
 	(paper "A2")
 	(title_block
 		(title "Scopeboy")
-		(date "2026-05-13")
+		(date "2026-05-12")
 		(rev "V1.1")
 		(company "Cornell University Electrical and Computer Engineering")
 		(comment 1 "Jenny List")
@@ -14526,6 +14526,16 @@
 		)
 		(uuid "007b3d09-b503-41ff-ac7b-2433141e3376")
 	)
+	(label "PowerStatus"
+		(at 250.19 190.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "010e8dd5-c663-48f3-92e1-7aa32974c890")
+	)
 	(label "MISO"
 		(at 410.21 39.37 0)
 		(effects
@@ -14545,16 +14555,6 @@
 			(justify right bottom)
 		)
 		(uuid "02ff75c3-c38e-47e2-aee2-89d7eacbd925")
-	)
-	(label "PowerStatus"
-		(at 250.19 129.54 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "03dafc68-8696-4f60-8929-b9044ce7116e")
 	)
 	(label "TRIG"
 		(at 250.19 121.92 180)
@@ -15340,16 +15340,6 @@
 		)
 		(uuid "9741d5ea-a2c5-46a3-b8de-e3d592f53742")
 	)
-	(label "GPIO31"
-		(at 250.19 190.5 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "978ee7f4-8219-46d2-a254-13a957da1934")
-	)
 	(label "USB_D-"
 		(at 267.97 104.14 180)
 		(effects
@@ -15660,6 +15650,16 @@
 		)
 		(uuid "d3ece0d6-856f-493f-8044-4864c4148a1f")
 	)
+	(label "ADC_CLK"
+		(at 250.19 129.54 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d64a667c-23a0-41ec-a520-575c73b6aa3b")
+	)
 	(label "D3"
 		(at 250.19 200.66 180)
 		(effects
@@ -15862,29 +15862,15 @@
 		)
 		(uuid "f9d0701d-f186-4b95-94f5-4cd2accdedba")
 	)
-	(global_label "CLK"
-		(shape input)
+	(label "ADC_CLK"
 		(at 496.57 331.47 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify left bottom)
 		)
-		(uuid "1fd88788-78ec-4fe6-9b6b-a5b05e8804dd")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 502.4691 331.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
+		(uuid "ff26533e-7b23-46e6-8285-9ed071a7ee28")
 	)
 	(symbol
 		(lib_id "Device:C")

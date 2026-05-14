@@ -4236,17 +4236,6 @@
 		)
 		(uuid "0272a8d9-0631-4434-8e00-b42bda7692be")
 	)
-	(hierarchical_label "SCL"
-		(shape input)
-		(at 355.6 158.75 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "09aa3dd1-6ab6-4b6d-a10e-1f1b652833cb")
-	)
 	(hierarchical_label "Trig"
 		(shape input)
 		(at 364.49 132.08 0)
@@ -4269,6 +4258,17 @@
 		)
 		(uuid "35b2d567-be42-4420-bdff-dbfac79defd2")
 	)
+	(hierarchical_label "SCL"
+		(shape input)
+		(at 236.22 147.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4309a71c-aa36-4f89-879f-e0197e6ac3c3")
+	)
 	(hierarchical_label "VREF"
 		(shape input)
 		(at 361.95 82.55 0)
@@ -4279,6 +4279,17 @@
 			(justify left)
 		)
 		(uuid "4c8421fd-22c1-4f10-9fd2-e81621f508ed")
+	)
+	(hierarchical_label "SDA"
+		(shape input)
+		(at 355.6 158.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7218e9c7-47b3-4ffe-bac6-4f97f7a5b79c")
 	)
 	(hierarchical_label "CHASSIS"
 		(shape input)
@@ -4313,29 +4324,7 @@
 		)
 		(uuid "bb185091-c67c-4087-b79c-b34d3fdbc2a6")
 	)
-	(hierarchical_label "SDA"
-		(shape input)
-		(at 236.22 147.32 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "bd370074-4404-482d-b489-a5887072d3fe")
-	)
 	(hierarchical_label "SCL"
-		(shape input)
-		(at 236.22 149.86 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c5d423eb-5c24-4e01-be0f-36f8d9a2b588")
-	)
-	(hierarchical_label "SDA"
 		(shape input)
 		(at 355.6 156.21 0)
 		(effects
@@ -4344,7 +4333,18 @@
 			)
 			(justify left)
 		)
-		(uuid "fc3be2c1-35d9-43af-88b6-37c6aef0da08")
+		(uuid "c44f9f45-fcee-4461-935a-a09d76644dfe")
+	)
+	(hierarchical_label "SDA"
+		(shape input)
+		(at 236.22 149.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ea90585f-d853-4e69-b088-8cf3ebf1392b")
 	)
 	(symbol
 		(lib_id "Reference_Voltage:LM4040DBZ-2.0")
