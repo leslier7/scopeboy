@@ -6,8 +6,8 @@
 	(paper "A2")
 	(title_block
 		(title "Scopeboy")
-		(date "2026-04-19")
-		(rev "V1.0")
+		(date "2026-05-12")
+		(rev "V1.1")
 		(company "Cornell University Electrical and Computer Engineering")
 		(comment 1 "Jenny List")
 		(comment 2 "Raspberry Pi Ltd")
@@ -14576,16 +14576,6 @@
 		)
 		(uuid "055562c5-0086-48eb-970e-f558ef19739a")
 	)
-	(label "GPIO40_ADC0"
-		(at 250.19 215.9 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "05ab5bdc-bf89-49fe-93d7-62795eebbf5e")
-	)
 	(label "D5"
 		(at 250.19 205.74 180)
 		(effects
@@ -14737,16 +14727,6 @@
 			(justify left bottom)
 		)
 		(uuid "15b66096-417b-4f51-ad3b-8f2e068b066d")
-	)
-	(label "GPIO41_ADC1"
-		(at 250.19 218.44 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "16ef9699-95ad-46e2-9d63-7128c854407d")
 	)
 	(label "XOUT"
 		(at 152.4 152.4 0)
@@ -15580,16 +15560,6 @@
 		)
 		(uuid "c0cd1175-38e6-4265-b5bb-ae3e012c036b")
 	)
-	(label "GPIO30"
-		(at 250.19 187.96 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c1172ee2-b708-4607-bb05-25a9dbccb99b")
-	)
 	(label "CDSD"
 		(at 350.52 135.89 180)
 		(effects
@@ -15851,6 +15821,16 @@
 			(justify right bottom)
 		)
 		(uuid "f38f2df0-ab17-4148-bccd-15fc8f877ea1")
+	)
+	(label "Reset"
+		(at 250.19 215.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f784f0fe-e063-4f75-93f9-d7b53191496a")
 	)
 	(label "QSPI_SD3"
 		(at 152.4 134.62 0)

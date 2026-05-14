@@ -9,8 +9,8 @@
 	(paper "A4")
 	(title_block
 		(title "Scopeboy")
-		(date "2026-04-19")
-		(rev "REV3")
+		(date "2026-05-12")
+		(rev "V1.1")
 		(company "Cornell University")
 		(comment 1 "Original RP2350 layout by Rasperry Pi Ltd")
 		(comment 2 "Original analog design by Jenny List")
@@ -185,7 +185,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -222,10 +222,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "AC0402JRNPO9BN100"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c549036d-2078-49ca-ae4d-ee3b548464c9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-00005eef0994")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -398,7 +417,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -435,10 +454,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "AC0402JRNPO9BN100"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e84cfe25-349b-4895-b1f2-a85d8470e472")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-00005edb1aa1")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -611,7 +649,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -652,7 +690,13 @@
 		(path "/00000000-0000-0000-0000-00005edac067")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
-		(attr smd)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.153641 0.38)
@@ -861,10 +905,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "W25Q128JVS"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dfa53890-fe7c-46d6-ac1e-07b2507a3119")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "SOIC*5.23x5.23mm*P1.27mm*")
 		(path "/00000000-0000-0000-0000-00005eda5f2c")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "6" "8" "4" "5" "2" "3" "7")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1064,7 +1127,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/FLASH_SS")
-			(pinfunction "~{CS}")
+			(pinfunction "~{CS}_1")
 			(pintype "input")
 			(uuid "d4341fdf-d5ea-41d8-9e50-031a2142ffe1")
 		)
@@ -1074,7 +1137,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/QSPI_SD1")
-			(pinfunction "DO(IO1)")
+			(pinfunction "DO(IO1)_2")
 			(pintype "bidirectional")
 			(uuid "1d14c306-d531-4f11-9fdc-f597ca158f6c")
 		)
@@ -1084,7 +1147,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/QSPI_SD2")
-			(pinfunction "IO2")
+			(pinfunction "IO2_3")
 			(pintype "bidirectional")
 			(uuid "e0eba472-ee44-4572-bbcf-b572acff8bf8")
 		)
@@ -1094,7 +1157,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_4")
 			(pintype "power_in")
 			(uuid "24933604-319e-420e-8711-b228ac6ee7a5")
 		)
@@ -1104,7 +1167,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/QSPI_SD0")
-			(pinfunction "DI(IO0)")
+			(pinfunction "DI(IO0)_5")
 			(pintype "bidirectional")
 			(uuid "dd922178-f531-4e16-9107-46446da615c8")
 		)
@@ -1114,7 +1177,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/QSPI_SCLK")
-			(pinfunction "CLK")
+			(pinfunction "CLK_6")
 			(pintype "input")
 			(uuid "dbeca035-765d-4347-9479-2ee5ebdee185")
 		)
@@ -1124,7 +1187,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/QSPI_SD3")
-			(pinfunction "IO3")
+			(pinfunction "IO3_7")
 			(pintype "bidirectional")
 			(uuid "a0bcb777-94a0-40a5-bc2d-e2e1f3d023a1")
 		)
@@ -1134,7 +1197,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3.3V")
-			(pinfunction "VCC")
+			(pinfunction "VCC_8")
 			(pintype "power_in")
 			(uuid "19587d55-0f7e-423c-9664-f174b5ac1a94")
 		)
@@ -1179,7 +1242,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1216,10 +1279,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "GJM1555C1H150GB01D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "085e8575-ad96-4a52-89ec-4a5586342568")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-00005ed98685")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1392,7 +1474,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1429,10 +1511,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "AC0402JRNPO9BN100"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "63b296b4-123f-4b94-933f-38da608a826f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/b060e775-6caf-44e0-a80c-ff2a742dcae8")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1605,7 +1706,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1642,10 +1743,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "AC0402JRNPO9BN100"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a35e2af2-56c0-41f7-bcef-93f93a2500a6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-00005eef0473")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1818,7 +1938,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1855,10 +1975,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "AC0402JRNPO9BN100"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b01daacf-4b28-4738-a60b-f59f99703bdb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-00005eef89b3")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2031,7 +2170,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -2068,10 +2207,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "RC0402JR-0727RL"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b2d917f3-a808-4a1c-ab87-5f779b60b6ee")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005ede0881")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2244,7 +2402,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -2281,10 +2439,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "AC0402JRNPO9BN100"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "67471b8a-6a91-456a-9b9b-207aa9112e97")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-00005eef00bb")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2457,7 +2634,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -2494,10 +2671,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "GJM1555C1H150GB01D"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ec8e40ad-3511-4803-a6ba-fea010b2c426")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-00005ed96b87")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2670,7 +2866,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -2707,10 +2903,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "RC0402JR-0727RL"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dc459043-b440-48da-96cd-7ff3f0127d64")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005ede1624")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2883,7 +3098,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2920,10 +3135,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "AC0402JRNPO9BN100"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "587ace96-ba84-4a5e-8855-72a1b544206f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-00005eef89bd")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3097,7 +3331,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -3134,10 +3368,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "CRCW04021K00FKED"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7ae931c7-181d-4a38-9d85-e90e7688be11")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005f0d8ebf")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3310,7 +3563,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3347,10 +3600,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "ABM8-272-T3"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c091862d-699e-4635-a851-359030da86ab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Crystal*")
 		(path "/00000000-0000-0000-0000-00005f0dd35c")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "4" "3")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3479,7 +3751,7 @@
 			(size 1.4 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/XIN")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "2a6cffdb-f652-43ee-b0c6-f358866b86e9")
 		)
@@ -3488,7 +3760,7 @@
 			(size 1.4 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "07d349ff-f8ba-44de-82e6-5f3734566ff1")
 		)
@@ -3497,7 +3769,7 @@
 			(size 1.4 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(C4-Pad1)")
-			(pinfunction "3")
+			(pinfunction "3_3")
 			(pintype "passive")
 			(uuid "ecff79f6-1f1f-4ac7-a727-d4a51691acdb")
 		)
@@ -3506,7 +3778,7 @@
 			(size 1.4 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "4")
+			(pinfunction "4_4")
 			(pintype "passive")
 			(uuid "176eed67-678c-4166-8c0c-2b82577b84b6")
 		)
@@ -3551,7 +3823,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3588,10 +3860,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "CL21A106KOQNNNE"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ad16867e-6a0a-4d09-86c8-46888b5152e8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-00005f1af96d")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3801,7 +4092,7 @@
 				)
 			)
 		)
-		(property "MFR. Part #" "0603WAF1000T5E"
+		(property "MFR. Part #" "ERJ-3EKF1000V"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3831,6 +4122,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/00000000-0000-0000-0000-00006133139d")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3945,7 +4242,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3971,10 +4268,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "SRN4018-2R2M"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "37b4555d-0fd4-4a6a-9cff-012ceaf6e9e4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/761fe620-9c9e-4945-b359-10da82744f9a")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4153,7 +4469,7 @@
 			(size 1.5 3.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "+3.3V")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "9842a0f7-73ef-47c0-9bd8-92e44bebee4b")
 		)
@@ -4162,7 +4478,7 @@
 			(size 1.5 3.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(U17-SW)")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "e8e1e542-b95b-4363-9136-75761241b928")
 		)
@@ -4207,7 +4523,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4231,10 +4547,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "CL21A106KOQNNNE"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b0c5f43f-db64-431a-b0e1-7a73f6ed0456")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/2a6fc0bc-8ab0-49db-8ed4-ed48ee9aa416")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4416,6 +4751,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/00000000-0000-0000-0000-000061075b5c")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4567,7 +4908,7 @@
 				)
 			)
 		)
-		(property "MFR. Part #" "0603WAF1000T5E"
+		(property "MFR. Part #" "ERJ-3EKF1000V"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4597,6 +4938,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/00000000-0000-0000-0000-000060fa3208")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4778,6 +5125,12 @@
 		(path "/d05e99ae-d69c-4cea-965f-80d9527653be")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4892,7 +5245,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4959,6 +5312,12 @@
 		(path "/c19ae03e-9bc9-4a6b-8e2a-488486f1c46d")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5123,9 +5482,28 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "ADG621BRMZ"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2d0ce9f7-1af7-4a90-96c6-11bfbfbe7a57")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/716e75ae-c9f7-4b3a-a0bf-26722420a730")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "7" "8" "10" "5" "9" "3" "4" "6")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5349,7 +5727,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U10--)")
-			(pinfunction "S1")
+			(pinfunction "S1_1")
 			(pintype "passive")
 			(uuid "6b0d0648-9c9c-4192-a207-00f2ef957055")
 		)
@@ -5359,7 +5737,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U9-D1)")
-			(pinfunction "D1")
+			(pinfunction "D1_2")
 			(pintype "passive")
 			(uuid "3050add4-f793-41f8-ab56-3cc68639738d")
 		)
@@ -5369,7 +5747,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/Sel1")
-			(pinfunction "IN2")
+			(pinfunction "IN2_3")
 			(pintype "input")
 			(uuid "448be745-5c72-496b-bf70-3957f15c962c")
 		)
@@ -5379,7 +5757,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GNDA")
-			(pinfunction "GND")
+			(pinfunction "GND_4")
 			(pintype "power_out")
 			(uuid "74b2d95e-1174-4741-bde6-b75b5be92d2e")
 		)
@@ -5389,7 +5767,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "-3V3")
-			(pinfunction "VSS")
+			(pinfunction "VSS_5")
 			(pintype "power_out")
 			(uuid "43f3cec3-fa31-4113-8a01-15aee685aa66")
 		)
@@ -5399,7 +5777,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U9-NC-Pad6)")
-			(pinfunction "NC")
+			(pinfunction "NC_6")
 			(pintype "no_connect")
 			(uuid "92c8e8b0-6f58-4164-afee-1e84b32d2534")
 		)
@@ -5409,7 +5787,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U10--)")
-			(pinfunction "S2")
+			(pinfunction "S2_7")
 			(pintype "passive")
 			(uuid "61ec461a-22b9-48f6-840d-bf9971fdde63")
 		)
@@ -5419,7 +5797,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U9-D2)")
-			(pinfunction "D2")
+			(pinfunction "D2_8")
 			(pintype "passive")
 			(uuid "583b5a1c-7214-4d9e-bd60-aa9e4f14d5ef")
 		)
@@ -5429,7 +5807,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/Sel0")
-			(pinfunction "IN1")
+			(pinfunction "IN1_9")
 			(pintype "input")
 			(uuid "ff4bc644-71e5-4491-88b8-a5d17770d995")
 		)
@@ -5439,7 +5817,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3.3VA")
-			(pinfunction "VDD")
+			(pinfunction "VDD_10")
 			(pintype "power_in")
 			(uuid "2a39f8d3-b48e-4516-a0c1-1407d33ea355")
 		)
@@ -5551,6 +5929,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/f6fc073f-507d-4a34-b02b-9bc66a2a45ac")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5665,7 +6049,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -5702,10 +6086,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "RC0402JR-0733RL"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "881e3861-6f84-4089-b0b0-f3e99d669177")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/a3ec68e2-704d-404c-97b0-00421b9ff8a8")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5878,7 +6281,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -5915,10 +6318,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "RC0603FR-0710KL"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "febca0d8-3cf3-461b-b464-8e8a9ded12e4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/376301f8-f9f7-4433-9efe-241e64a7e888")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6100,6 +6522,12 @@
 		(path "/6115fbd0-48ec-43ca-a7b9-7413d6899837")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6214,7 +6642,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6281,6 +6709,12 @@
 		(path "/26693920-544d-4562-968d-eb2f1af17507")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6395,7 +6829,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6438,6 +6872,12 @@
 		(path "/7cfee6f8-2ad4-4140-a6b6-c8af0de605d5")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6627,7 +7067,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1086956522)
 			(net "VBUS")
-			(pinfunction "K")
+			(pinfunction "K_1")
 			(pintype "passive")
 			(uuid "52d9906d-22fe-449b-9f8e-a9e12f9d4b6a")
 		)
@@ -6637,7 +7077,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1086956522)
 			(net "GND")
-			(pinfunction "A")
+			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "d658fdf7-1fd8-4d78-baac-063f8481a14e")
 		)
@@ -6682,7 +7122,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -6736,7 +7176,13 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/00000000-0000-0000-0000-0000615b2a9e")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
-		(attr smd)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 0.8 -0.735)
@@ -6846,7 +7292,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/VIN")
-			(pinfunction "K")
+			(pinfunction "K_1")
 			(pintype "passive")
 			(uuid "bd32bc65-a671-4a8c-a67a-9575c3c23a3c")
 		)
@@ -6856,7 +7302,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "-3V3")
-			(pinfunction "A")
+			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "981c04b8-be47-4828-ae19-c4a3f7ea5cd6")
 		)
@@ -6940,10 +7386,31 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "2086581001"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c9d8eeef-eb7b-4986-a9d4-1c5c6ad6659c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "HDMI*A*")
 		(path "/c5babca0-b8a2-43e7-aadd-dfaeb57226b8")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "4" "6" "7" "9" "10" "12" "13" "15" "16" "14" "19" "2"
+					"5" "18" "8" "11" "17" "SH"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7293,7 +7760,7 @@
 			(size 2.6 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(J6-D2+)")
-			(pinfunction "D2+")
+			(pinfunction "D2+_1")
 			(pintype "passive")
 			(uuid "1dce8f29-3658-4da8-98b2-387da6daab75")
 		)
@@ -7302,7 +7769,7 @@
 			(size 2.6 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "D2S")
+			(pinfunction "D2S_2")
 			(pintype "power_in")
 			(uuid "1e3d9c90-57fa-4744-93ff-c04dd7078def")
 		)
@@ -7311,7 +7778,7 @@
 			(size 2.6 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(J6-D2-)")
-			(pinfunction "D2-")
+			(pinfunction "D2-_3")
 			(pintype "passive")
 			(uuid "5c0543ea-ade8-4e88-a0dc-2ae846624d09")
 		)
@@ -7320,7 +7787,7 @@
 			(size 2.6 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(J6-D1+)")
-			(pinfunction "D1+")
+			(pinfunction "D1+_4")
 			(pintype "passive")
 			(uuid "4db3b54d-17b3-453d-9468-defe329ee87c")
 		)
@@ -7329,7 +7796,7 @@
 			(size 2.6 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "D1S")
+			(pinfunction "D1S_5")
 			(pintype "power_in")
 			(uuid "5b6208e2-f8b9-46e3-89e2-9162169a1d46")
 		)
@@ -7338,7 +7805,7 @@
 			(size 2.6 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(J6-D1-)")
-			(pinfunction "D1-")
+			(pinfunction "D1-_6")
 			(pintype "passive")
 			(uuid "67e767a3-f77e-4804-b829-032e4ecfbd0e")
 		)
@@ -7347,7 +7814,7 @@
 			(size 2.6 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(J6-D0+)")
-			(pinfunction "D0+")
+			(pinfunction "D0+_7")
 			(pintype "passive")
 			(uuid "4c5bd171-d973-4112-95d5-08d93a46f961")
 		)
@@ -7356,7 +7823,7 @@
 			(size 2.6 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "D0S")
+			(pinfunction "D0S_8")
 			(pintype "power_in")
 			(uuid "a407744c-a2e9-4d09-8d84-78bef87c7db4")
 		)
@@ -7365,7 +7832,7 @@
 			(size 2.6 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(J6-D0-)")
-			(pinfunction "D0-")
+			(pinfunction "D0-_9")
 			(pintype "passive")
 			(uuid "b972ac73-f5bc-4e00-864a-03ccdbfe7dfe")
 		)
@@ -7374,7 +7841,7 @@
 			(size 2.6 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(J6-CK+)")
-			(pinfunction "CK+")
+			(pinfunction "CK+_10")
 			(pintype "passive")
 			(uuid "4eff7d20-2eb4-4173-80b3-8078db0037ab")
 		)
@@ -7383,7 +7850,7 @@
 			(size 2.6 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "CKS")
+			(pinfunction "CKS_11")
 			(pintype "power_in")
 			(uuid "331b3732-ad6a-48e0-b84d-3f114a58f908")
 		)
@@ -7392,7 +7859,7 @@
 			(size 2.6 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(J6-CK-)")
-			(pinfunction "CK-")
+			(pinfunction "CK-_12")
 			(pintype "passive")
 			(uuid "9b8d7ef0-3924-4083-9595-6575f27f69b0")
 		)
@@ -7401,7 +7868,7 @@
 			(size 2.6 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(J6-CEC-Pad13)")
-			(pinfunction "CEC")
+			(pinfunction "CEC_13")
 			(pintype "bidirectional")
 			(uuid "daa8c830-7f4b-44fc-81dd-b8560a87e895")
 		)
@@ -7410,7 +7877,7 @@
 			(size 2.6 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(J6-UTILITY-Pad14)")
-			(pinfunction "UTILITY")
+			(pinfunction "UTILITY_14")
 			(pintype "passive")
 			(uuid "92c6878e-f675-4bb7-8bbe-d4759ca0f33b")
 		)
@@ -7419,7 +7886,7 @@
 			(size 2.6 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(J6-SCL-Pad15)")
-			(pinfunction "SCL")
+			(pinfunction "SCL_15")
 			(pintype "passive")
 			(uuid "ef471bc7-dd1b-4f98-a75f-2cc9227e1481")
 		)
@@ -7428,7 +7895,7 @@
 			(size 2.6 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(J6-SDA-Pad16)")
-			(pinfunction "SDA")
+			(pinfunction "SDA_16")
 			(pintype "bidirectional")
 			(uuid "2e7cf29c-0db3-409a-87fc-3fd4d929a9a7")
 		)
@@ -7437,7 +7904,7 @@
 			(size 2.6 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_17")
 			(pintype "power_in")
 			(uuid "c6dbaf40-82fe-4fd4-bf8e-518b002ca09c")
 		)
@@ -7446,7 +7913,7 @@
 			(size 2.6 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VDC")
-			(pinfunction "+5V")
+			(pinfunction "+5V_18")
 			(pintype "power_in")
 			(uuid "44b6ca1f-9b7d-4ee1-8716-f1cf7e3e13d8")
 		)
@@ -7455,7 +7922,7 @@
 			(size 2.6 0.3)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(J6-HPD)")
-			(pinfunction "HPD")
+			(pinfunction "HPD_19")
 			(pintype "passive")
 			(uuid "0629e955-e03f-41a2-b280-f47c47bbca51")
 		)
@@ -7466,7 +7933,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "SH")
+			(pinfunction "SH_SH")
 			(pintype "passive")
 			(uuid "0d45e38f-d099-4cdb-a464-ea4727b06385")
 		)
@@ -7477,7 +7944,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "SH")
+			(pinfunction "SH_SH")
 			(pintype "passive")
 			(uuid "e862e70c-0e05-443a-89e6-8af238b95c66")
 		)
@@ -7488,7 +7955,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "SH")
+			(pinfunction "SH_SH")
 			(pintype "passive")
 			(uuid "08ff39e6-64ba-4e59-97f4-17f9a706eaa6")
 		)
@@ -7499,7 +7966,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "SH")
+			(pinfunction "SH_SH")
 			(pintype "passive")
 			(uuid "0f6ca169-960b-4640-bc0f-8e446266db88")
 		)
@@ -7544,7 +8011,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -7585,6 +8052,12 @@
 		(path "/a61b0612-b2ce-436c-bbca-6f572a488572")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7964,7 +8437,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/VBat")
-			(pinfunction "Pin_1")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "7397cb75-beb9-42eb-a78b-9ee6d3c50b85")
 		)
@@ -7974,7 +8447,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
-			(pinfunction "Pin_2")
+			(pinfunction "Pin_2_2")
 			(pintype "passive")
 			(uuid "c882ce8a-1cef-42b6-9923-0e8bd62ccd1a")
 		)
@@ -8100,6 +8573,12 @@
 		(path "/664133b9-e63c-4981-ae21-43c8c7ab8983")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8214,7 +8693,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -8238,10 +8717,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "RC0603FR-0710KL"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "24a394d6-9349-4065-a21a-b44e8eb7a0d4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/8c8478c9-129f-49b7-b8d9-bb4e8d81905e")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8356,7 +8854,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -8380,10 +8878,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "CL21A226MQQNNNE"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "27eebedf-41c8-4e0d-8c74-c33d976ad29a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/4452b2fd-42e4-43f3-81d5-11a2092050ef")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8498,7 +9015,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -8535,10 +9052,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "CRCW04021K00FKED"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9d474dad-672d-4a2e-b62c-1002228f303e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/1baf75ce-b576-4e5b-a968-eae4e1150743")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8761,9 +9297,28 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "TLV3501AIDBVT"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "269a40f0-891d-4a46-ae39-46b63fc03950")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/00000000-0000-0000-0000-0000618b3afc")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "3" "1" "4" "2" "6" "5")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8987,7 +9542,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U14--)")
-			(pinfunction "-")
+			(pinfunction "-_1")
 			(pintype "input")
 			(uuid "be6e947a-343e-42f4-b300-64b8a9312b16")
 		)
@@ -9006,7 +9561,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U14-+)")
-			(pinfunction "+")
+			(pinfunction "+_3")
 			(pintype "input")
 			(uuid "e0b93835-4f0e-46ac-bb8e-da25a6f00619")
 		)
@@ -9145,6 +9700,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/16e28951-d288-46b1-9363-18f190213f01")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9259,7 +9820,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9283,10 +9844,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "CRCW0603453KFKEAC"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "02e151f0-5b35-4df2-8905-a5223b0a5714")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/9fa39217-365b-4e91-9ccc-afb2abe0a31f")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9468,6 +10048,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/00000000-0000-0000-0000-000061cbd34c")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9649,6 +10235,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/cdfe4e44-2eab-402e-947b-ae252aa0fa3f")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9763,7 +10355,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9791,7 +10383,13 @@
 		(path "/8493d957-8f72-4a0d-bfb2-5d7f5e77131d")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
+		(attr exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -9879,7 +10477,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -9920,6 +10518,12 @@
 		(path "/a4508228-dd38-46fa-aa5e-3f08d93631a1")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "MP")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10099,7 +10703,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/SWCLK")
-			(pinfunction "Pin_1")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "eecf4d33-a081-40a2-b082-18047138381e")
 		)
@@ -10109,7 +10713,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
-			(pinfunction "Pin_2")
+			(pinfunction "Pin_2_2")
 			(pintype "passive")
 			(uuid "9017a044-d67a-4050-969e-fb2cd8df09b1")
 		)
@@ -10119,7 +10723,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/SWD")
-			(pinfunction "Pin_3")
+			(pinfunction "Pin_3_3")
 			(pintype "passive")
 			(uuid "40fe280b-00e6-4cbd-bc87-622c276f3e7f")
 		)
@@ -10129,7 +10733,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
 			(net "GND")
-			(pinfunction "MountPin")
+			(pinfunction "MountPin_MP")
 			(pintype "passive")
 			(uuid "80aecc14-ce5f-4edb-97c8-7cd4dcdd21aa")
 		)
@@ -10139,7 +10743,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
 			(net "GND")
-			(pinfunction "MountPin")
+			(pinfunction "MountPin_MP")
 			(pintype "passive")
 			(uuid "5ac798c8-8b39-42e1-a3df-0503d6a3e844")
 		)
@@ -10251,6 +10855,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/00000000-0000-0000-0000-0000613313b8")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10415,9 +11025,28 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "DAC5571IDBVT"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "16f5c1a5-9789-45fc-8a1e-e2eb47657d5b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/00000000-0000-0000-0000-0000618c7c27")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "5" "4" "6" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10641,7 +11270,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U14--)")
-			(pinfunction "VOUT")
+			(pinfunction "VOUT_1")
 			(pintype "output")
 			(uuid "4619dce3-432c-4f74-b535-18b0a80dbc60")
 		)
@@ -10651,7 +11280,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GNDA")
-			(pinfunction "GND")
+			(pinfunction "GND_2")
 			(pintype "power_out")
 			(uuid "df087910-02d2-4124-ad44-bfa05695db3b")
 		)
@@ -10661,7 +11290,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3.3VA")
-			(pinfunction "VDD")
+			(pinfunction "VDD_3")
 			(pintype "power_in")
 			(uuid "1c7815b8-1b53-405c-9045-a44e8f1d9405")
 		)
@@ -10671,7 +11300,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/SCL")
-			(pinfunction "SDA")
+			(pinfunction "SDA_4")
 			(pintype "bidirectional")
 			(uuid "0bbf7136-57cf-4bac-b3fe-a1816806672b")
 		)
@@ -10681,7 +11310,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/SDA")
-			(pinfunction "SCL")
+			(pinfunction "SCL_5")
 			(pintype "input")
 			(uuid "3154f902-3676-46cb-aa7a-44a9d325a41d")
 		)
@@ -10691,7 +11320,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3.3VA")
-			(pinfunction "A0")
+			(pinfunction "A0_6")
 			(pintype "input")
 			(uuid "99bec6ab-3dc9-4e42-8cd1-09b9b3ada9ea")
 		)
@@ -10803,6 +11432,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/1cad3f2d-2cab-4039-9724-6b2771c1952b")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10917,7 +11552,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -10954,10 +11589,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "CL05A475MP5NRNC"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c8087222-b467-493c-84e5-2840baa9a9b7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/49804f0b-88e0-4255-82cf-7a091749a988")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11197,6 +11851,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/ef096a02-81e6-429e-935a-ad93962f0305")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11311,7 +11971,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -11348,10 +12008,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "CRGCQ0603J220R"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fc6bb455-382f-4f66-a4b3-94f860853b92")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2571f953-6263-4e54-915c-e61fc2a006ab")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11466,7 +12145,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11503,10 +12182,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "CL05A475MP5NRNC"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6b569023-9349-402d-bf0a-0b0c7759db25")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/838f2f8a-cee7-4869-ad9a-fcfb64bc990a")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11657,7 +12355,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -11694,10 +12392,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "RC0603FR-0710KL"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5603048b-cc69-4e0e-a24a-51cdbd18ac83")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/8fef86b9-8141-4505-adba-de9d57ce9b20")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11812,7 +12529,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -11862,10 +12579,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "BAT54WS-E3-08"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0f6a71dc-8863-46eb-bce1-73e0411689c7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/00000000-0000-0000-0000-000060e3413f")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11976,7 +12712,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3.3VA")
-			(pinfunction "K")
+			(pinfunction "K_1")
 			(pintype "passive")
 			(uuid "f7ff4f98-a0a7-4c3e-80bc-1eddc1d61f2e")
 		)
@@ -11986,7 +12722,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D1-A1)")
-			(pinfunction "A")
+			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "0352924f-dca2-4ac5-8942-7ff10f11ab45")
 		)
@@ -12098,6 +12834,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/15bdf9b9-6bfd-433a-9598-3ed39245c085")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12212,7 +12954,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -12249,10 +12991,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "CRGCQ0603J220R"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d7e02400-d1de-4aca-a080-ea6d5d2bf9f6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/9602045b-bba8-451b-b8a1-12104e998531")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12434,6 +13195,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/00000000-0000-0000-0000-000060b76641")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12548,7 +13315,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -12598,10 +13365,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "BAT54WS-E3-08"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f924d194-3226-4d3b-ad01-06a79fd55aee")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/00000000-0000-0000-0000-000060e34145")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12712,7 +13498,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D1-A1)")
-			(pinfunction "K")
+			(pinfunction "K_1")
 			(pintype "passive")
 			(uuid "adddd4f5-1b26-4a3e-aa64-9d97ef4cdeb9")
 		)
@@ -12722,7 +13508,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GNDA")
-			(pinfunction "A")
+			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "91851358-a8bb-408e-b7e6-cf0ffe72cd53")
 		)
@@ -12767,7 +13553,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -12804,10 +13590,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "AC0402JRNPO9BN100"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e38ce19e-d67e-4189-af9e-fe9e8cd2ad30")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-00005eeee897")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12981,7 +13786,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -13021,6 +13826,12 @@
 		(path "/bc559360-5dcd-43ea-8676-fb240b85ecc4")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13241,7 +14052,7 @@
 			(size 1.05 0.65)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "626d975c-b1d0-4f2d-ae03-d475b231722e")
 		)
@@ -13250,7 +14061,7 @@
 			(size 1.05 0.65)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "56915910-dbe1-422a-84cc-80a121bac239")
 		)
@@ -13259,7 +14070,7 @@
 			(size 1.05 0.65)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/~{USB_BOOT}")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "76105b6b-7a30-42ec-8e1d-11a03917ff14")
 		)
@@ -13268,7 +14079,7 @@
 			(size 1.05 0.65)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/~{USB_BOOT}")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "f8d0021f-6372-4488-800b-a02856332a1a")
 		)
@@ -13313,7 +14124,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -13380,6 +14191,12 @@
 		(path "/5967cc4b-feab-42c1-87b1-6b864d76e494")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13679,7 +14496,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/RX")
-			(pinfunction "Pin_1")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "ff3d4f37-ee07-40ed-913b-0d78d8a385a4")
 		)
@@ -13689,7 +14506,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
-			(pinfunction "Pin_2")
+			(pinfunction "Pin_2_2")
 			(pintype "passive")
 			(uuid "c61b238f-52e8-4144-8f31-55e624383b16")
 		)
@@ -13699,7 +14516,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/TX")
-			(pinfunction "Pin_3")
+			(pinfunction "Pin_3_3")
 			(pintype "passive")
 			(uuid "6a5fc9bd-20bc-47c9-a4f3-02db28853cdc")
 		)
@@ -13825,6 +14642,12 @@
 		(path "/1f31d035-7c3f-48c4-b08f-ec5a5c727eff")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14006,6 +14829,12 @@
 		(path "/1b89a059-e2e4-4210-917e-e31ae96ea378")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14187,6 +15016,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/d2d62fb2-b8b2-4eef-a751-042967a7dba7")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14301,7 +15136,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -14338,10 +15173,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "CRGCQ0603J220R"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "201b2c09-63b1-4ccb-b70e-ab62e81c31dd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2a2e7d5a-d755-45ff-851e-5a7a1a12e83c")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14523,6 +15377,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/acb396c5-152d-4cc9-8f52-050fa1919c3b")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14637,7 +15497,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14663,10 +15523,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "SS14"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "332cee19-b397-458e-8aff-d88bd0209c0a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/374dfa74-a9f3-4016-ae56-bee57fc13055")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14856,7 +15735,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1388888889)
 			(net "/VBoost")
-			(pinfunction "K")
+			(pinfunction "K_1")
 			(pintype "passive")
 			(uuid "59e30883-e1de-4c7f-b3e3-82e712c5fee0")
 		)
@@ -14866,7 +15745,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1388888889)
 			(net "Net-(D5-A)")
-			(pinfunction "A")
+			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "9837bad6-a1f2-435b-9daf-70040ece156d")
 		)
@@ -14978,6 +15857,12 @@
 		(path "/3f5e82b1-0749-4f46-b231-ef49fed41dca")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15116,7 +16001,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C701580"
+		(property "LCSC Part #" "C701069"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15142,7 +16027,7 @@
 				)
 			)
 		)
-		(property "MFR. Part #" "ADC08060CIMTX/NOPB"
+		(property "MFR. Part #" "TI ADC08060CIMT/NOPB"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15158,6 +16043,14 @@
 		(path "/00000000-0000-0000-0000-000060bdae88")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "6" "7" "3" "9" "10" "18" "1" "4" "12" "22" "21" "20" "19" "16"
+					"15" "14" "13" "24" "23" "17" "2" "5" "8" "11"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15341,7 +16234,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3.3VA")
-			(pinfunction "VA")
+			(pinfunction "VA_1")
 			(pintype "unspecified")
 			(uuid "210c121d-8dc0-4a79-90f7-7671ac7d9795")
 		)
@@ -15351,7 +16244,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GNDA")
-			(pinfunction "AGND")
+			(pinfunction "AGND_2")
 			(pintype "unspecified")
 			(uuid "6bdc314d-a661-4439-9855-bc85785c3da7")
 		)
@@ -15361,7 +16254,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/VREF")
-			(pinfunction "VRT")
+			(pinfunction "VRT_3")
 			(pintype "unspecified")
 			(uuid "27167015-b213-410d-ab87-bd492cf6ebb1")
 		)
@@ -15371,7 +16264,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3.3VA")
-			(pinfunction "VA")
+			(pinfunction "VA_4")
 			(pintype "unspecified")
 			(uuid "76ba8331-5a32-488d-87b9-f021de7b5b79")
 		)
@@ -15381,7 +16274,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GNDA")
-			(pinfunction "AGND")
+			(pinfunction "AGND_5")
 			(pintype "unspecified")
 			(uuid "1ce56f20-b5d9-4296-94f3-a6df85898200")
 		)
@@ -15391,7 +16284,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/VIN")
-			(pinfunction "VIN")
+			(pinfunction "VIN_6")
 			(pintype "unspecified")
 			(uuid "816b4aeb-c273-4118-ba40-0ad30dc80bc6")
 		)
@@ -15401,7 +16294,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GNDA")
-			(pinfunction "VIN_GND")
+			(pinfunction "VIN_GND_7")
 			(pintype "unspecified")
 			(uuid "1a61c236-269a-4e88-b30a-63ccd762523c")
 		)
@@ -15411,7 +16304,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GNDA")
-			(pinfunction "AGND")
+			(pinfunction "AGND_8")
 			(pintype "unspecified")
 			(uuid "178eb1ad-539e-4a4a-876c-da67ec957006")
 		)
@@ -15421,7 +16314,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U7-VRM)")
-			(pinfunction "VRM")
+			(pinfunction "VRM_9")
 			(pintype "unspecified")
 			(uuid "f7f19b9e-963a-42e4-ab96-0a1be4043450")
 		)
@@ -15431,7 +16324,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GNDA")
-			(pinfunction "VRB")
+			(pinfunction "VRB_10")
 			(pintype "unspecified")
 			(uuid "fe540ef8-9140-4b7b-b893-ad19db392d94")
 		)
@@ -15441,7 +16334,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GNDA")
-			(pinfunction "AGND")
+			(pinfunction "AGND_11")
 			(pintype "unspecified")
 			(uuid "033cbc4f-426e-430c-9917-ba8191c303ed")
 		)
@@ -15451,7 +16344,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3.3VA")
-			(pinfunction "VA")
+			(pinfunction "VA_12")
 			(pintype "unspecified")
 			(uuid "9a8d5474-180f-48f3-bf23-66697eaad463")
 		)
@@ -15461,7 +16354,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/D7")
-			(pinfunction "D7")
+			(pinfunction "D7_13")
 			(pintype "unspecified")
 			(uuid "e7cf7d98-ca2c-40c3-9096-7b17ba674627")
 		)
@@ -15471,7 +16364,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/D6")
-			(pinfunction "D6")
+			(pinfunction "D6_14")
 			(pintype "unspecified")
 			(uuid "1c82cb92-1197-4950-a60f-9062269c5a44")
 		)
@@ -15481,7 +16374,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/D5")
-			(pinfunction "D5")
+			(pinfunction "D5_15")
 			(pintype "unspecified")
 			(uuid "b859cd96-8489-448a-9f15-93688da1bb55")
 		)
@@ -15491,7 +16384,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/D4")
-			(pinfunction "D4")
+			(pinfunction "D4_16")
 			(pintype "unspecified")
 			(uuid "2893f28e-ab2f-4561-8de7-0dac1d571d12")
 		)
@@ -15501,7 +16394,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
-			(pinfunction "DRGND")
+			(pinfunction "DRGND_17")
 			(pintype "unspecified")
 			(uuid "0f1cfc39-b5e9-473a-9613-08c68817360a")
 		)
@@ -15511,7 +16404,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3.3V")
-			(pinfunction "DRVD")
+			(pinfunction "DRVD_18")
 			(pintype "unspecified")
 			(uuid "f0b0c674-c275-4d65-8026-f204b88d1736")
 		)
@@ -15521,7 +16414,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/D3")
-			(pinfunction "D3")
+			(pinfunction "D3_19")
 			(pintype "unspecified")
 			(uuid "61e1f38a-b027-4f3a-8d76-b23b61a18097")
 		)
@@ -15531,7 +16424,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/D2")
-			(pinfunction "D2")
+			(pinfunction "D2_20")
 			(pintype "unspecified")
 			(uuid "2af2d31e-c85d-4099-bc8d-446a5e9ab176")
 		)
@@ -15541,7 +16434,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/D1")
-			(pinfunction "D1")
+			(pinfunction "D1_21")
 			(pintype "unspecified")
 			(uuid "f11c1ccd-7d60-420d-968c-3c7a7414d116")
 		)
@@ -15551,7 +16444,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/D0")
-			(pinfunction "D0")
+			(pinfunction "D0_22")
 			(pintype "unspecified")
 			(uuid "c0c85058-5e0c-4f8f-9aa4-c91bbce3367f")
 		)
@@ -15561,7 +16454,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
-			(pinfunction "PD")
+			(pinfunction "PD_23")
 			(pintype "unspecified")
 			(uuid "3109c1e6-c294-4971-92aa-b6078e01eab8")
 		)
@@ -15571,7 +16464,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U7-CLK)")
-			(pinfunction "CLK")
+			(pinfunction "CLK_24")
 			(pintype "unspecified")
 			(uuid "aed3ad57-3b0c-49ed-ba9b-a9ba3ef092a2")
 		)
@@ -15616,7 +16509,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -15640,10 +16533,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "RMCF0603FT73K2"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a67efa23-c3ee-4564-a9b1-10200dab3021")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/f6a1dd2c-87d1-4254-a90b-6fcc326c4f5b")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15825,6 +16737,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/00000000-0000-0000-0000-000061ce0ad6")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15939,7 +16857,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -15980,7 +16898,13 @@
 		(path "/3db98b1e-e9a5-4763-9a2b-bb7198355dd3")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
-		(attr smd)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.153641 0.38)
@@ -16152,7 +17076,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -16176,10 +17100,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "RC0603FR-07100KL"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1cdf6840-a07d-43f9-be22-cf47410d0863")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/1e561ee1-73e0-45c6-b8ae-f4b753db94e0")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16361,6 +17304,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/3702735c-ac6e-42e6-a38c-c75ef780c1c8")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16475,7 +17424,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -16512,10 +17461,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "CL05A475MP5NRNC"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "01eb0e22-3442-471e-a8ac-b91dbf0eb36b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/cb0f1e5d-e572-4f44-8a4a-6f7f23812888")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16666,7 +17634,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -16703,10 +17671,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "RC0402JR-070RL"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "18bb675f-1374-487b-a56e-e3eb90f1b3bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/7ae9859a-73a1-4269-9b3f-9bfb7e096fa4")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16907,10 +17894,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "TPS2116DRLR"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f79816c3-ce11-4abd-b8e5-f592a8f4c6ee")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "SOT?5?3*")
 		(path "/677b3cb5-d828-427d-94b9-3de5c801a2ab")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "3" "4" "5" "6" "1" "7" "2" "8")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17053,7 +18059,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1666666667)
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_1")
 			(pintype "power_in")
 			(thermal_bridge_angle 45)
 			(uuid "1f2150f2-b987-4278-b779-f36d9ac996ed")
@@ -17064,7 +18070,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1666666667)
 			(net "VDC")
-			(pinfunction "VOUT")
+			(pinfunction "VOUT_2")
 			(pintype "power_out")
 			(thermal_bridge_angle 45)
 			(uuid "a98e6957-5340-40a3-8474-61caff0c1582")
@@ -17075,7 +18081,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1666666667)
 			(net "VBUS")
-			(pinfunction "VIN1")
+			(pinfunction "VIN1_3")
 			(pintype "power_in")
 			(thermal_bridge_angle 45)
 			(uuid "b2fa86f8-e5f6-4d00-bfc5-f630d84dcd90")
@@ -17086,7 +18092,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1666666667)
 			(net "Net-(U5-PR1)")
-			(pinfunction "PR1")
+			(pinfunction "PR1_4")
 			(pintype "input")
 			(thermal_bridge_angle 45)
 			(uuid "2afbc7ba-580f-4028-88ad-26305bb69992")
@@ -17097,7 +18103,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1666666667)
 			(net "VBUS")
-			(pinfunction "MODE")
+			(pinfunction "MODE_5")
 			(pintype "input")
 			(thermal_bridge_angle 45)
 			(uuid "f995c165-b3a2-41bb-b387-0e9fb494fba6")
@@ -17108,7 +18114,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1666666667)
 			(net "/VBoost")
-			(pinfunction "VIN2")
+			(pinfunction "VIN2_6")
 			(pintype "power_in")
 			(thermal_bridge_angle 45)
 			(uuid "a839bd88-711f-49ca-bf15-065dd50407fa")
@@ -17119,7 +18125,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1666666667)
 			(net "VDC")
-			(pinfunction "VOUT")
+			(pinfunction "VOUT_7")
 			(pintype "power_out")
 			(thermal_bridge_angle 45)
 			(uuid "68aff812-be9d-4cf4-9aa4-571d34d90887")
@@ -17130,7 +18136,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.1666666667)
 			(net "/PowerStatus")
-			(pinfunction "ST")
+			(pinfunction "ST_8")
 			(pintype "open_collector")
 			(thermal_bridge_angle 45)
 			(uuid "61b8022d-7842-4bb5-9047-0cea3804ac10")
@@ -17221,6 +18227,14 @@
 		(path "/37098636-4cdd-490f-a094-b494beea25b4")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "S1" "B1" "B12" "A1" "A12" "A9" "B4" "B9" "A4" "A5" "B5" "A7" "B7"
+					"A6" "B6" "A8" "B8"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17319,7 +18333,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_A1")
 			(pintype "passive")
 			(uuid "30125f5b-44e0-4cc8-b4ba-ec85494d746b")
 		)
@@ -17329,7 +18343,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(F1-Pad1)")
-			(pinfunction "VBUS")
+			(pinfunction "VBUS_A4")
 			(pintype "passive")
 			(uuid "7b2e2a45-3a65-4f88-b787-e80640ee186f")
 		)
@@ -17339,7 +18353,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(J1-CC1)")
-			(pinfunction "CC1")
+			(pinfunction "CC1_A5")
 			(pintype "bidirectional")
 			(uuid "216bced8-fb90-4197-a4e4-51e649f7c2bf")
 		)
@@ -17349,7 +18363,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/USB_D+")
-			(pinfunction "D+")
+			(pinfunction "D+_A6")
 			(pintype "bidirectional")
 			(uuid "fdb92d3d-1bef-4077-a770-c961351641ee")
 		)
@@ -17359,7 +18373,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/USB_D-")
-			(pinfunction "D-")
+			(pinfunction "D-_A7")
 			(pintype "bidirectional")
 			(uuid "2c777075-cd6f-4aab-8b36-14e5c5fa7c1c")
 		)
@@ -17369,7 +18383,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "unconnected-(J1-SBU1-PadA8)")
-			(pinfunction "SBU1")
+			(pinfunction "SBU1_A8")
 			(pintype "bidirectional")
 			(uuid "f9a951e8-da95-4857-a730-7ba69f204e62")
 		)
@@ -17379,7 +18393,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(F1-Pad1)")
-			(pinfunction "VBUS")
+			(pinfunction "VBUS_A9")
 			(pintype "passive")
 			(uuid "c9099047-2070-429c-ab8b-4aef7600af0f")
 		)
@@ -17389,7 +18403,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_A12")
 			(pintype "passive")
 			(uuid "d2da6624-f23e-4a40-abd1-1e604a9a6551")
 		)
@@ -17399,7 +18413,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_B1")
 			(pintype "passive")
 			(uuid "55af36a7-33c9-4b43-afb1-5348d6f4d3d6")
 		)
@@ -17409,7 +18423,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(F1-Pad1)")
-			(pinfunction "VBUS")
+			(pinfunction "VBUS_B4")
 			(pintype "passive")
 			(uuid "899a055a-8e3d-4319-81c4-8053a2b34d74")
 		)
@@ -17419,7 +18433,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(J1-CC2)")
-			(pinfunction "CC2")
+			(pinfunction "CC2_B5")
 			(pintype "bidirectional")
 			(uuid "75affd1a-085b-487e-a618-0fc9408c7c21")
 		)
@@ -17429,7 +18443,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/USB_D+")
-			(pinfunction "D+")
+			(pinfunction "D+_B6")
 			(pintype "bidirectional")
 			(uuid "599c19cf-5217-4e76-a15c-8d35000fb916")
 		)
@@ -17439,7 +18453,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/USB_D-")
-			(pinfunction "D-")
+			(pinfunction "D-_B7")
 			(pintype "bidirectional")
 			(uuid "f41aaec3-e19f-4ef6-960f-47caf604f43b")
 		)
@@ -17449,7 +18463,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "unconnected-(J1-SBU2-PadB8)")
-			(pinfunction "SBU2")
+			(pinfunction "SBU2_B8")
 			(pintype "bidirectional")
 			(uuid "a0f3907f-ef99-49eb-81fd-59aabdfed491")
 		)
@@ -17459,7 +18473,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(F1-Pad1)")
-			(pinfunction "VBUS")
+			(pinfunction "VBUS_B9")
 			(pintype "passive")
 			(uuid "e07c12b8-841a-42b2-a0ba-b20bce04fb8d")
 		)
@@ -17469,7 +18483,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_B12")
 			(pintype "passive")
 			(uuid "475ecedd-04d2-4f40-a313-40421373d163")
 		)
@@ -17481,7 +18495,7 @@
 			(layers "*.Cu" "*.Mask" "F.Paste")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "SHIELD")
+			(pinfunction "SHIELD_S1")
 			(pintype "passive")
 			(uuid "28a07916-c905-41d1-b24f-35d13ba0f082")
 		)
@@ -17493,7 +18507,7 @@
 			(layers "*.Cu" "*.Mask" "F.Paste")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "SHIELD")
+			(pinfunction "SHIELD_S1")
 			(pintype "passive")
 			(uuid "47318aa3-7f57-4d38-b338-74c04df8a178")
 		)
@@ -17505,7 +18519,7 @@
 			(layers "*.Cu" "*.Mask" "F.Paste")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "SHIELD")
+			(pinfunction "SHIELD_S1")
 			(pintype "passive")
 			(uuid "2f1d2a3f-8f90-43be-a779-078576985a25")
 		)
@@ -17517,7 +18531,7 @@
 			(layers "*.Cu" "*.Mask" "F.Paste")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "SHIELD")
+			(pinfunction "SHIELD_S1")
 			(pintype "passive")
 			(uuid "22762944-9719-4e48-96e7-814c4caa4cf6")
 		)
@@ -17629,6 +18643,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/00000000-0000-0000-0000-00006111f701")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17743,7 +18763,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -17780,10 +18800,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "CRCW04021K00FKED"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8e3b131b-17b1-45de-9a49-307ae6acd7f9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/919c1793-0fcf-4575-8c6c-eda756a79fa2")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17956,7 +18995,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -18010,6 +19049,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/a2b0e4a2-22c8-4695-9d6b-e4903e9094ad")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18191,6 +19236,12 @@
 		(path "/6027fce4-a06a-41f7-9e85-fd8a3d9ff8ba")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18372,6 +19423,12 @@
 		(path "/00000000-0000-0000-0000-000060d66a42")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18486,7 +19543,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -18523,10 +19580,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "CL05A475MP5NRNC"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a1be5a8e-28b0-4404-879b-f0b08b25e804")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/afc5815d-d894-4cd1-ba9b-a5ec9f40998e")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18817,6 +19893,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/c6abaa6a-914a-465c-8ed8-f4db75a13c93")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "3" "4" "5" "2" "1")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19108,7 +20190,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D1-A1)")
-			(pinfunction "+")
+			(pinfunction "+_3")
 			(pintype "input")
 			(uuid "5889ace1-0544-4f08-a4a1-641fad60fc08")
 		)
@@ -19118,7 +20200,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U10-+)")
-			(pinfunction "-")
+			(pinfunction "-_4")
 			(pintype "input")
 			(uuid "18a8d4c0-fb0c-4a88-9529-5fd20c0f8293")
 		)
@@ -19172,7 +20254,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -19209,7 +20291,7 @@
 				)
 			)
 		)
-		(property "MFR. Part #" "RC0603FR-0710KL"
+		(property "MFR. Part #" "ERJ-3EKF1000V"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19226,6 +20308,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/fe7da31d-b558-4f3b-afd0-b373647a6259")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19340,7 +20428,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -19377,10 +20465,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "CRGCQ0603J220R"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "505106f9-37da-4173-9bb8-4acefa3b72af")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/ab600144-7076-404d-9778-c44a8345aec1")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19533,10 +20640,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "731000105"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6454c6ca-8381-4def-9fb1-3285781d3d3e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "CONN_73100-0105_MOL")
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/2b05da92-7cec-4424-9d69-696429367c96")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19836,7 +20962,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(J7-Pad1)")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "2b2a02b9-265f-4b7f-a2d5-11bc0a36c684")
 		)
@@ -19847,7 +20973,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GNDA")
-			(pinfunction "GND")
+			(pinfunction "GND_2")
 			(pintype "passive")
 			(uuid "5bd5213d-4158-4781-bb76-58e52d45c165")
 		)
@@ -19858,7 +20984,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GNDA")
-			(pinfunction "GND")
+			(pinfunction "GND_2")
 			(pintype "passive")
 			(uuid "4ccd287e-d6f3-46c5-84aa-99ff8d402231")
 		)
@@ -19970,6 +21096,12 @@
 		(path "/c53a1f41-f935-4eb7-b368-cb5c45f6292a")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20084,7 +21216,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -20108,10 +21240,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "RC0603FR-0710KL"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f9e5e20d-ec94-4e0b-aeaf-4f87cf3c1a0d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/b7412abf-7809-44c0-b0c6-65d0bc689506")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20226,7 +21377,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -20280,6 +21431,12 @@
 		(path "/15c69732-322b-4f54-8ab8-c57964b87090")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20394,7 +21551,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -20418,10 +21575,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "CL21A226MQQNNNE"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f90ee703-8ff8-46f4-8829-f2819e40bd50")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/19953e3e-c6fa-47cc-b6d9-ade49f24ccd2")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20603,6 +21779,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/b2500510-c730-428b-b481-597221d09392")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20717,7 +21899,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -20771,6 +21953,12 @@
 		(path "/46ae1052-afa2-4949-9dea-7cf230102ece")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20952,6 +22140,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/0d659f04-eeb9-49dd-996b-ef06c312882a")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21133,6 +22327,12 @@
 		(path "/6cade4a5-cfe1-4715-bb99-cc0c30838cfa")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21247,7 +22447,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -21288,6 +22488,12 @@
 		(path "/b1af8586-6f72-4158-b296-102cd4837dbe")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21439,7 +22645,7 @@
 				)
 			)
 		)
-		(property "MFR. Part #" "0603WAF1000T5E"
+		(property "MFR. Part #" "ERJ-3EKF1000V"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -21469,6 +22675,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/00000000-0000-0000-0000-0000613313ae")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21650,6 +22862,12 @@
 		(path "/fe3d096d-c6a8-458b-bc0d-916b568ab12a")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21866,9 +23084,28 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "LMH6629MFX/NOPB"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e61088e9-624a-4874-a1cb-f1656e888a5f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/00000000-0000-0000-0000-000060ee511b")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "3" "4" "5" "2" "1")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -22160,7 +23397,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U10-+)")
-			(pinfunction "+")
+			(pinfunction "+_3")
 			(pintype "input")
 			(uuid "e3b54502-7db7-452b-848c-195316ad573d")
 		)
@@ -22170,7 +23407,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U10--)")
-			(pinfunction "-")
+			(pinfunction "-_4")
 			(pintype "input")
 			(uuid "d46c04da-3409-4127-8b77-124d20e0f56f")
 		)
@@ -22291,6 +23528,12 @@
 		(path "/3482b4c3-1b53-43fd-876d-fa10350fb2a2")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -22429,10 +23672,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "TLV62568DBVR"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "afbb6379-982f-466e-965a-3832ed2c9241")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/612cb58c-f191-4d6e-bb6a-3e7ff5bc9fc9")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "4" "1" "2" "3" "5")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -22706,7 +23968,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U17-EN)")
-			(pinfunction "EN")
+			(pinfunction "EN_1")
 			(pintype "input")
 			(uuid "e342469b-c894-43db-8d1b-4c7b3afec8de")
 		)
@@ -22716,7 +23978,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_2")
 			(pintype "power_in")
 			(uuid "1966da6e-2f5b-4c04-8a47-fb47d1bf1f3d")
 		)
@@ -22726,7 +23988,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U17-SW)")
-			(pinfunction "SW")
+			(pinfunction "SW_3")
 			(pintype "power_out")
 			(uuid "f57f2994-91fe-4d13-b2c0-89a6357d71a4")
 		)
@@ -22736,7 +23998,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "VDC")
-			(pinfunction "VIN")
+			(pinfunction "VIN_4")
 			(pintype "power_in")
 			(uuid "d960ce5b-4269-4ee6-a9ba-dbe3e44bfe40")
 		)
@@ -22746,7 +24008,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U17-FB)")
-			(pinfunction "FB")
+			(pinfunction "FB_5")
 			(pintype "input")
 			(uuid "027557a7-af72-437e-a762-e5eb104ec3ff")
 		)
@@ -22826,9 +24088,34 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "RP2354B"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "723d677f-ae71-4ab4-af19-3576c851ecb0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/c7fb2975-ddad-4934-98e4-654ec059c3d7")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "61" "64" "65" "63" "62" "75" "72" "74" "73" "70" "71" "30" "31"
+					"35" "33" "34" "51" "32" "10" "69" "76" "60" "81" "50" "41" "24" "15"
+					"29" "5" "68" "59" "67" "66" "77" "78" "79" "80" "1" "2" "3" "4" "6"
+					"7" "8" "9" "11" "12" "13" "14" "16" "17" "18" "19" "20" "21" "22" "23"
+					"25" "26" "27" "28" "36" "37" "38" "39" "40" "42" "43" "44" "45" "46"
+					"47" "48" "49" "52" "53" "54" "55" "56" "57" "58"
+				)
+			)
+		)
 		(zone_connect 2)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -23030,7 +24317,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/TRIG")
-			(pinfunction "GPIO4")
+			(pinfunction "GPIO4_1")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "38cca9b4-3617-49b6-b9ac-26fa68cb054b")
@@ -23041,7 +24328,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/Sel0")
-			(pinfunction "GPIO5")
+			(pinfunction "GPIO5_2")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "294de91f-33ee-444c-82fe-9856b08b511e")
@@ -23052,7 +24339,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/Sel1")
-			(pinfunction "GPIO6")
+			(pinfunction "GPIO6_3")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "ba9f9ba9-1cfe-41fb-8605-052208eb008f")
@@ -23063,7 +24350,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/PowerStatus")
-			(pinfunction "GPIO7")
+			(pinfunction "GPIO7_4")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "1068bd70-c9c7-47bb-9d40-f28d21fe7c80")
@@ -23074,7 +24361,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3.3V")
-			(pinfunction "IOVDD")
+			(pinfunction "IOVDD_5")
 			(pintype "power_in")
 			(thermal_bridge_angle 45)
 			(uuid "bae72a97-f94c-4c08-a824-89e661989bcb")
@@ -23085,7 +24372,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/SD_D0")
-			(pinfunction "GPIO8")
+			(pinfunction "GPIO8_6")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "87c74144-f303-462d-89a2-c16d35717244")
@@ -23096,7 +24383,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/CSSD")
-			(pinfunction "GPIO9")
+			(pinfunction "GPIO9_7")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "374e8023-66c5-4b88-80f1-7923d98c4c64")
@@ -23107,7 +24394,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/CLKSD")
-			(pinfunction "GPIO10")
+			(pinfunction "GPIO10_8")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "2ed064ff-86e7-4480-a4ec-cfcc4add93d3")
@@ -23118,7 +24405,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/DISD")
-			(pinfunction "GPIO11")
+			(pinfunction "GPIO11_9")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "5a7e125a-5afd-44de-9f87-9d82005b82d0")
@@ -23129,7 +24416,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+1V1")
-			(pinfunction "DVDD")
+			(pinfunction "DVDD_10")
 			(pintype "power_in")
 			(thermal_bridge_angle 45)
 			(uuid "4bd6dfea-d9b6-4efc-a22f-a8256efb58dd")
@@ -23140,7 +24427,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/HDMI_D2P")
-			(pinfunction "GPIO12")
+			(pinfunction "GPIO12_11")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "f7b9c516-bf1a-455c-a6a3-0c2869fe1003")
@@ -23151,7 +24438,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/HDMI_D2N")
-			(pinfunction "GPIO13")
+			(pinfunction "GPIO13_12")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "d3060d7f-b813-466d-9829-83ca09827395")
@@ -23162,7 +24449,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/HDMI_CKP")
-			(pinfunction "GPIO14")
+			(pinfunction "GPIO14_13")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "2c44a9af-2253-4974-b3ff-3643335da70f")
@@ -23173,7 +24460,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/HDMI_CKN")
-			(pinfunction "GPIO15")
+			(pinfunction "GPIO15_14")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "5826f82c-aa5e-4e8f-bc30-1838e757f034")
@@ -23184,7 +24471,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3.3V")
-			(pinfunction "IOVDD")
+			(pinfunction "IOVDD_15")
 			(pintype "power_in")
 			(thermal_bridge_angle 45)
 			(uuid "a11e2d72-ded9-4205-9de0-b8e7d41aa9c7")
@@ -23195,7 +24482,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/HDMI_D1P")
-			(pinfunction "GPIO16")
+			(pinfunction "GPIO16_16")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "cced8634-13c0-4c2a-87ec-3f8d979c5d7a")
@@ -23206,7 +24493,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/HDMI_D1N")
-			(pinfunction "GPIO17")
+			(pinfunction "GPIO17_17")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "ce22de31-a099-4261-b84c-cd8f36111da7")
@@ -23217,7 +24504,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/HDMI_D0P")
-			(pinfunction "GPIO18")
+			(pinfunction "GPIO18_18")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "4c0d5213-eacb-4000-834e-728d66005a8f")
@@ -23228,7 +24515,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/HDMI_D0N")
-			(pinfunction "GPIO19")
+			(pinfunction "GPIO19_19")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "3735fcf5-1aca-454f-9493-4da950d5a879")
@@ -23239,7 +24526,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/SDA")
-			(pinfunction "GPIO20")
+			(pinfunction "GPIO20_20")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "4669a55b-0d80-4073-ba7d-f10aed556b68")
@@ -23250,7 +24537,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/SCL")
-			(pinfunction "GPIO21")
+			(pinfunction "GPIO21_21")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "7eb5db89-dfe4-43d7-aad5-ce9da765c521")
@@ -23261,7 +24548,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/CDSD")
-			(pinfunction "GPIO22")
+			(pinfunction "GPIO22_22")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "5ae0b443-1189-4aff-85d0-8a6b77a8bd07")
@@ -23272,7 +24559,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/ROTCLK")
-			(pinfunction "GPIO23")
+			(pinfunction "GPIO23_23")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "9090fca7-b476-417a-bac4-a44b1a5b7c4a")
@@ -23283,7 +24570,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3.3V")
-			(pinfunction "IOVDD")
+			(pinfunction "IOVDD_24")
 			(pintype "power_in")
 			(thermal_bridge_angle 45)
 			(uuid "288316c4-c838-4595-8253-6a46f5c2f83c")
@@ -23294,7 +24581,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/ROTDT")
-			(pinfunction "GPIO24")
+			(pinfunction "GPIO24_25")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "6361d21e-43f3-4605-934b-4d8e826821f2")
@@ -23305,7 +24592,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/ROTSW")
-			(pinfunction "GPIO25")
+			(pinfunction "GPIO25_26")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "08184577-010c-4f6c-a47d-1f748f90794c")
@@ -23316,7 +24603,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/Backlight")
-			(pinfunction "GPIO26")
+			(pinfunction "GPIO26_27")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "03ff0539-f735-4cf6-91f4-37dbbd698a28")
@@ -23327,7 +24614,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/D{slash}C")
-			(pinfunction "GPIO27")
+			(pinfunction "GPIO27_28")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "72b9d2c8-867a-4d7e-85c1-69334cc76323")
@@ -23338,7 +24625,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3.3V")
-			(pinfunction "IOVDD")
+			(pinfunction "IOVDD_29")
 			(pintype "power_in")
 			(thermal_bridge_angle 45)
 			(uuid "bb9e87e6-bd53-4ed5-b6b5-8ca39755fa05")
@@ -23349,7 +24636,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/XIN")
-			(pinfunction "XIN")
+			(pinfunction "XIN_30")
 			(pintype "input")
 			(thermal_bridge_angle 45)
 			(uuid "1db6f202-14f1-4ee1-b5b8-6e586bbec4fb")
@@ -23360,7 +24647,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/XOUT")
-			(pinfunction "XOUT")
+			(pinfunction "XOUT_31")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "468f1f87-4ce9-4940-9ae1-639a298a5d61")
@@ -23371,7 +24658,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+1V1")
-			(pinfunction "DVDD")
+			(pinfunction "DVDD_32")
 			(pintype "power_in")
 			(thermal_bridge_angle 45)
 			(uuid "84339057-8cad-4e32-81ee-c2d7befc29f8")
@@ -23382,7 +24669,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/SWCLK")
-			(pinfunction "SWCLK")
+			(pinfunction "SWCLK_33")
 			(pintype "output")
 			(thermal_bridge_angle 45)
 			(uuid "352a2e73-516d-4e43-a44a-9460edf944b1")
@@ -23393,7 +24680,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/SWD")
-			(pinfunction "SWD")
+			(pinfunction "SWD_34")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "5e363585-2d78-4a84-9c72-e1b65176ceb4")
@@ -23404,7 +24691,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/RUN")
-			(pinfunction "RUN")
+			(pinfunction "RUN_35")
 			(pintype "input")
 			(thermal_bridge_angle 45)
 			(uuid "5847517a-f049-49ca-b250-beba1edb3920")
@@ -23415,7 +24702,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/TX")
-			(pinfunction "GPIO28")
+			(pinfunction "GPIO28_36")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "212a5b18-82c4-4dbc-ae02-b5b8f7faf0f4")
@@ -23426,7 +24713,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/RX")
-			(pinfunction "GPIO29")
+			(pinfunction "GPIO29_37")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "f6c5c21f-9d76-49ad-9208-2c9698e845cd")
@@ -23436,8 +24723,8 @@
 			(size 0.22 0.78)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/GPIO30")
-			(pinfunction "GPIO30")
+			(net "unconnected-(U4-GPIO30-Pad38)")
+			(pinfunction "GPIO30_38")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "132c8e19-ec27-4303-902d-c36c8af729d1")
@@ -23448,7 +24735,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/GPIO31")
-			(pinfunction "GPIO31")
+			(pinfunction "GPIO31_39")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "e510887a-83ec-4514-8f16-75fd555c081f")
@@ -23459,7 +24746,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/D0")
-			(pinfunction "GPIO32")
+			(pinfunction "GPIO32_40")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "ffb9c035-3b7d-4a65-8e1b-4c9209a6ba44")
@@ -23470,7 +24757,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3.3V")
-			(pinfunction "IOVDD")
+			(pinfunction "IOVDD_41")
 			(pintype "power_in")
 			(thermal_bridge_angle 45)
 			(uuid "66b1f049-00c8-431e-937a-dad499f9b989")
@@ -23481,7 +24768,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/D1")
-			(pinfunction "GPIO33")
+			(pinfunction "GPIO33_42")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "652f318e-75cb-41bd-b5a2-fc2f0cdeb568")
@@ -23492,7 +24779,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/D2")
-			(pinfunction "GPIO34")
+			(pinfunction "GPIO34_43")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "d36a4720-3d3d-480c-898d-35e2c4bdf869")
@@ -23503,7 +24790,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/D3")
-			(pinfunction "GPIO35")
+			(pinfunction "GPIO35_44")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "53482767-8cf2-4a55-98ee-251a536179d1")
@@ -23514,7 +24801,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/D4")
-			(pinfunction "GPIO36")
+			(pinfunction "GPIO36_45")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "dced9c9c-5e2a-4d5b-a332-8ef9a49b187e")
@@ -23525,7 +24812,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/D5")
-			(pinfunction "GPIO37")
+			(pinfunction "GPIO37_46")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "cc90b2c3-1cec-4f9b-b190-8ffd75f7ba75")
@@ -23536,7 +24823,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/D6")
-			(pinfunction "GPIO38")
+			(pinfunction "GPIO38_47")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "beedc58a-7e0f-468a-a448-8b4369051d0c")
@@ -23547,7 +24834,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/D7")
-			(pinfunction "GPIO39")
+			(pinfunction "GPIO39_48")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "0e2b1075-30ca-415d-aea4-0c784e5e4669")
@@ -23557,8 +24844,8 @@
 			(size 0.22 0.78)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/GPIO40_ADC0")
-			(pinfunction "GPIO40_ADC0")
+			(net "/Reset")
+			(pinfunction "GPIO40_ADC0_49")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "efb82d66-198f-4c27-a5f1-a677f96769cb")
@@ -23569,7 +24856,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3.3V")
-			(pinfunction "IOVDD")
+			(pinfunction "IOVDD_50")
 			(pintype "power_in")
 			(thermal_bridge_angle 45)
 			(uuid "3cc57ebf-1d82-445b-9f6f-664ab179b5d4")
@@ -23580,7 +24867,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+1V1")
-			(pinfunction "DVDD")
+			(pinfunction "DVDD_51")
 			(pintype "power_in")
 			(thermal_bridge_angle 45)
 			(uuid "1f5def68-7aeb-43b8-9f3a-696645724981")
@@ -23590,8 +24877,8 @@
 			(size 0.22 0.78)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "/GPIO41_ADC1")
-			(pinfunction "GPIO41_ADC1")
+			(net "unconnected-(U4-GPIO41_ADC1-Pad52)")
+			(pinfunction "GPIO41_ADC1_52")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "6fa96e77-e1d9-42de-b5f2-006aeb4e26b2")
@@ -23602,7 +24889,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/GPIO42_ADC2")
-			(pinfunction "GPIO42_ADC2")
+			(pinfunction "GPIO42_ADC2_53")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "a24125dc-b3bf-4a93-b758-d10555c4a091")
@@ -23613,7 +24900,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/GPIO43_ADC3")
-			(pinfunction "GPIO43_ADC3")
+			(pinfunction "GPIO43_ADC3_54")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "efb66184-5479-4d7f-96e9-74e1b5c6994c")
@@ -23624,7 +24911,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/GPIO44_ADC4")
-			(pinfunction "GPIO44_ADC4")
+			(pinfunction "GPIO44_ADC4_55")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "7391e6b3-da29-4031-b12f-220c8a7670cc")
@@ -23635,7 +24922,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/GPIO45_ADC5")
-			(pinfunction "GPIO45_ADC5")
+			(pinfunction "GPIO45_ADC5_56")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "293aab06-b272-4c3d-b4e8-a7266f765db6")
@@ -23646,7 +24933,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/GPIO46_ADC6")
-			(pinfunction "GPIO46_ADC6")
+			(pinfunction "GPIO46_ADC6_57")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "65681dee-104b-4566-892f-4d5c4eeb8e1e")
@@ -23657,7 +24944,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/GPIO47_ADC7")
-			(pinfunction "GPIO47_ADC7")
+			(pinfunction "GPIO47_ADC7_58")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "505de1a7-a31a-406a-a547-6e936fa3f83d")
@@ -23668,7 +24955,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3.3V")
-			(pinfunction "ADC_AVDD")
+			(pinfunction "ADC_AVDD_59")
 			(pintype "power_in")
 			(thermal_bridge_angle 45)
 			(uuid "5205cb12-ffb7-4ebb-855f-78459cc29623")
@@ -23679,7 +24966,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3.3V")
-			(pinfunction "IOVDD")
+			(pinfunction "IOVDD_60")
 			(pintype "power_in")
 			(thermal_bridge_angle 45)
 			(uuid "6d4ec78f-b793-4837-8da1-eca47b96d5ef")
@@ -23690,7 +24977,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/VREG_AVDD")
-			(pinfunction "VREG_AVDD")
+			(pinfunction "VREG_AVDD_61")
 			(pintype "power_in")
 			(thermal_bridge_angle 45)
 			(uuid "ca9f150b-6137-4277-8be9-5e8214e3df8d")
@@ -23701,7 +24988,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
-			(pinfunction "VREG_PGND")
+			(pinfunction "VREG_PGND_62")
 			(pintype "power_in")
 			(thermal_bridge_angle 45)
 			(uuid "47131b5c-3828-4e8a-8e09-e637ebf269ec")
@@ -23712,7 +24999,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/VREG_LX")
-			(pinfunction "VREG_LX")
+			(pinfunction "VREG_LX_63")
 			(pintype "power_out")
 			(thermal_bridge_angle 45)
 			(uuid "641f2b81-6e7e-458a-9cdf-b15e029f0eea")
@@ -23723,7 +25010,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3.3V")
-			(pinfunction "VREG_VIN")
+			(pinfunction "VREG_VIN_64")
 			(pintype "power_in")
 			(thermal_bridge_angle 45)
 			(uuid "0bd07d9e-868a-48ec-839b-1e5cce7666a1")
@@ -23734,7 +25021,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+1V1")
-			(pinfunction "VREG_FB")
+			(pinfunction "VREG_FB_65")
 			(pintype "input")
 			(thermal_bridge_angle 45)
 			(uuid "42db4f3b-83b8-4d11-9fa2-1ebc7c31bebd")
@@ -23745,7 +25032,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U4-USB_DM)")
-			(pinfunction "USB_DM")
+			(pinfunction "USB_DM_66")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "bde8670c-1173-4f96-9aa0-a0bda9dae183")
@@ -23756,7 +25043,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U4-USB_DP)")
-			(pinfunction "USB_DP")
+			(pinfunction "USB_DP_67")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "53a2eebc-c410-472d-8288-5cd8735b10a1")
@@ -23767,7 +25054,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3.3V")
-			(pinfunction "USB_OTP_VDD")
+			(pinfunction "USB_OTP_VDD_68")
 			(pintype "power_in")
 			(thermal_bridge_angle 45)
 			(uuid "40c3d7cb-a352-4dd3-9a95-8db96fa1904d")
@@ -23778,7 +25065,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3.3V")
-			(pinfunction "QSPI_IOVDD")
+			(pinfunction "QSPI_IOVDD_69")
 			(pintype "power_in")
 			(thermal_bridge_angle 45)
 			(uuid "e879b55e-71ab-49dd-bb60-a3cbdc556ecb")
@@ -23789,7 +25076,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/QSPI_SD3")
-			(pinfunction "QSPI_SD3")
+			(pinfunction "QSPI_SD3_70")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "90b4367d-9783-4e98-9849-a1bf3f63ef56")
@@ -23800,7 +25087,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/QSPI_SCLK")
-			(pinfunction "QSPI_SCLK")
+			(pinfunction "QSPI_SCLK_71")
 			(pintype "output")
 			(thermal_bridge_angle 45)
 			(uuid "33d25f78-edd4-4704-b2d5-2741aabad81c")
@@ -23811,7 +25098,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/QSPI_SD0")
-			(pinfunction "QSPI_SD0")
+			(pinfunction "QSPI_SD0_72")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "a43fec4a-e73d-49f3-bc02-6e34162f004d")
@@ -23822,7 +25109,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/QSPI_SD2")
-			(pinfunction "QSPI_SD2")
+			(pinfunction "QSPI_SD2_73")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "87d9c7ab-f385-4030-af63-06d6457e5814")
@@ -23833,7 +25120,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/QSPI_SD1")
-			(pinfunction "QSPI_SD1")
+			(pinfunction "QSPI_SD1_74")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "0a43bce5-d41d-4c03-a0c8-2fdffb7e6bc9")
@@ -23844,7 +25131,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/QSPI_SS")
-			(pinfunction "QSPI_SS")
+			(pinfunction "QSPI_SS_75")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "95c5eec9-ba4c-44de-a765-dcfade7412bf")
@@ -23855,7 +25142,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3.3V")
-			(pinfunction "IOVDD")
+			(pinfunction "IOVDD_76")
 			(pintype "power_in")
 			(thermal_bridge_angle 45)
 			(uuid "60ec431e-1d2f-458b-b120-b808455c062d")
@@ -23866,7 +25153,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/MOSI")
-			(pinfunction "GPIO0")
+			(pinfunction "GPIO0_77")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "22187aef-1e4b-45ea-8481-64b45888c0fa")
@@ -23877,7 +25164,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/LCDCS")
-			(pinfunction "GPIO1")
+			(pinfunction "GPIO1_78")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "35c2cc0c-095f-424a-bdf9-fa873fe95f97")
@@ -23888,7 +25175,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/SCK")
-			(pinfunction "GPIO2")
+			(pinfunction "GPIO2_79")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "cb055eb1-865f-4b0e-86c9-3b25c21a0f7f")
@@ -23899,7 +25186,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/MISO")
-			(pinfunction "GPIO3")
+			(pinfunction "GPIO3_80")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 45)
 			(uuid "94100083-9b7b-4c8f-a92f-f89e7f589e15")
@@ -23911,7 +25198,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_81")
 			(pintype "power_in")
 			(zone_connect 2)
 			(uuid "38799a67-7725-4c24-a233-8bf9c6a42868")
@@ -23921,7 +25208,7 @@
 			(size 1.133333 1.133333)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_81")
 			(pintype "power_in")
 			(solder_paste_margin -0.5)
 			(thermal_bridge_angle 45)
@@ -23934,7 +25221,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_81")
 			(pintype "power_in")
 			(zone_connect 2)
 			(uuid "fccd12ee-5597-4752-a9ea-5739a5b4b168")
@@ -23944,7 +25231,7 @@
 			(size 1.133333 1.133333)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_81")
 			(pintype "power_in")
 			(solder_paste_margin -0.5)
 			(thermal_bridge_angle 45)
@@ -23957,7 +25244,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_81")
 			(pintype "power_in")
 			(zone_connect 2)
 			(uuid "4718df24-0dea-44d4-8776-fa28cd08590c")
@@ -23967,7 +25254,7 @@
 			(size 1.133333 1.133333)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_81")
 			(pintype "power_in")
 			(solder_paste_margin -0.5)
 			(thermal_bridge_angle 45)
@@ -23980,7 +25267,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_81")
 			(pintype "power_in")
 			(zone_connect 2)
 			(uuid "e8e3eae4-552a-444b-a4eb-6c27d79fcb25")
@@ -23990,7 +25277,7 @@
 			(size 1.133333 1.133333)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_81")
 			(pintype "power_in")
 			(solder_paste_margin -0.5)
 			(thermal_bridge_angle 45)
@@ -24003,7 +25290,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_81")
 			(pintype "power_in")
 			(zone_connect 2)
 			(uuid "cc23bb09-34f4-4b04-a75f-2635ccbbbe6c")
@@ -24013,7 +25300,7 @@
 			(size 1.133333 1.133333)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_81")
 			(pintype "power_in")
 			(solder_paste_margin -0.5)
 			(thermal_bridge_angle 45)
@@ -24026,7 +25313,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_81")
 			(pintype "power_in")
 			(zone_connect 2)
 			(uuid "8ec72570-25da-4d09-9bfe-03f1ebc24637")
@@ -24036,7 +25323,7 @@
 			(size 1.133333 1.133333)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_81")
 			(pintype "power_in")
 			(solder_paste_margin -0.5)
 			(thermal_bridge_angle 45)
@@ -24049,7 +25336,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_81")
 			(pintype "power_in")
 			(zone_connect 2)
 			(uuid "1388a38c-f385-4cff-8c3a-1d3083a07bd3")
@@ -24059,7 +25346,7 @@
 			(size 1.133333 1.133333)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_81")
 			(pintype "power_in")
 			(solder_paste_margin -0.5)
 			(thermal_bridge_angle 45)
@@ -24072,7 +25359,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_81")
 			(pintype "power_in")
 			(zone_connect 2)
 			(uuid "3e393747-19cb-4f7c-bc97-2dcac8bc44e6")
@@ -24082,7 +25369,7 @@
 			(size 1.133333 1.133333)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_81")
 			(pintype "power_in")
 			(solder_paste_margin -0.5)
 			(thermal_bridge_angle 45)
@@ -24095,7 +25382,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_81")
 			(pintype "power_in")
 			(zone_connect 2)
 			(uuid "343dfe0c-2f63-4d32-8afb-ab10a0ae0116")
@@ -24105,7 +25392,7 @@
 			(size 1.133333 1.133333)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_81")
 			(pintype "power_in")
 			(solder_paste_margin -0.5)
 			(thermal_bridge_angle 45)
@@ -24208,6 +25495,12 @@
 		(path "/c999e543-e4d3-4f7a-9bc1-fd402e62aa85")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "3" "1" "8" "12" "10" "9" "4" "13" "11" "2" "7" "6" "5")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -24361,7 +25654,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GNDA")
-			(pinfunction "PGOOD")
+			(pinfunction "PGOOD_1")
 			(pintype "open_collector")
 			(uuid "e165635c-4199-418d-9c2f-5017d63245dc")
 		)
@@ -24371,7 +25664,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U6-FB+)")
-			(pinfunction "FB+")
+			(pinfunction "FB+_2")
 			(pintype "input")
 			(uuid "58de15a9-c2f3-46dc-a6a5-19dc7835bb65")
 		)
@@ -24381,7 +25674,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "VDC")
-			(pinfunction "VIN")
+			(pinfunction "VIN_3")
 			(pintype "power_in")
 			(uuid "a803b0a5-4d5c-4710-b347-e022112d17fe")
 		)
@@ -24391,7 +25684,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GNDA")
-			(pinfunction "GND")
+			(pinfunction "GND_4")
 			(pintype "power_in")
 			(uuid "c71587b2-3c1c-44c5-ab01-595dc5f2a89c")
 		)
@@ -24401,7 +25694,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U6-CP)")
-			(pinfunction "CP")
+			(pinfunction "CP_5")
 			(pintype "passive")
 			(uuid "b0b09d25-d1e3-4bab-ac13-a8623a727c2a")
 		)
@@ -24411,7 +25704,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "-3V3")
-			(pinfunction "OUT-")
+			(pinfunction "OUT-_6")
 			(pintype "power_out")
 			(uuid "a965be7b-c781-47a9-8d94-79a1bd93f1bf")
 		)
@@ -24421,7 +25714,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U6-FB-)")
-			(pinfunction "FB-")
+			(pinfunction "FB-_7")
 			(pintype "input")
 			(uuid "8d377578-b940-4c6e-869b-54c12bcc3363")
 		)
@@ -24431,7 +25724,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "VDC")
-			(pinfunction "EN-")
+			(pinfunction "EN-_8")
 			(pintype "input")
 			(uuid "ce2f66e7-e4ea-4740-a28a-f1fbc75b4308")
 		)
@@ -24441,7 +25734,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U6-C-)")
-			(pinfunction "C-")
+			(pinfunction "C-_9")
 			(pintype "passive")
 			(uuid "02d4492d-0aaa-43ed-b831-bf4438d9ce97")
 		)
@@ -24451,7 +25744,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U6-C+)")
-			(pinfunction "C+")
+			(pinfunction "C+_10")
 			(pintype "passive")
 			(uuid "a3f1754e-4dab-4809-92ad-62f1eb9e9389")
 		)
@@ -24461,7 +25754,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3.3VA")
-			(pinfunction "OUT+")
+			(pinfunction "OUT+_11")
 			(pintype "power_out")
 			(uuid "2d1fcf3d-f242-42a5-97db-d8c1967907f0")
 		)
@@ -24471,7 +25764,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "VDC")
-			(pinfunction "EN+")
+			(pinfunction "EN+_12")
 			(pintype "input")
 			(uuid "a16bc96a-378a-4fdd-b766-40a0a1a7a98e")
 		)
@@ -24482,7 +25775,7 @@
 			(layers "*.Cu")
 			(remove_unused_layers no)
 			(net "GNDA")
-			(pinfunction "PAD")
+			(pinfunction "PAD_13")
 			(pintype "power_in")
 			(uuid "6f5faa44-2465-4407-9fbf-3993d9b8d79f")
 		)
@@ -24493,7 +25786,7 @@
 			(layers "*.Cu")
 			(remove_unused_layers no)
 			(net "GNDA")
-			(pinfunction "PAD")
+			(pinfunction "PAD_13")
 			(pintype "power_in")
 			(uuid "0a0c7d75-b518-4d64-9d06-b5bf60a5e6fc")
 		)
@@ -24502,7 +25795,7 @@
 			(size 1 2.65)
 			(layers "F.Cu" "F.Mask")
 			(net "GNDA")
-			(pinfunction "PAD")
+			(pinfunction "PAD_13")
 			(pintype "power_in")
 			(uuid "a7d0e21b-f547-42ec-9595-db8d03e33838")
 		)
@@ -24511,7 +25804,7 @@
 			(size 1 2.65)
 			(layers "B.Cu")
 			(net "GNDA")
-			(pinfunction "PAD")
+			(pinfunction "PAD_13")
 			(pintype "power_in")
 			(uuid "3348a13c-650e-4644-b252-1222105a512f")
 		)
@@ -24522,7 +25815,7 @@
 			(layers "*.Cu")
 			(remove_unused_layers no)
 			(net "GNDA")
-			(pinfunction "PAD")
+			(pinfunction "PAD_13")
 			(pintype "power_in")
 			(uuid "f966b8a3-ef93-46cb-993e-7421d3c6a667")
 		)
@@ -24591,10 +25884,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "MT3608"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "806e3e2e-e0fa-4191-8b0b-91960f78d3ea")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "SOT*23*")
 		(path "/8dd02571-b413-4ca3-a6e0-79018913bd12")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "5" "4" "2" "6" "1" "3")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -24818,7 +26130,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D5-A)")
-			(pinfunction "SW")
+			(pinfunction "SW_1")
 			(pintype "passive")
 			(uuid "f6ffd35a-3827-461c-8375-4775090fe40d")
 		)
@@ -24828,7 +26140,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_2")
 			(pintype "power_in")
 			(uuid "6902f10d-0709-44ca-81a2-c1e172b25642")
 		)
@@ -24838,7 +26150,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U18-FB)")
-			(pinfunction "FB")
+			(pinfunction "FB_3")
 			(pintype "input")
 			(uuid "9291e0bb-9f69-4465-9d29-3b1c68ad03f1")
 		)
@@ -24848,7 +26160,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/VBat")
-			(pinfunction "EN")
+			(pinfunction "EN_4")
 			(pintype "input")
 			(uuid "5d057e61-d501-47ff-9422-9654fc53bac7")
 		)
@@ -24858,7 +26170,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/VBat")
-			(pinfunction "IN")
+			(pinfunction "IN_5")
 			(pintype "power_in")
 			(uuid "64eb2028-aa90-4fba-ba8d-c928e9cc07c7")
 		)
@@ -24868,7 +26180,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U18-NC-Pad6)")
-			(pinfunction "NC")
+			(pinfunction "NC_6")
 			(pintype "no_connect")
 			(uuid "10d9fa7d-2646-4e30-bac8-c427459bf793")
 		)
@@ -24913,7 +26225,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -24941,7 +26253,13 @@
 		(path "/92608406-0a55-4e07-a388-4d6b6282e9e5")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
+		(attr exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -25029,7 +26347,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -25057,7 +26375,13 @@
 		(path "/8eee7968-f0a1-4190-8817-458737790ddf")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
+		(attr exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -25145,7 +26469,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -25182,10 +26506,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "CRGCQ0603J220R"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "91784a52-9f2b-41ac-bbf9-b4281f71d94b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/13f0d9b0-de31-430b-a4b3-1e4ff79f8d1d")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -25299,7 +26642,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -25336,10 +26679,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "SRN4018TA-3R3M"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4f9a2fed-a904-43cf-991a-9cadc56856b6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/4f70ee66-41ca-4ae7-b93c-70a7d8aa391d")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -25460,7 +26822,7 @@
 			(size 0.7 1.7)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "+1V1")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "44b020bd-460a-45c6-94ed-bb16fe2b95d4")
 		)
@@ -25469,7 +26831,7 @@
 			(size 0.7 1.7)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/VREG_LX")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "982d0edd-2db3-4ad0-82c0-3cb1c3721d99")
 		)
@@ -25581,6 +26943,12 @@
 		(path "/ef6a4adf-d88c-4e51-974f-5634cef86efc")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -25695,7 +27063,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -25719,10 +27087,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "CL21A106KOQNNNE"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "53da0f42-2fbf-4419-aae5-8311d5e12133")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/c0acf311-66d0-42f5-b115-f0a9611f54f6")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -25904,6 +27291,12 @@
 		(path "/66e36f64-2e0f-4697-a7a7-3d6923409b64")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -26085,6 +27478,12 @@
 		(path "/5af67c50-1793-4829-95ec-1cba34e3a724")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -26199,7 +27598,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -26236,10 +27635,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "AC0402JRNPO9BN100"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c3ce49b3-57b8-40d2-9c44-521ec074c511")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/9c77ddd7-0f01-4a10-8d25-561e0b821e2b")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -26412,7 +27830,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -26449,10 +27867,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "AC0402JRNPO9BN100"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "86c682fc-5c70-423d-84ac-62105cb50c23")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/258c4816-45ff-4431-9120-72ed127013b5")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -26692,6 +28129,12 @@
 		(path "/33d5f520-7bea-46d3-a2e2-24f3c919b7d6")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -26806,7 +28249,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -26843,10 +28286,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "RC0603FR-0710KL"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b5cf9661-82ee-4453-91cb-71771499804b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/5f3b71c1-025a-40a1-adda-26ca00248b15")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -26961,7 +28423,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -27002,6 +28464,12 @@
 		(path "/1c6f4695-4341-46ce-821e-19d56a54ccc8")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -27166,9 +28634,28 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "DAC5571IDBVT"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6f9d800d-2ed3-4451-84de-b0cc5af58287")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/00000000-0000-0000-0000-000060e488ae")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "5" "4" "6" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -27392,7 +28879,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U11-+)")
-			(pinfunction "VOUT")
+			(pinfunction "VOUT_1")
 			(pintype "output")
 			(uuid "b9cde307-2b52-45eb-9642-1e1c3a0287c8")
 		)
@@ -27402,7 +28889,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GNDA")
-			(pinfunction "GND")
+			(pinfunction "GND_2")
 			(pintype "power_out")
 			(uuid "db9eb663-9f06-463f-b6bc-d60f6e4145de")
 		)
@@ -27412,7 +28899,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3.3VA")
-			(pinfunction "VDD")
+			(pinfunction "VDD_3")
 			(pintype "power_in")
 			(uuid "257acc98-1cd5-455c-a3d8-425a9fd6b9ef")
 		)
@@ -27422,7 +28909,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/SCL")
-			(pinfunction "SDA")
+			(pinfunction "SDA_4")
 			(pintype "bidirectional")
 			(uuid "27848b78-404c-4f26-a930-8c49b6a44a86")
 		)
@@ -27432,7 +28919,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/SDA")
-			(pinfunction "SCL")
+			(pinfunction "SCL_5")
 			(pintype "input")
 			(uuid "3c032401-2746-4b18-86e2-ff85af814973")
 		)
@@ -27442,7 +28929,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GNDA")
-			(pinfunction "A0")
+			(pinfunction "A0_6")
 			(pintype "input")
 			(uuid "01d8c333-750c-4d15-a70f-6f3da1eae5a5")
 		)
@@ -27487,7 +28974,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -27511,10 +28998,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "RC0603FR-0747KL"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "600280ad-fb81-4363-94fc-12a0e6f55677")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c1936522-970e-440d-9236-13f96d932b04")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -27629,7 +29135,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -27666,10 +29172,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "RC0603FR-0710KL"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "067c9636-2efe-4abc-968e-5c1012196657")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/3b8c7bd8-79ad-4fe3-8cdb-63d1aec361b0")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -27851,6 +29376,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/01c6efcd-d454-4426-bfe2-37beb11ad3ba")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -27965,7 +29496,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -28002,10 +29533,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "CRGCQ0603J220R"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3957c9ea-bdfe-404f-b224-1d8960d9b7ad")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/1ac3a304-f481-4eea-b72d-6aeb4b7a29e5")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -28187,6 +29737,12 @@
 		(path "/d14c855d-50ec-4f85-9928-85877d3577ea")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -28301,7 +29857,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -28341,6 +29897,12 @@
 		(path "/31beb0b3-741d-4ea8-9364-2da49879897e")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -28561,7 +30123,7 @@
 			(size 1.05 0.65)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(R8-Pad1)")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "55bc8f5b-f7ad-477a-b62b-0aa3c628aa2a")
 		)
@@ -28570,7 +30132,7 @@
 			(size 1.05 0.65)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(R8-Pad1)")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "3ce1fcb0-626c-4ac9-bdef-a34c16e22810")
 		)
@@ -28579,7 +30141,7 @@
 			(size 1.05 0.65)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/RUN")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "6726de26-de11-4dcb-be87-3a209a6bebb7")
 		)
@@ -28588,7 +30150,7 @@
 			(size 1.05 0.65)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/RUN")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "cc0a0539-0b40-40e1-b12f-89717b0e5e5c")
 		)
@@ -28633,7 +30195,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -28670,10 +30232,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "CRGCQ0603J220R"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "381673d4-1d1b-41bf-8ef9-afb3b4197e10")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/66b3eaaa-76ed-46c7-b691-61873630a2e6")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -28788,7 +30369,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -28812,10 +30393,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "RC0603FR-07100KL"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c0378c69-997e-44d1-9f2c-5c2dfa71fcb4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/cef5c106-b54f-4a5d-bfcf-f169302a1aaa")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -28996,6 +30596,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/00000000-0000-0000-0000-00006195918e")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "3" "4" "5" "2" "1")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -29287,7 +30893,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U13-K)")
-			(pinfunction "+")
+			(pinfunction "+_3")
 			(pintype "input")
 			(uuid "85ff5498-0a9b-46bd-9fb9-9d8195cfbaa3")
 		)
@@ -29297,7 +30903,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "/VREF")
-			(pinfunction "-")
+			(pinfunction "-_4")
 			(pintype "input")
 			(uuid "aa90dc90-7923-4839-9cdb-b8f36496ad2d")
 		)
@@ -29469,6 +31075,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/00000000-0000-0000-0000-0000612e16f1")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "3" "4" "5" "2" "1")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -29760,7 +31372,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U11-+)")
-			(pinfunction "+")
+			(pinfunction "+_3")
 			(pintype "input")
 			(uuid "f51afd0c-b3fc-48af-99ae-1cbc35930a8a")
 		)
@@ -29770,7 +31382,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U11--)")
-			(pinfunction "-")
+			(pinfunction "-_4")
 			(pintype "input")
 			(uuid "cc796214-d573-48fa-bf4b-e84f308a6df7")
 		)
@@ -29891,6 +31503,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/00000000-0000-0000-0000-00006111f71f")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -30005,7 +31623,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -30042,10 +31660,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "AC0402JRNPO9BN100"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "26cf919a-9e23-400b-a078-2247ecb78319")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/100d8571-a9e8-4bae-8312-52aa7ac38044")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -30218,7 +31855,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -30246,7 +31883,13 @@
 		(path "/7a597021-7e88-42f3-a873-73b61bea0afd")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
+		(attr exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -30401,6 +32044,12 @@
 		(path "/eb7d6d33-53ee-4496-89a6-b249a0b71637")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -30582,6 +32231,12 @@
 		(path "/b9a91db2-c9e4-4842-ab69-552cd32e6f90")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -30735,10 +32390,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "ESD9B5.0ST5G"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "11308adb-1a58-4a8d-bb19-bd88cb25f61e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "D*SOD?923*")
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/633c799d-cf8e-4bdd-972f-8f063cb59227")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -31008,7 +32682,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D1-A1)")
-			(pinfunction "A1")
+			(pinfunction "A1_1")
 			(pintype "passive")
 			(uuid "ac291e28-30ab-4063-8a2c-71a141ef1859")
 		)
@@ -31018,7 +32692,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GNDA")
-			(pinfunction "A2")
+			(pinfunction "A2_2")
 			(pintype "passive")
 			(uuid "2e1c4b9e-72dc-4bd3-a384-d07fa90e2e91")
 		)
@@ -31063,7 +32737,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -31087,10 +32761,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "RC0603FR-07100KL"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cc3e2847-cca2-495e-bdff-91689627a5e9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/4f7cd22b-8842-4715-9afe-51e7e4a06e2f")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -31205,7 +32898,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -31259,6 +32952,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/e049f588-2f3f-47ce-8bdd-3a7fac9af3f5")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -31440,6 +33139,12 @@
 		(path "/d8294ac3-14e8-411a-990b-a5c17f573eca")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -31591,7 +33296,7 @@
 				)
 			)
 		)
-		(property "MFR. Part #" "0603WAF1000T5E"
+		(property "MFR. Part #" "ERJ-3EKF1000V"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -31621,6 +33326,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/e08debdd-ce5f-4020-bf02-6ae74d112d95")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -31802,6 +33513,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/00000000-0000-0000-0000-000060b2b69f")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -32075,7 +33792,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(U13-K)")
-			(pinfunction "K")
+			(pinfunction "K_1")
 			(pintype "passive")
 			(uuid "d07956a0-e61c-4e52-bc91-7573b8474864")
 		)
@@ -32085,7 +33802,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GNDA")
-			(pinfunction "A")
+			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "fbca4dee-5d5d-4404-b21e-7f5ac7ffb84b")
 		)
@@ -32137,7 +33854,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -32163,10 +33880,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "SRN4018TA-4R7M"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a6ea6e64-256d-4c9a-ab53-1f0eb00d4b65")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/1d9dfcac-7dfa-4482-8afd-47d2a818201a")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -32345,7 +34081,7 @@
 			(size 1.5 3.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/VBat")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "4df864f8-0202-49b1-8982-f3be26ec423c")
 		)
@@ -32354,7 +34090,7 @@
 			(size 1.5 3.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(D5-A)")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "be311773-ecd5-4732-b532-5092f3f6037e")
 		)
@@ -32399,7 +34135,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -32436,10 +34172,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "AC0402JRNPO9BN100"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e3f22a7d-eabf-42ad-9b43-5024459ad3ba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/1f56dccc-5777-4772-836a-6e5e3a2d1e3a")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -32612,7 +34367,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -32649,10 +34404,29 @@
 				)
 			)
 		)
+		(property "MFR. Part #" "CRGCQ0603J220R"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c82c5874-1293-46b9-940c-61b9e1ae6ecb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/43e84961-7b9f-4cf2-96a5-267149fbe899")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -32834,6 +34608,12 @@
 		(path "/309af44e-2a3f-4363-834b-5cda58dc5818/8ff5e2eb-1f52-4d2b-af01-ffd9b5fc83a9")
 		(sheetname "/Analog Front End/")
 		(sheetfile "analog_front_end.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -32992,7 +34772,13 @@
 		(path "/7d4e6c22-354a-433e-8323-392685d57789")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
-		(attr smd)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "6" "8" "4" "5" "2" "3" "7")
+			)
+		)
+		(attr smd exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 2.725 2.725)
@@ -33192,7 +34978,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/FLASH2_SS")
-			(pinfunction "~{CS}")
+			(pinfunction "~{CS}_1")
 			(pintype "input")
 			(uuid "8858333f-2d6a-48e3-83c8-34831e22e1c6")
 		)
@@ -33202,7 +34988,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/QSPI_SD1")
-			(pinfunction "DO(IO1)")
+			(pinfunction "DO(IO1)_2")
 			(pintype "bidirectional")
 			(uuid "620560e6-b2a4-4ddc-8865-42ab064f22e5")
 		)
@@ -33212,7 +34998,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/QSPI_SD2")
-			(pinfunction "IO2")
+			(pinfunction "IO2_3")
 			(pintype "bidirectional")
 			(uuid "528022e5-1802-4f2d-bfb4-6e9d4051b19d")
 		)
@@ -33222,7 +35008,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_4")
 			(pintype "power_in")
 			(uuid "db5f8786-7c29-4d2f-94aa-f2780d67097f")
 		)
@@ -33232,7 +35018,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/QSPI_SD0")
-			(pinfunction "DI(IO0)")
+			(pinfunction "DI(IO0)_5")
 			(pintype "bidirectional")
 			(uuid "b05a0e16-5422-4eaa-a69e-aa4e4849b3b2")
 		)
@@ -33242,7 +35028,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/QSPI_SCLK")
-			(pinfunction "CLK")
+			(pinfunction "CLK_6")
 			(pintype "input")
 			(uuid "76f9812a-e86a-44c6-be90-ae01a628c44e")
 		)
@@ -33252,7 +35038,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/QSPI_SD3")
-			(pinfunction "IO3")
+			(pinfunction "IO3_7")
 			(pintype "bidirectional")
 			(uuid "8354cb4a-349c-4731-b2fc-43b6b2292e1b")
 		)
@@ -33262,7 +35048,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3.3V")
-			(pinfunction "VCC")
+			(pinfunction "VCC_8")
 			(pintype "power_in")
 			(uuid "9aa8f980-5742-48f5-a137-922c604b1516")
 		)
@@ -33309,7 +35095,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -33381,6 +35167,12 @@
 		(path "/c3ce5053-ba3b-4c10-9876-e9f67730e958")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -33681,7 +35473,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
-			(pinfunction "Pin_1")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "a81d663c-b24c-44a4-a6f2-6947e32e5ddf")
 		)
@@ -33691,7 +35483,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "+3.3V")
-			(pinfunction "Pin_2")
+			(pinfunction "Pin_2_2")
 			(pintype "passive")
 			(uuid "197b6a8f-4e57-49d0-a90e-9654de68e68c")
 		)
@@ -33701,7 +35493,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/SCL")
-			(pinfunction "Pin_3")
+			(pinfunction "Pin_3_3")
 			(pintype "passive")
 			(uuid "da96a045-4ff9-4a44-8c8a-aeac9672bea7")
 		)
@@ -33711,7 +35503,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/SDA")
-			(pinfunction "Pin_4")
+			(pinfunction "Pin_4_4")
 			(pintype "passive")
 			(uuid "f8e8c5fd-9e9c-4001-aa18-9954b24226be")
 		)
@@ -33772,7 +35564,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -33802,7 +35594,13 @@
 		(path "/8523346b-dede-4315-9843-e9c9b0430d6c")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5" "6" "7" "8")
+			)
+		)
+		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.38 1.38)
@@ -33944,7 +35742,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J9-Pin_1-Pad1)")
-			(pinfunction "Pin_1")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "7b9e1d96-dc09-4d57-bc2b-d968653ea964")
 		)
@@ -33955,7 +35753,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/CDSD")
-			(pinfunction "Pin_2")
+			(pinfunction "Pin_2_2")
 			(pintype "passive")
 			(uuid "327a9f88-1a7e-4aa1-9860-836596f90ed1")
 		)
@@ -33966,7 +35764,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/CSSD")
-			(pinfunction "Pin_3")
+			(pinfunction "Pin_3_3")
 			(pintype "passive")
 			(uuid "4cf66bdc-cdc1-4515-a48f-6f8416405640")
 		)
@@ -33977,7 +35775,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/DISD")
-			(pinfunction "Pin_4")
+			(pinfunction "Pin_4_4")
 			(pintype "passive")
 			(uuid "34ea515f-eb33-49f4-8c02-c9dd5082c4dd")
 		)
@@ -33988,7 +35786,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/SD_D0")
-			(pinfunction "Pin_5")
+			(pinfunction "Pin_5_5")
 			(pintype "passive")
 			(uuid "9207c90e-2d9d-4030-8ec1-a81a62607e98")
 		)
@@ -33999,7 +35797,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/CLKSD")
-			(pinfunction "Pin_6")
+			(pinfunction "Pin_6_6")
 			(pintype "passive")
 			(uuid "a59ec6b2-b890-4b52-9e22-d76438d07d0f")
 		)
@@ -34010,7 +35808,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "Pin_7")
+			(pinfunction "Pin_7_7")
 			(pintype "passive")
 			(uuid "552cbe29-d9b9-4280-b897-16e56b997006")
 		)
@@ -34021,7 +35819,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "+3.3V")
-			(pinfunction "Pin_8")
+			(pinfunction "Pin_8_8")
 			(pintype "passive")
 			(uuid "5d760c1f-ad28-433b-b804-a85ad96d9070")
 		)
@@ -34079,7 +35877,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -34121,7 +35919,13 @@
 		(path "/48df845a-9555-4805-b534-ab90c100c0ee")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
-		(attr smd)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.153641 0.38)
@@ -34296,7 +36100,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -34338,7 +36142,13 @@
 		(path "/cd4b5b1c-2a73-4b45-836f-b177f5a8c60e")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
-		(attr smd)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.153641 -0.38)
@@ -34513,7 +36323,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -34555,7 +36365,13 @@
 		(path "/02cbe2d4-0509-4226-845a-ed75dfe020e1")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
-		(attr smd)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.107836 0.36)
@@ -34731,7 +36547,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -34771,10 +36587,30 @@
 				(justify mirror)
 			)
 		)
+		(property "MFR. Part #" "PEC11L4115FS0020"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9fd9837c-e4d3-4130-a61a-93353041b1b2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "RotaryEncoder*Switch*")
 		(path "/47d6373a-3598-4ac7-91c2-a2940f52c415")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "A" "C" "B" "S1" "S2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -34988,7 +36824,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/ROTCLK")
-			(pinfunction "A")
+			(pinfunction "A_A")
 			(pintype "passive")
 			(uuid "40e98817-3cf0-4cf1-a198-060961403977")
 		)
@@ -34999,7 +36835,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/ROTDT")
-			(pinfunction "B")
+			(pinfunction "B_B")
 			(pintype "passive")
 			(uuid "db4a56fa-0ce3-4be7-9f49-192a3a46237e")
 		)
@@ -35010,7 +36846,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "C")
+			(pinfunction "C_C")
 			(pintype "passive")
 			(uuid "0a25e793-be2c-4c1f-9039-648b55de36c6")
 		)
@@ -35037,7 +36873,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/ROTSW")
-			(pinfunction "S1")
+			(pinfunction "S1_S1")
 			(pintype "passive")
 			(uuid "b3713aff-5646-4a40-a9f5-19cd2fcbb1d7")
 		)
@@ -35048,7 +36884,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "S2")
+			(pinfunction "S2_S2")
 			(pintype "passive")
 			(uuid "2697186a-85fb-48b3-8651-4fcde3ba23ee")
 		)
@@ -35106,7 +36942,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -35150,7 +36986,13 @@
 		(path "/fb280e92-7ea0-47d6-a495-c5b4821d0d58")
 		(sheetname "/")
 		(sheetfile "scopeboy.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5" "6" "7" "8" "9" "10")
+			)
+		)
+		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.38 1.38)
@@ -35292,7 +37134,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "Pin_1")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "b90ff132-af6d-4188-8a84-40b10d341424")
 		)
@@ -35303,7 +37145,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "+3.3V")
-			(pinfunction "Pin_2")
+			(pinfunction "Pin_2_2")
 			(pintype "passive")
 			(uuid "9bcf589a-9b6b-4ead-8331-c39170a00671")
 		)
@@ -35314,7 +37156,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/D{slash}C")
-			(pinfunction "Pin_3")
+			(pinfunction "Pin_3_3")
 			(pintype "passive")
 			(uuid "4b8ed879-ff74-47b6-b79e-55571dbda11a")
 		)
@@ -35325,7 +37167,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/Reset")
-			(pinfunction "Pin_4")
+			(pinfunction "Pin_4_4")
 			(pintype "passive")
 			(uuid "015c6870-a5bd-4279-bb22-0566b78e5022")
 		)
@@ -35336,7 +37178,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/SDCS")
-			(pinfunction "Pin_5")
+			(pinfunction "Pin_5_5")
 			(pintype "passive")
 			(uuid "2c013dc6-5c15-4d75-84de-0b1f555b5977")
 		)
@@ -35347,7 +37189,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/LCDCS")
-			(pinfunction "Pin_6")
+			(pinfunction "Pin_6_6")
 			(pintype "passive")
 			(uuid "6ba41d24-ee19-4480-b68e-bf114a03d0d9")
 		)
@@ -35358,7 +37200,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/MOSI")
-			(pinfunction "Pin_7")
+			(pinfunction "Pin_7_7")
 			(pintype "passive")
 			(uuid "4ebde16f-217f-4ba4-a29b-ece5073583c7")
 		)
@@ -35369,7 +37211,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/MISO")
-			(pinfunction "Pin_8")
+			(pinfunction "Pin_8_8")
 			(pintype "passive")
 			(uuid "e2647c93-745d-4320-96ae-c6dfb7aa3d34")
 		)
@@ -35380,7 +37222,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/SCK")
-			(pinfunction "Pin_9")
+			(pinfunction "Pin_9_9")
 			(pintype "passive")
 			(uuid "d3b4248d-5d6a-4d4f-bb46-7ef3dc13a991")
 		)
@@ -35391,7 +37233,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/Backlight")
-			(pinfunction "Pin_10")
+			(pinfunction "Pin_10_10")
 			(pintype "passive")
 			(uuid "a7f83ba5-836e-46af-8ad4-bd037facfb36")
 		)
@@ -37093,7 +38935,7 @@
 			)
 		)
 	)
-	(gr_text "ScopeBoy\nDesigned by:\nRobbie Leslie, Immanuel Koshy\nCornell University\nDepartment of Electrical\nand Computer Engineering"
+	(gr_text "ScopeBoy\nDesigned by:\nRobbie Leslie, Immanuel Koshy\nCornell University\nDepartment of Electrical\nand Computer Engineering\nV1.1"
 		(at 135.65 119.35 270)
 		(layer "B.SilkS")
 		(uuid "f0ab835e-bae1-4bf6-983e-3005371ff6fd")
@@ -52812,20 +54654,20 @@
 		(uuid "fd4090e0-4723-4c7e-abb3-76be670b6256")
 	)
 	(segment
+		(start 134.694586 134.74458)
+		(end 141.835384 141.885379)
+		(width 0.15015)
+		(layer "F.Cu")
+		(net "/SWD")
+		(uuid "0760fadb-b3e3-47f4-9f2c-3db29b6efc8b")
+	)
+	(segment
 		(start 203.42063 110.167853)
 		(end 203.350005 110.238478)
 		(width 0.15015)
 		(layer "F.Cu")
 		(net "/SWD")
-		(uuid "1f1d82c4-f5a6-437e-a23c-643542573e0d")
-	)
-	(segment
-		(start 135.073403 135.123398)
-		(end 141.835384 141.885379)
-		(width 0.15015)
-		(layer "F.Cu")
-		(net "/SWD")
-		(uuid "21fd7d16-67ff-4836-b224-17a8358e5fbd")
+		(uuid "08a51e29-04ae-4006-a303-9719b675f2c6")
 	)
 	(segment
 		(start 205.916961 110.167853)
@@ -52833,7 +54675,31 @@
 		(width 0.15015)
 		(layer "F.Cu")
 		(net "/SWD")
-		(uuid "30ecd6b7-6b17-4d1c-a520-04620a765dbe")
+		(uuid "213c3c3c-4ec6-461d-bc53-f0bf34380986")
+	)
+	(segment
+		(start 214.923773 128.668097)
+		(end 214.923773 117.243867)
+		(width 0.15015)
+		(layer "F.Cu")
+		(net "/SWD")
+		(uuid "2c14e76e-acf1-4e30-aa8b-a855c5d1128a")
+	)
+	(segment
+		(start 141.835384 141.885379)
+		(end 201.706491 141.885379)
+		(width 0.15015)
+		(layer "F.Cu")
+		(net "/SWD")
+		(uuid "2f574148-f893-4682-9705-3c55cdc450de")
+	)
+	(segment
+		(start 208.712128 113.85)
+		(end 206.515383 111.653255)
+		(width 0.15015)
+		(layer "F.Cu")
+		(net "/SWD")
+		(uuid "35e20987-0899-4e7b-a4ef-06b67c9e1c09")
 	)
 	(segment
 		(start 201.706491 141.885379)
@@ -52844,20 +54710,12 @@
 		(uuid "38ea0a31-aad2-4c32-8c01-ccadc04ec062")
 	)
 	(segment
-		(start 141.835384 141.885379)
-		(end 201.706491 141.885379)
-		(width 0.15015)
-		(layer "F.Cu")
-		(net "/SWD")
-		(uuid "620f0f0d-4d4d-4a68-a83e-aad217f62d8e")
-	)
-	(segment
 		(start 206.515383 110.766276)
 		(end 205.916961 110.167853)
 		(width 0.15015)
 		(layer "F.Cu")
 		(net "/SWD")
-		(uuid "80264508-ec8d-450a-8ee0-651f7a701130")
+		(uuid "924c3a21-a0da-421f-a670-e5966b499f61")
 	)
 	(segment
 		(start 203.350005 110.238478)
@@ -52865,15 +54723,7 @@
 		(width 0.15015)
 		(layer "F.Cu")
 		(net "/SWD")
-		(uuid "916f047e-162a-4cfc-b67a-64d56676b658")
-	)
-	(segment
-		(start 214.923773 117.563961)
-		(end 210.491854 113.132042)
-		(width 0.15015)
-		(layer "F.Cu")
-		(net "/SWD")
-		(uuid "917404a3-0426-42a7-bc95-daafa89c8131")
+		(uuid "9f5d9e59-8f56-4ed7-aa14-da1d8990f94e")
 	)
 	(segment
 		(start 203.350005 110.8465)
@@ -52884,52 +54734,12 @@
 		(uuid "aadb6373-735e-4d0a-b814-85577add7290")
 	)
 	(segment
-		(start 134.694586 134.74458)
-		(end 135.073403 135.123398)
+		(start 214.923773 117.243867)
+		(end 211.529906 113.85)
 		(width 0.15015)
 		(layer "F.Cu")
 		(net "/SWD")
-		(uuid "acd62621-ae0b-461e-a697-ae544f74d6f4")
-	)
-	(segment
-		(start 210.491854 113.132042)
-		(end 207.994171 113.132042)
-		(width 0.15015)
-		(layer "F.Cu")
-		(net "/SWD")
-		(uuid "adb0079b-5f73-4e61-84ee-2a7c408ebecd")
-	)
-	(segment
-		(start 207.994171 113.132042)
-		(end 206.515383 111.653255)
-		(width 0.15015)
-		(layer "F.Cu")
-		(net "/SWD")
-		(uuid "b14b2781-dd5d-41c3-a0d9-e04e660e3dca")
-	)
-	(segment
-		(start 214.923773 128.668097)
-		(end 214.923773 117.563961)
-		(width 0.15015)
-		(layer "F.Cu")
-		(net "/SWD")
-		(uuid "b7b05951-ab50-4abb-88ba-e4bf41de24aa")
-	)
-	(segment
-		(start 201.706491 141.885379)
-		(end 214.923773 128.668097)
-		(width 0.15015)
-		(layer "F.Cu")
-		(net "/SWD")
-		(uuid "bf60e2b4-8161-4ac2-b42e-46606da143f6")
-	)
-	(segment
-		(start 134.025005 134.55)
-		(end 134.694586 134.74458)
-		(width 0.15015)
-		(layer "F.Cu")
-		(net "/SWD")
-		(uuid "c0de345f-0981-417d-a411-45a960a4aff9")
+		(uuid "cabe7646-78e9-4950-abd0-e04940859dff")
 	)
 	(segment
 		(start 206.515383 111.653255)
@@ -52937,7 +54747,31 @@
 		(width 0.15015)
 		(layer "F.Cu")
 		(net "/SWD")
-		(uuid "e68446f6-1908-422d-b027-0be308a0db3b")
+		(uuid "d43e67fd-d271-4d3b-bb17-835f61a8134a")
+	)
+	(segment
+		(start 201.706491 141.885379)
+		(end 214.923773 128.668097)
+		(width 0.15015)
+		(layer "F.Cu")
+		(net "/SWD")
+		(uuid "dc305639-eca8-45ad-b505-a8933d0089b8")
+	)
+	(segment
+		(start 211.529906 113.85)
+		(end 208.712128 113.85)
+		(width 0.15015)
+		(layer "F.Cu")
+		(net "/SWD")
+		(uuid "ddea12f6-682b-476c-a31e-999ee267a617")
+	)
+	(segment
+		(start 134.025005 134.55)
+		(end 134.694586 134.74458)
+		(width 0.15015)
+		(layer "F.Cu")
+		(net "/SWD")
+		(uuid "fb38ceb3-e5bd-4895-8896-19796ff81da3")
 	)
 	(segment
 		(start 156.512676 125.914602)
@@ -56630,12 +58464,12 @@
 		(uuid "0841f7fe-bfc6-40b9-89a5-0d2a2fd9b2e2")
 	)
 	(segment
-		(start 209.05 107.45)
-		(end 207.675218 107.45)
+		(start 208.675779 107.426004)
+		(end 208.651783 107.45)
 		(width 0.15015)
 		(layer "F.Cu")
 		(net "/D6")
-		(uuid "551148be-16cf-49c4-bad6-3b7c75d03925")
+		(uuid "4c1cbadc-e4fc-4666-800e-fbe97de1bd33")
 	)
 	(segment
 		(start 178.024911 119.462793)
@@ -56644,30 +58478,6 @@
 		(layer "F.Cu")
 		(net "/D6")
 		(uuid "5e2c869c-b48a-4df2-8d80-3257b796bee6")
-	)
-	(segment
-		(start 207.575218 107.35)
-		(end 206.846505 107.35)
-		(width 0.15015)
-		(layer "F.Cu")
-		(net "/D6")
-		(uuid "66de6d81-19df-4c8f-a6d2-124f9c08b884")
-	)
-	(segment
-		(start 207.675218 107.45)
-		(end 207.575218 107.35)
-		(width 0.15015)
-		(layer "F.Cu")
-		(net "/D6")
-		(uuid "7d40ea7a-0600-4768-9af9-ce3d3bc4a588")
-	)
-	(segment
-		(start 209.15 107.35)
-		(end 209.05 107.45)
-		(width 0.15015)
-		(layer "F.Cu")
-		(net "/D6")
-		(uuid "810a34cd-805c-424b-a83e-e604b845051e")
 	)
 	(segment
 		(start 175.589963 115.416729)
@@ -56686,6 +58496,14 @@
 		(uuid "d07e1a4b-69a9-4500-afaf-3bcad4b5c613")
 	)
 	(segment
+		(start 207.675218 107.45)
+		(end 207.575218 107.35)
+		(width 0.15015)
+		(layer "F.Cu")
+		(net "/D6")
+		(uuid "daa89a1e-df33-48d1-8a73-0eca69ecedcc")
+	)
+	(segment
 		(start 171.373234 111.2)
 		(end 170.887505 111.2)
 		(width 0.15015)
@@ -56693,8 +58511,24 @@
 		(net "/D6")
 		(uuid "deae6fa5-4738-4209-9a2d-c5f6a215ae98")
 	)
+	(segment
+		(start 207.575218 107.35)
+		(end 206.846505 107.35)
+		(width 0.15015)
+		(layer "F.Cu")
+		(net "/D6")
+		(uuid "e6b172b2-5d6a-4512-9bd0-b8d05e727483")
+	)
+	(segment
+		(start 208.651783 107.45)
+		(end 207.675218 107.45)
+		(width 0.15015)
+		(layer "F.Cu")
+		(net "/D6")
+		(uuid "ee992cf2-23d8-4779-8b05-a8ebf5e2a884")
+	)
 	(via
-		(at 209.15 107.35)
+		(at 208.675779 107.426004)
 		(size 0.6006)
 		(drill 0.25025)
 		(layers "F.Cu" "B.Cu")
@@ -56730,52 +58564,20 @@
 		(uuid "768f4fb4-840a-4c70-b15b-8d05b5da6d16")
 	)
 	(segment
-		(start 203.093298 117.076173)
-		(end 198.555751 117.076173)
-		(width 0.15015)
-		(layer "B.Cu")
-		(net "/D6")
-		(uuid "137bdf2f-a50b-4aac-a2ee-4a36f9d78087")
-	)
-	(segment
-		(start 208.435691 111.734853)
-		(end 207.502922 112.667622)
-		(width 0.15015)
-		(layer "B.Cu")
-		(net "/D6")
-		(uuid "27cd1968-1b9c-40e8-ac52-dbef27a9f7f2")
-	)
-	(segment
 		(start 205.215656 114.708121)
 		(end 205.215656 114.953815)
 		(width 0.15015)
 		(layer "B.Cu")
 		(net "/D6")
-		(uuid "3f54ae10-9ea7-4d5a-934c-21e2ef356203")
+		(uuid "254e941c-ba76-4bef-aa3e-41cf0e553cbc")
 	)
 	(segment
-		(start 209.15 107.35)
-		(end 209.15 107.767598)
+		(start 208.675779 108.241819)
+		(end 208.435691 108.481907)
 		(width 0.15015)
 		(layer "B.Cu")
 		(net "/D6")
-		(uuid "4ac35fd2-97e0-4287-b638-b515f36bf90a")
-	)
-	(segment
-		(start 207.256155 112.667622)
-		(end 205.215656 114.708121)
-		(width 0.15015)
-		(layer "B.Cu")
-		(net "/D6")
-		(uuid "4f0732da-af29-42fb-b530-e5c361b59518")
-	)
-	(segment
-		(start 178.11156 119.549442)
-		(end 178.024911 119.462793)
-		(width 0.15015)
-		(layer "B.Cu")
-		(net "/D6")
-		(uuid "a12cb7ea-9a2f-46df-8408-a0a6c544da20")
+		(uuid "3a48c7b2-a8fc-43ab-a87e-321961759ee7")
 	)
 	(segment
 		(start 196.082481 119.549442)
@@ -56783,15 +58585,39 @@
 		(width 0.15015)
 		(layer "B.Cu")
 		(net "/D6")
-		(uuid "a8004c83-8f63-4f1b-9cce-2fbfaf65c380")
+		(uuid "3e7b52a8-4e55-4eba-8ec4-b73fce886464")
 	)
 	(segment
-		(start 198.555751 117.076173)
-		(end 196.082481 119.549442)
+		(start 207.256155 112.667622)
+		(end 205.215656 114.708121)
 		(width 0.15015)
 		(layer "B.Cu")
 		(net "/D6")
-		(uuid "b18f489e-fc3a-41ac-b3e1-6b158541cc11")
+		(uuid "51effa0b-e67a-4528-a48e-4be0759e0458")
+	)
+	(segment
+		(start 178.11156 119.549442)
+		(end 178.024911 119.462793)
+		(width 0.15015)
+		(layer "B.Cu")
+		(net "/D6")
+		(uuid "72b81720-d48f-4f9b-957f-9d6e979ad52f")
+	)
+	(segment
+		(start 208.675779 107.426004)
+		(end 208.675779 108.241819)
+		(width 0.15015)
+		(layer "B.Cu")
+		(net "/D6")
+		(uuid "7e329ea3-2b91-45f3-b1ae-beb4f93f9fec")
+	)
+	(segment
+		(start 203.093298 117.076173)
+		(end 198.555751 117.076173)
+		(width 0.15015)
+		(layer "B.Cu")
+		(net "/D6")
+		(uuid "9e28862b-e01a-419f-bcf2-1ae20973e6a0")
 	)
 	(segment
 		(start 208.435691 108.481907)
@@ -56799,15 +58625,23 @@
 		(width 0.15015)
 		(layer "B.Cu")
 		(net "/D6")
-		(uuid "b244b59c-e7ff-40b3-9fde-a4b5b1ee6d98")
+		(uuid "a0910b43-a723-4ba7-8fe5-ec55aad7d3db")
 	)
 	(segment
-		(start 209.15 107.767598)
-		(end 208.435691 108.481907)
+		(start 198.555751 117.076173)
+		(end 196.082481 119.549442)
 		(width 0.15015)
 		(layer "B.Cu")
 		(net "/D6")
-		(uuid "cd4493cf-0bc6-4cf1-9b30-f27af9839293")
+		(uuid "bff38101-f39b-4134-82ab-da4bd126cfbc")
+	)
+	(segment
+		(start 208.435691 111.734853)
+		(end 207.502922 112.667622)
+		(width 0.15015)
+		(layer "B.Cu")
+		(net "/D6")
+		(uuid "e3d31c02-4ed7-4a41-a8dd-d6a1e58ff484")
 	)
 	(segment
 		(start 207.502922 112.667622)
@@ -56815,7 +58649,7 @@
 		(width 0.15015)
 		(layer "B.Cu")
 		(net "/D6")
-		(uuid "f13fd22f-6292-4232-b4cf-1ccec36674f2")
+		(uuid "e4b2c56a-17c8-4ddf-be1b-eb3362466428")
 	)
 	(segment
 		(start 205.215656 114.953815)
@@ -56823,7 +58657,7 @@
 		(width 0.15015)
 		(layer "B.Cu")
 		(net "/D6")
-		(uuid "f16cb1db-04c3-442b-945e-f8bc672425c4")
+		(uuid "fecba017-2f53-4cbd-a8cd-c94185723fc0")
 	)
 	(segment
 		(start 208.327492 107.75)
@@ -62152,28 +63986,20 @@
 		(uuid "07b52387-d547-4693-b8ed-49b727d2b025")
 	)
 	(segment
+		(start 211.576246 114.25)
+		(end 213.75 116.423754)
+		(width 0.15)
+		(layer "F.Cu")
+		(net "/RUN")
+		(uuid "2949ddad-1add-4470-aed5-5e9b4bbd27ae")
+	)
+	(segment
 		(start 203.75 110.8465)
 		(end 203.75 111.95)
 		(width 0.15)
 		(layer "F.Cu")
 		(net "/RUN")
-		(uuid "331360ba-6e6b-407d-b957-b62399f31f42")
-	)
-	(segment
-		(start 203.75 111.95)
-		(end 205.95 114.15)
-		(width 0.15)
-		(layer "F.Cu")
-		(net "/RUN")
-		(uuid "5650b280-43aa-4cc0-a571-b12acf21712b")
-	)
-	(segment
-		(start 213.75 116.95)
-		(end 213.75 117.5)
-		(width 0.15)
-		(layer "F.Cu")
-		(net "/RUN")
-		(uuid "9c460092-5f0b-4ccd-9863-73b8b7b7d56d")
+		(uuid "7011a433-faeb-4c70-9df6-096c1dd8a430")
 	)
 	(segment
 		(start 213.75 121.625)
@@ -62184,20 +64010,28 @@
 		(uuid "9e0313b9-8bc9-4a39-aa0d-d3809b1f0248")
 	)
 	(segment
-		(start 210.95 114.15)
-		(end 213.75 116.95)
+		(start 206.05 114.25)
+		(end 211.576246 114.25)
 		(width 0.15)
 		(layer "F.Cu")
 		(net "/RUN")
-		(uuid "f0b0ef83-e25d-4c98-bcef-1c18a342ba14")
+		(uuid "b1abd2b6-a189-4390-abc4-9a59308dbdaf")
 	)
 	(segment
-		(start 205.95 114.15)
-		(end 210.95 114.15)
+		(start 213.75 116.423754)
+		(end 213.75 117.5)
 		(width 0.15)
 		(layer "F.Cu")
 		(net "/RUN")
-		(uuid "fc2c483a-23fc-4837-b257-99f1890adc86")
+		(uuid "c07365ef-0edb-434d-ba2a-93be81c6a653")
+	)
+	(segment
+		(start 203.75 111.95)
+		(end 206.05 114.25)
+		(width 0.15)
+		(layer "F.Cu")
+		(net "/RUN")
+		(uuid "e1847be0-9c18-408a-8552-3262f4ae0bea")
 	)
 	(segment
 		(start 205.812217 102.212217)
@@ -62604,14 +64438,6 @@
 		(uuid "f1a95c92-9c15-4fad-bef2-c66cca113597")
 	)
 	(segment
-		(start 211.678557 99.947117)
-		(end 207.069553 95.338113)
-		(width 0.15015)
-		(layer "F.Cu")
-		(net "/SCK")
-		(uuid "39f34d5b-e9ae-47c7-a830-da39f0e9d41a")
-	)
-	(segment
 		(start 198.550005 100.277771)
 		(end 198.550005 100.718)
 		(width 0.15015)
@@ -62626,6 +64452,54 @@
 		(layer "F.Cu")
 		(net "/SCK")
 		(uuid "3ea482a4-61fc-4ced-80a6-33525c592a51")
+	)
+	(segment
+		(start 210.992658 112.502377)
+		(end 211.678557 111.816478)
+		(width 0.15015)
+		(layer "F.Cu")
+		(net "/SCK")
+		(uuid "4ad7f8a9-2ac7-4dec-abb1-f95e0101f9f5")
+	)
+	(segment
+		(start 210.941008 112.630582)
+		(end 210.992658 112.578932)
+		(width 0.15015)
+		(layer "F.Cu")
+		(net "/SCK")
+		(uuid "4af2404d-442b-4035-9f3a-6582d2c7e503")
+	)
+	(segment
+		(start 210.992658 112.578932)
+		(end 210.992658 112.502377)
+		(width 0.15015)
+		(layer "F.Cu")
+		(net "/SCK")
+		(uuid "4f835ca5-0a58-44cd-af09-82e3d80b4dc9")
+	)
+	(segment
+		(start 211.678557 111.816478)
+		(end 211.678557 99.947117)
+		(width 0.15015)
+		(layer "F.Cu")
+		(net "/SCK")
+		(uuid "593bda28-37bd-41ef-a923-d4b43d20ee55")
+	)
+	(segment
+		(start 210.941008 112.631167)
+		(end 210.941008 112.630582)
+		(width 0.15015)
+		(layer "F.Cu")
+		(net "/SCK")
+		(uuid "5d986402-826a-4faf-b0c9-8dfc130311b6")
+	)
+	(segment
+		(start 211.678557 99.947117)
+		(end 207.069553 95.338113)
+		(width 0.15015)
+		(layer "F.Cu")
+		(net "/SCK")
+		(uuid "61c56313-25e9-4600-91e9-68283c411161")
 	)
 	(segment
 		(start 196.690222 99.007513)
@@ -62649,15 +64523,7 @@
 		(width 0.15015)
 		(layer "F.Cu")
 		(net "/SCK")
-		(uuid "8b4cd323-03fb-4708-b047-79b9a5a618cb")
-	)
-	(segment
-		(start 211.678557 111.816478)
-		(end 211.678557 99.947117)
-		(width 0.15015)
-		(layer "F.Cu")
-		(net "/SCK")
-		(uuid "8e486187-92a0-4a98-8779-ab5a79a587e1")
+		(uuid "9925e5bc-c47c-4daf-a00c-a22ab748a2d7")
 	)
 	(segment
 		(start 197.971857 99.699623)
@@ -62675,32 +64541,8 @@
 		(net "/SCK")
 		(uuid "bb59db42-7c0e-4182-9c9f-c13cdd7cdb68")
 	)
-	(segment
-		(start 210.893514 112.678076)
-		(end 210.992658 112.578932)
-		(width 0.15015)
-		(layer "F.Cu")
-		(net "/SCK")
-		(uuid "c3391372-5ca0-4c5c-b60f-f4e1bd3448ea")
-	)
-	(segment
-		(start 210.992658 112.578932)
-		(end 210.992658 112.502377)
-		(width 0.15015)
-		(layer "F.Cu")
-		(net "/SCK")
-		(uuid "fdc84261-8268-4e26-914e-c6c819c95357")
-	)
-	(segment
-		(start 210.992658 112.502377)
-		(end 211.678557 111.816478)
-		(width 0.15015)
-		(layer "F.Cu")
-		(net "/SCK")
-		(uuid "fe355bac-788b-4982-a48f-12ac82a2770c")
-	)
 	(via
-		(at 210.893514 112.678076)
+		(at 210.941008 112.631167)
 		(size 0.6006)
 		(drill 0.25025)
 		(layers "F.Cu" "B.Cu")
@@ -62754,20 +64596,28 @@
 		(uuid "e7395498-8e8f-4338-8375-559e7c7bbbad")
 	)
 	(segment
-		(start 210.893514 112.678076)
-		(end 198.771426 124.800164)
-		(width 0.15015)
-		(layer "B.Cu")
-		(net "/SCK")
-		(uuid "0dd5d5df-5be1-45bf-a422-6278a617479d")
-	)
-	(segment
 		(start 198.460294 140.389235)
 		(end 198.270005 140.85)
 		(width 0.15015)
 		(layer "B.Cu")
 		(net "/SCK")
-		(uuid "17bf9826-b9ee-4baa-af0e-d48664149fde")
+		(uuid "0947bcc5-9a38-4c0b-a57b-462ddff04c95")
+	)
+	(segment
+		(start 210.941008 112.631167)
+		(end 210.268833 112.631167)
+		(width 0.15015)
+		(layer "B.Cu")
+		(net "/SCK")
+		(uuid "2afe645b-ec1d-49b2-9aee-8095c80d4c44")
+	)
+	(segment
+		(start 210.268833 112.631167)
+		(end 198.771426 124.128574)
+		(width 0.15015)
+		(layer "B.Cu")
+		(net "/SCK")
+		(uuid "37e62714-ee9a-440d-88a9-632a93c586e8")
 	)
 	(segment
 		(start 198.382209 97.109198)
@@ -62794,12 +64644,20 @@
 		(uuid "80e2dd80-08bf-4beb-b62a-39055610b963")
 	)
 	(segment
+		(start 198.771426 124.128574)
+		(end 198.771426 139.638095)
+		(width 0.15015)
+		(layer "B.Cu")
+		(net "/SCK")
+		(uuid "98180398-01e7-4865-97a4-f1cf0e45bc0d")
+	)
+	(segment
 		(start 198.771426 139.638095)
 		(end 198.460294 140.389235)
 		(width 0.15015)
 		(layer "B.Cu")
 		(net "/SCK")
-		(uuid "a476c7ab-c92a-4e6c-877a-e35e5cf3b2e5")
+		(uuid "b53fd40d-98cb-4a8b-adbc-dab567fea690")
 	)
 	(segment
 		(start 196.690222 99.007513)
@@ -62808,14 +64666,6 @@
 		(layer "B.Cu")
 		(net "/SCK")
 		(uuid "dc262cff-6735-4c47-8121-df9bf497dbab")
-	)
-	(segment
-		(start 198.771426 124.800164)
-		(end 198.771426 139.638095)
-		(width 0.15015)
-		(layer "B.Cu")
-		(net "/SCK")
-		(uuid "eaed95aa-f2a0-40f8-9789-7f70156af74e")
 	)
 	(segment
 		(start 174.810184 126.107917)
@@ -63162,6 +65012,166 @@
 		(layer "B.Cu")
 		(net "/FLASH2_SS")
 		(uuid "e162dcf3-1a5d-4d08-9417-565c638821cd")
+	)
+	(segment
+		(start 210.468248 109.975)
+		(end 210.861752 109.975)
+		(width 0.15)
+		(layer "F.Cu")
+		(net "/Reset")
+		(uuid "0c50c6cc-c449-4c15-ac8a-a4f36240141f")
+	)
+	(segment
+		(start 199.85 137.45)
+		(end 188.97 137.45)
+		(width 0.15)
+		(layer "F.Cu")
+		(net "/Reset")
+		(uuid "23ac843b-beea-4cd1-bb78-93578fa61557")
+	)
+	(segment
+		(start 209.678131 109.184883)
+		(end 210.468248 109.975)
+		(width 0.15)
+		(layer "F.Cu")
+		(net "/Reset")
+		(uuid "392b8279-9591-44fe-93a6-d7cc9168a9a4")
+	)
+	(segment
+		(start 206.8465 106.55)
+		(end 206.9565 106.44)
+		(width 0.15)
+		(layer "F.Cu")
+		(net "/Reset")
+		(uuid "432905d7-6561-42d5-bd20-84baa4556c4c")
+	)
+	(segment
+		(start 210.25 113.05)
+		(end 210.45 113.25)
+		(width 0.15)
+		(layer "F.Cu")
+		(net "/Reset")
+		(uuid "47e4a9ca-0020-4039-b6bf-1241ca509ad8")
+	)
+	(segment
+		(start 211.14 110.253248)
+		(end 211.14 111.76)
+		(width 0.15)
+		(layer "F.Cu")
+		(net "/Reset")
+		(uuid "6ec9a4eb-0647-4591-bad8-131f31091d5a")
+	)
+	(segment
+		(start 211.14 111.76)
+		(end 210.25 112.65)
+		(width 0.15)
+		(layer "F.Cu")
+		(net "/Reset")
+		(uuid "77a231fb-8869-4917-9ab6-2680c37def17")
+	)
+	(segment
+		(start 208.066861 106.44)
+		(end 208.577565 106.950704)
+		(width 0.15)
+		(layer "F.Cu")
+		(net "/Reset")
+		(uuid "86306916-819b-4f83-a020-efb7cc4d8a06")
+	)
+	(segment
+		(start 210.25 112.65)
+		(end 210.25 113.05)
+		(width 0.15)
+		(layer "F.Cu")
+		(net "/Reset")
+		(uuid "908a0b76-584d-4ae2-9b99-eddc501be894")
+	)
+	(segment
+		(start 208.577565 106.950704)
+		(end 208.872655 106.950704)
+		(width 0.15)
+		(layer "F.Cu")
+		(net "/Reset")
+		(uuid "92f018ee-57f0-4a58-a066-4b00e3919df0")
+	)
+	(segment
+		(start 188.97 137.45)
+		(end 185.57 140.85)
+		(width 0.15)
+		(layer "F.Cu")
+		(net "/Reset")
+		(uuid "988e2779-2ff9-4b4f-8b7c-e94816dbc84e")
+	)
+	(segment
+		(start 208.872655 106.950704)
+		(end 209.678131 107.75618)
+		(width 0.15)
+		(layer "F.Cu")
+		(net "/Reset")
+		(uuid "dbc2fd5c-8c60-4d8b-b28c-3bb0cdd48d89")
+	)
+	(segment
+		(start 209.678131 107.75618)
+		(end 209.678131 109.184883)
+		(width 0.15)
+		(layer "F.Cu")
+		(net "/Reset")
+		(uuid "deac1163-fa91-4952-a2e9-d996a3819254")
+	)
+	(segment
+		(start 206.9565 106.44)
+		(end 208.066861 106.44)
+		(width 0.15)
+		(layer "F.Cu")
+		(net "/Reset")
+		(uuid "e2a680df-4101-4da7-8390-bd6a0e97d05b")
+	)
+	(segment
+		(start 210.861752 109.975)
+		(end 211.14 110.253248)
+		(width 0.15)
+		(layer "F.Cu")
+		(net "/Reset")
+		(uuid "e3329e29-1b83-446e-a808-65d63fe1db5b")
+	)
+	(via
+		(at 210.45 113.25)
+		(size 0.6)
+		(drill 0.25)
+		(layers "F.Cu" "B.Cu")
+		(net "/Reset")
+		(uuid "1d5bb6cd-a8af-4e06-9c1b-d039c3c7c340")
+	)
+	(via
+		(at 199.85 137.45)
+		(size 0.6)
+		(drill 0.25)
+		(layers "F.Cu" "B.Cu")
+		(net "/Reset")
+		(uuid "8b34cf34-5c94-4a37-b61b-ec8bb28409df")
+	)
+	(segment
+		(start 210.45 115.45)
+		(end 199.85 126.05)
+		(width 0.15)
+		(layer "B.Cu")
+		(net "/Reset")
+		(uuid "716c5b0e-f968-4cc0-96ba-8c8949df1c27")
+	)
+	(segment
+		(start 210.45 113.25)
+		(end 210.45 115.45)
+		(width 0.15)
+		(layer "B.Cu")
+		(net "/Reset")
+		(uuid "770513cc-c457-4805-8de0-4da485feb2b1")
+	)
+	(segment
+		(start 199.85 126.05)
+		(end 199.85 137.45)
+		(width 0.15)
+		(layer "B.Cu")
+		(net "/Reset")
+		(uuid "ade94652-9b3c-49e7-bc93-87b38799eaff")
 	)
 	(zone
 		(layer "F.Cu")
