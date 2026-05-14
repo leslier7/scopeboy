@@ -15,6 +15,7 @@
 #include "display.h"
 #ifdef DISPLAY_HDMI
 #include "pico_hdmi/video_output.h"
+#include "hardware/clocks.h"
 #endif
 #include "dac.h"
 #include "adc.h"
@@ -149,6 +150,7 @@ bool windowInitialized = false;
 
 // --- SNAKE GAME VARIABLES ---
 bool isSnakeMode = false;
+bool seesaw_present = false;
 #define SNAKE_BLOCK_SIZE 10
 #define GRID_W (320 / SNAKE_BLOCK_SIZE)
 #define GRID_H (240 / SNAKE_BLOCK_SIZE)
@@ -189,7 +191,7 @@ void gpio_callback(uint gpio, uint32_t events) {
 }
 
 // --- Helper Functions ---
-void seesaw_pin_mode_bulk(uint32_t pins);
+int seesaw_pin_mode_bulk(uint32_t pins);
 uint32_t seesaw_read_buttons();
 uint16_t seesaw_read_analog(uint8_t pin);
 
@@ -588,9 +590,9 @@ void drawSnake() {
 }
 
 void handleInput() {
-    uint32_t buttons = seesaw_read_buttons();
-    uint16_t joyX = seesaw_read_analog(PIN_JOY_X);
-    uint16_t joyY = seesaw_read_analog(PIN_JOY_Y);
+    uint32_t buttons = seesaw_present ? seesaw_read_buttons() : 0xFFFFFFFF;
+    uint16_t joyX    = seesaw_present ? seesaw_read_analog(PIN_JOY_X) : 512;
+    uint16_t joyY    = seesaw_present ? seesaw_read_analog(PIN_JOY_Y) : 512;
     
     bool currentEncSw = !gpio_get(PICO_ENC_SW);
     int delta = rotaryDelta;
@@ -754,41 +756,49 @@ void core1_entry() {
 
 // --- Main ---
 int main() {
-    stdio_init_all(); 
-    
+#ifdef DISPLAY_HDMI
+    set_sys_clock_khz(126000, true);
+#endif
+    stdio_init_all();
+
     gpio_init(PICO_DEFAULT_LED_PIN);
     gpio_set_dir(PICO_DEFAULT_LED_PIN, GPIO_OUT);
 
-    i2c_init(I2C_PORT, 400 * 1000); 
+    // Start display and core 1 first — HDMI must be live before any I2C device calls
+    // that might block or corrupt bus state on missing hardware.
+    display_init();
+    multicore_reset_core1();
+    multicore_launch_core1(core1_entry);
+#ifdef DISPLAY_HDMI
+    sleep_ms(100);
+#endif
+
+    i2c_init(I2C_PORT, 400 * 1000);
     gpio_set_function(I2C_SDA_PIN, GPIO_FUNC_I2C);
     gpio_set_function(I2C_SCL_PIN, GPIO_FUNC_I2C);
     gpio_pull_up(I2C_SDA_PIN);
     gpio_pull_up(I2C_SCL_PIN);
-    
-    sleep_ms(100); 
 
-    uint32_t digital_pins = MASK_A | MASK_B | MASK_X | MASK_Y | MASK_START | MASK_SELECT;
-    seesaw_pin_mode_bulk(digital_pins); 
+    sleep_ms(100);
 
-    rotary_init(); 
-
-    display_init();
-    
+    // Initialize DAC before seesaw — seesaw timeout corrupts I2C state and
+    // i2c_write_blocking (used by dac5571_write) will hang on a dirty bus.
     initDac();
     int dac_val = setVoltage(CHAN_TRIG, 1.65f);
-    
+
+    uint32_t digital_pins = MASK_A | MASK_B | MASK_X | MASK_Y | MASK_START | MASK_SELECT;
+    seesaw_present = (seesaw_pin_mode_bulk(digital_pins) >= 0);
+
+    rotary_init();
+
     for(int i=0; i<320; i++) oldWaveY[i] = 120;
 
     init_adc_capture();
     init_trigger();
-    
+
     // Set Initial Gain State
     currentGainMode = SCOPE_GAIN_MED;
     updateGainState(0); // Applies factor 0.39 and relays
-
-    // start core 1 
-    multicore_reset_core1();
-    multicore_launch_core1(core1_entry);
 
     // start core 0
     core0_entry();
@@ -800,30 +810,41 @@ int main() {
 }
 
 // --- I2C Implementations ---
-void seesaw_pin_mode_bulk(uint32_t pins) {
+#define SEESAW_TIMEOUT_MS 5
+
+int seesaw_pin_mode_bulk(uint32_t pins) {
     uint8_t buf[6];
-    buf[0] = SEESAW_GPIO_BASE; buf[1] = SEESAW_GPIO_BULK_SET; 
+    buf[0] = SEESAW_GPIO_BASE; buf[1] = SEESAW_GPIO_BULK_SET;
     buf[2] = (pins >> 24) & 0xFF; buf[3] = (pins >> 16) & 0xFF;
     buf[4] = (pins >> 8) & 0xFF; buf[5] = pins & 0xFF;
-    i2c_write_blocking(I2C_PORT, SEESAW_I2C_ADDR, buf, 6, false);
+    return i2c_write_blocking_until(I2C_PORT, SEESAW_I2C_ADDR, buf, 6, false,
+                                    make_timeout_time_ms(SEESAW_TIMEOUT_MS));
 }
 
 uint32_t seesaw_read_buttons() {
     uint8_t write_buf[2] = {SEESAW_GPIO_BASE, SEESAW_GPIO_BULK};
     uint8_t read_buf[4];
-    i2c_write_blocking(I2C_PORT, SEESAW_I2C_ADDR, write_buf, 2, false); 
-    sleep_us(600); 
-    i2c_read_blocking(I2C_PORT, SEESAW_I2C_ADDR, read_buf, 4, false); 
-    return ((uint32_t)read_buf[0] << 24) | ((uint32_t)read_buf[1] << 16) | 
+    if (i2c_write_blocking_until(I2C_PORT, SEESAW_I2C_ADDR, write_buf, 2, false,
+                                 make_timeout_time_ms(SEESAW_TIMEOUT_MS)) < 0)
+        return 0xFFFFFFFF;
+    sleep_us(600);
+    if (i2c_read_blocking_until(I2C_PORT, SEESAW_I2C_ADDR, read_buf, 4, false,
+                                make_timeout_time_ms(SEESAW_TIMEOUT_MS)) < 0)
+        return 0xFFFFFFFF;
+    return ((uint32_t)read_buf[0] << 24) | ((uint32_t)read_buf[1] << 16) |
            ((uint32_t)read_buf[2] << 8) | (uint32_t)read_buf[3];
 }
 
 uint16_t seesaw_read_analog(uint8_t pin) {
     uint8_t write_buf[2] = {SEESAW_ADC_BASE, (uint8_t)(SEESAW_ADC_OFFSET + pin)};
     uint8_t read_buf[2];
-    i2c_write_blocking(I2C_PORT, SEESAW_I2C_ADDR, write_buf, 2, false);
-    sleep_us(1000); 
-    i2c_read_blocking(I2C_PORT, SEESAW_I2C_ADDR, read_buf, 2, false);
+    if (i2c_write_blocking_until(I2C_PORT, SEESAW_I2C_ADDR, write_buf, 2, false,
+                                 make_timeout_time_ms(SEESAW_TIMEOUT_MS)) < 0)
+        return 512;
+    sleep_us(1000);
+    if (i2c_read_blocking_until(I2C_PORT, SEESAW_I2C_ADDR, read_buf, 2, false,
+                                make_timeout_time_ms(SEESAW_TIMEOUT_MS)) < 0)
+        return 512;
     return ((uint16_t)read_buf[0] << 8) | read_buf[1];
 }
 
