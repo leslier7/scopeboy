@@ -6,7 +6,7 @@
 	(paper "A2")
 	(title_block
 		(title "Scopeboy")
-		(date "2026-05-12")
+		(date "2026-05-13")
 		(rev "V1.1")
 		(company "Cornell University Electrical and Computer Engineering")
 		(comment 1 "Jenny List")
@@ -14899,16 +14899,6 @@
 		)
 		(uuid "37f74b3e-853a-44e3-859f-146710771bfb")
 	)
-	(label "SDA"
-		(at 478.79 49.53 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "39804dbb-90a0-4c22-bca7-d3f744543cac")
-	)
 	(label "HDMI_CKP"
 		(at 551.18 107.95 0)
 		(effects
@@ -14928,6 +14918,16 @@
 			(justify left bottom)
 		)
 		(uuid "3d203f21-8b2e-46e4-832d-9dfe1cd54176")
+	)
+	(label "SDA"
+		(at 478.79 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3e018bef-491e-4050-ba55-c5328b89210e")
 	)
 	(label "HDMI_CKN"
 		(at 551.18 110.49 0)
@@ -15128,6 +15128,16 @@
 			(justify right bottom)
 		)
 		(uuid "687ffe5e-2085-4863-8ce6-f7cc9a0328c3")
+	)
+	(label "SCL"
+		(at 478.79 49.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6bc450d3-9f29-4278-8b67-298bb1f42d60")
 	)
 	(label "HDMI_D2P"
 		(at 250.19 142.24 180)
@@ -15419,16 +15429,6 @@
 			(justify right bottom)
 		)
 		(uuid "a5e6ffa3-0bd6-4b3d-aa38-b361cb33aec6")
-	)
-	(label "SCL"
-		(at 478.79 52.07 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a649129a-439d-4145-9a1e-238cf0fe038c")
 	)
 	(label "LCDCS"
 		(at 250.19 114.3 180)
